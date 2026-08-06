@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1100" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1080" width="100%" height="100%">
   <defs>
-    <!-- Card Clip Path -->
+    <!-- Card Background Clip Path -->
     <clipPath id="cardClip">
       <rect width="300" height="320" rx="12"/>
     </clipPath>
 
-    <!-- Text Gradients for each card -->
+    <!-- Premium Gradient Titles for each Card -->
     <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="100%" stop-color="#8b5cf6"/>
@@ -43,7 +43,7 @@
       <stop offset="100%" stop-color="#64748b"/>
     </linearGradient>
 
-    <!-- Glow Radial Gradients -->
+    <!-- Glow Radial Light Sources -->
     <radialGradient id="glow1" cx="0%" cy="0%" r="100%">
       <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
@@ -82,52 +82,40 @@
     </radialGradient>
   </defs>
 
+  <!-- SVG Native Interactive Styles (Standard SVG specification) -->
   <style>
-    /* Base Reset & Font */
     * { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-
-    /* Card Wrapper & Animation */
-    .card-wrapper { transform-origin: center; }
+    
     .card {
       opacity: 0;
       animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
       transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transform-origin: center;
     }
-    
-    /* Staggered Loading Delays */
-    .card-wrapper:nth-child(1) .card { animation-delay: 0.1s; }
-    .card-wrapper:nth-child(2) .card { animation-delay: 0.15s; }
-    .card-wrapper:nth-child(3) .card { animation-delay: 0.2s; }
-    .card-wrapper:nth-child(4) .card { animation-delay: 0.25s; }
-    .card-wrapper:nth-child(5) .card { animation-delay: 0.3s; }
-    .card-wrapper:nth-child(6) .card { animation-delay: 0.35s; }
-    .card-wrapper:nth-child(7) .card { animation-delay: 0.4s; }
-    .card-wrapper:nth-child(8) .card { animation-delay: 0.45s; }
-    .card-wrapper:nth-child(9) .card { animation-delay: 0.5s; }
+    .c1 .card { animation-delay: 0.1s; }
+    .c2 .card { animation-delay: 0.15s; }
+    .c3 .card { animation-delay: 0.2s; }
+    .c4 .card { animation-delay: 0.25s; }
+    .c5 .card { animation-delay: 0.3s; }
+    .c6 .card { animation-delay: 0.35s; }
+    .c7 .card { animation-delay: 0.4s; }
+    .c8 .card { animation-delay: 0.45s; }
+    .c9 .card { animation-delay: 0.5s; }
 
-    /* Hover Effects */
+    /* Hover Interactions */
     .card:hover {
       transform: translateY(-8px) scale(1.01);
     }
-    .card:hover .glow {
-      opacity: 1;
-    }
     .card:hover .card-bg {
-      border-color: var(--accent);
+      stroke: var(--accent);
     }
     .card:hover .left-accent {
       opacity: 1;
     }
-    .card:hover .logo-wrapper rect {
-      fill: #334155;
-      stroke: var(--accent);
+    .card:hover .glow {
+      opacity: 1;
     }
-    .card:hover .badge rect {
-      stroke: var(--accent);
-    }
-
-    /* Logo Hover */
+    
     .logo-wrapper {
       transition: all 0.2s ease;
       cursor: pointer;
@@ -136,27 +124,29 @@
       transform: scale(1.25) rotate(-6deg);
     }
     .logo-wrapper:hover rect {
-      fill: #1e293b;
-      stroke: var(--accent);
+      fill: #334155 !important;
+      stroke: var(--accent) !important;
     }
 
-    /* Badge Hover */
     .badge {
-      transition: all 0.2s;
+      transition: all 0.2s ease;
       cursor: pointer;
     }
     .badge:hover {
       transform: scale(1.05);
     }
     .badge:hover rect {
-      fill: var(--accent);
-      stroke: transparent;
+      fill: var(--accent) !important;
+      stroke: transparent !important;
     }
     .badge:hover text {
-      fill: #000000;
+      fill: #000000 !important;
     }
 
-    /* Keyframe Animations */
+    .card-icon {
+      animation: float 3s ease-in-out infinite;
+    }
+
     @keyframes fadeUp {
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -165,35 +155,28 @@
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-4px); }
     }
-    .card-icon {
-      animation: float 3s ease-in-out infinite;
-    }
   </style>
 
   <!-- ================= ROW 1 ================= -->
 
   <!-- Card 1: AI Engineering -->
-  <g class="card-wrapper" transform="translate(20, 20)">
+  <g class="c1" transform="translate(20, 20)">
     <g class="card" style="--accent: #8b5cf6;">
       <rect class="card-bg" width="300" height="320" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
-      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#8b5cf6" clip-path="url(#cardClip)"/>
-      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow1)" opacity="0" transition="opacity 0.4s ease"/>
+      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#8b5cf6" clip-path="url(#cardClip)" opacity="0.8"/>
+      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow1)" opacity="0"/>
       
-      <!-- Header -->
-      <svg class="card-icon" x="20" y="20" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm0 0v2m0 8v2M8 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h4m6-12h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4M9 18v-2a3 3 0 0 1 6 0v2"/>
-      </svg>
+      <path class="card-icon" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm0 0v2m0 8v2M8 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h4m6-12h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4M9 18v-2a3 3 0 0 1 6 0v2" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(20, 20)"/>
       <text x="70" y="32" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1" text-transform="uppercase">Artificial Intelligence</text>
       <text x="70" y="54" font-size="18" font-weight="700" fill="url(#g1)">AI Engineering</text>
 
-      <!-- Logos -->
       <g class="logo-wrapper" transform="translate(20, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/python" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(62, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/numpy" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(104, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/pandas" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(146, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/scikitlearn" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(188, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/tensorflow" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(230, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/pytorch" width="34" height="34"/></g>
-
+      
       <g class="logo-wrapper" transform="translate(20, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/xgboost" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(62, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/lightgbm" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(104, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/catboost" width="34" height="34"/></g>
@@ -201,7 +184,6 @@
       <g class="logo-wrapper" transform="translate(188, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/mlflow" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(230, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/wandb" width="34" height="34"/></g>
 
-      <!-- Badges -->
       <g class="badge" transform="translate(20, 170)"><rect width="80" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="#1e293b"/><text x="40" y="17" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle">Feature Eng</text></g>
       <g class="badge" transform="translate(110, 170)"><rect width="70" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="#1e293b"/><text x="35" y="17" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle">Data Prep</text></g>
       <g class="badge" transform="translate(190, 170)"><rect width="90" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="#1e293b"/><text x="45" y="17" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle">Model Training</text></g>
@@ -210,15 +192,13 @@
   </g>
 
   <!-- Card 2: Generative AI & LLMs -->
-  <g class="card-wrapper" transform="translate(350, 20)">
+  <g class="c2" transform="translate(350, 20)">
     <g class="card" style="--accent: #06b6d4;">
       <rect class="card-bg" width="300" height="320" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
-      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#06b6d4" clip-path="url(#cardClip)"/>
-      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow2)" opacity="0" transition="opacity 0.4s ease"/>
+      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#06b6d4" clip-path="url(#cardClip)" opacity="0.8"/>
+      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow2)" opacity="0"/>
       
-      <svg class="card-icon" x="20" y="20" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M15 14c.2-1 .7-1.6 1.5-2 .5-.2 1-.2 1.5 0 .7.4.9 1.3.5 2-.3.6-1 1.1-1.5 1.2a6.5 6.5 0 0 1-.7 3.7M9 18a6.5 6.5 0 0 1-4.5-11 2.5 2.5 0 0 1 4.3 1.5M9 18c0 1 .5 1.5 1.5 1.5S12 19 12 18m-8-5h16"/>
-      </svg>
+      <path class="card-icon" d="M15 14c.2-1 .7-1.6 1.5-2 .5-.2 1-.2 1.5 0 .7.4.9 1.3.5 2-.3.6-1 1.1-1.5 1.2a6.5 6.5 0 0 1-.7 3.7M9 18a6.5 6.5 0 0 1-4.5-11 2.5 2.5 0 0 1 4.3 1.5M9 18c0 1 .5 1.5 1.5 1.5S12 19 12 18m-8-5h16" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(20, 20)"/>
       <text x="70" y="32" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1" text-transform="uppercase">Large Language Models</text>
       <text x="70" y="54" font-size="18" font-weight="700" fill="url(#g2)">Generative AI &amp; LLMs</text>
 
@@ -228,7 +208,7 @@
       <g class="logo-wrapper" transform="translate(146, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/mistral" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(188, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/meta" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(230, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/huggingface" width="34" height="34"/></g>
-
+      
       <g class="logo-wrapper" transform="translate(20, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/langchain" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(62, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/ollama" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(104, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/llamaindex" width="34" height="34"/></g>
@@ -243,15 +223,13 @@
   </g>
 
   <!-- Card 3: Agentic AI -->
-  <g class="card-wrapper" transform="translate(680, 20)">
+  <g class="c3" transform="translate(680, 20)">
     <g class="card" style="--accent: #ec4899;">
       <rect class="card-bg" width="300" height="320" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
-      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#ec4899" clip-path="url(#cardClip)"/>
-      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow3)" opacity="0" transition="opacity 0.4s ease"/>
+      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#ec4899" clip-path="url(#cardClip)" opacity="0.8"/>
+      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow3)" opacity="0"/>
       
-      <svg class="card-icon" x="20" y="20" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M9 6a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM5 20a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm8 0a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM12 9v2m0 6v2M6 12h2m8 0h2"/>
-      </svg>
+      <path class="card-icon" d="M9 6a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM5 20a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm8 0a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM12 9v2m0 6v2M6 12h2m8 0h2" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(20, 20)"/>
       <text x="70" y="32" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1" text-transform="uppercase">Autonomous Agents</text>
       <text x="70" y="54" font-size="18" font-weight="700" fill="url(#g3)">Agentic AI</text>
 
@@ -277,15 +255,13 @@
   <!-- ================= ROW 2 ================= -->
 
   <!-- Card 4: Full-Stack Development -->
-  <g class="card-wrapper" transform="translate(20, 370)">
+  <g class="c4" transform="translate(20, 370)">
     <g class="card" style="--accent: #3b82f6;">
       <rect class="card-bg" width="300" height="320" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
-      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#3b82f6" clip-path="url(#cardClip)"/>
-      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow4)" opacity="0" transition="opacity 0.4s ease"/>
+      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#3b82f6" clip-path="url(#cardClip)" opacity="0.8"/>
+      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow4)" opacity="0"/>
       
-      <svg class="card-icon" x="20" y="20" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="m8 6-6 6 6 6m8 0 6-6-6-6"/>
-      </svg>
+      <path class="card-icon" d="m8 6-6 6 6 6m8 0 6-6-6-6" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(20, 20)"/>
       <text x="70" y="32" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1" text-transform="uppercase">Client &amp; Server</text>
       <text x="70" y="54" font-size="18" font-weight="700" fill="url(#g4)">Full-Stack Development</text>
 
@@ -295,14 +271,14 @@
       <g class="logo-wrapper" transform="translate(146, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/javascript" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(188, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/html5" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(230, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/css3" width="34" height="34"/></g>
-
+      
       <g class="logo-wrapper" transform="translate(20, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/tailwindcss" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(62, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/redux" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(104, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/shadcnui" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(146, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/framer" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(188, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/vite" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(230, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/nodejs" width="34" height="34"/></g>
-
+      
       <g class="logo-wrapper" transform="translate(20, 164)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/express" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(62, 164)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/fastapi" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(104, 164)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/django" width="34" height="34"/></g>
@@ -315,15 +291,13 @@
   </g>
 
   <!-- Card 5: Cloud & DevOps -->
-  <g class="card-wrapper" transform="translate(350, 370)">
+  <g class="c5" transform="translate(350, 370)">
     <g class="card" style="--accent: #14b8a6;">
       <rect class="card-bg" width="300" height="320" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
-      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#14b8a6" clip-path="url(#cardClip)"/>
-      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow5)" opacity="0" transition="opacity 0.4s ease"/>
+      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#14b8a6" clip-path="url(#cardClip)" opacity="0.8"/>
+      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow5)" opacity="0"/>
       
-      <svg class="card-icon" x="20" y="20" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M17.5 19H9a7 7 0 1 1 6.7-9.2A5 5 0 0 1 17.5 19Z"/>
-      </svg>
+      <path class="card-icon" d="M17.5 19H9a7 7 0 1 1 6.7-9.2A5 5 0 0 1 17.5 19Z" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(20, 20)"/>
       <text x="70" y="32" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1" text-transform="uppercase">Infrastructure &amp; CI/CD</text>
       <text x="70" y="54" font-size="18" font-weight="700" fill="url(#g5)">Cloud &amp; DevOps</text>
 
@@ -333,7 +307,7 @@
       <g class="logo-wrapper" transform="translate(146, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/git" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(188, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/github" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(230, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/githubactions" width="34" height="34"/></g>
-
+      
       <g class="logo-wrapper" transform="translate(20, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/linux" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(62, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/nginx" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(104, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/vercel" width="34" height="34"/></g>
@@ -346,15 +320,15 @@
   </g>
 
   <!-- Card 6: Databases -->
-  <g class="card-wrapper" transform="translate(680, 370)">
+  <g class="c6" transform="translate(680, 370)">
     <g class="card" style="--accent: #f59e0b;">
       <rect class="card-bg" width="300" height="320" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
-      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#f59e0b" clip-path="url(#cardClip)"/>
-      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow6)" opacity="0" transition="opacity 0.4s ease"/>
+      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#f59e0b" clip-path="url(#cardClip)" opacity="0.8"/>
+      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow6)" opacity="0"/>
       
-      <svg class="card-icon" x="20" y="20" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/>
-      </svg>
+      <path class="card-icon" d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12, 5)"/>
+      <ellipse cx="12" cy="5" rx="9" ry="3" fill="none" stroke="#f59e0b" stroke-width="2" transform="translate(12, 5)"/>
+      <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12, 5)"/>
       <text x="70" y="32" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1" text-transform="uppercase">Data Persistence</text>
       <text x="70" y="54" font-size="18" font-weight="700" fill="url(#g6)">Databases</text>
 
@@ -364,7 +338,7 @@
       <g class="logo-wrapper" transform="translate(146, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/redis" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(188, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/sqlite" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(230, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/supabase" width="34" height="34"/></g>
-
+      
       <g class="logo-wrapper" transform="translate(20, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/firebase" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(62, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/pinecone" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(104, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/chromadb" width="34" height="34"/></g>
@@ -379,15 +353,15 @@
   <!-- ================= ROW 3 ================= -->
 
   <!-- Card 7: Automation -->
-  <g class="card-wrapper" transform="translate(20, 720)">
+  <g class="c7" transform="translate(20, 720)">
     <g class="card" style="--accent: #10b981;">
       <rect class="card-bg" width="300" height="320" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
-      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#10b981" clip-path="url(#cardClip)"/>
-      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow7)" opacity="0" transition="opacity 0.4s ease"/>
+      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#10b981" clip-path="url(#cardClip)" opacity="0.8"/>
+      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow7)" opacity="0"/>
       
-      <svg class="card-icon" x="20" y="20" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="2" y="6" width="6" height="4"/><path d="M8 10v2a4 4 0 0 0 8 0v-2"/><rect x="16" y="14" width="6" height="4"/>
-      </svg>
+      <path class="card-icon" d="M8 10v2a4 4 0 0 0 8 0v-2" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12, 5)"/>
+      <rect x="2" y="6" width="6" height="4" fill="none" stroke="#10b981" stroke-width="2" rx="0" transform="translate(12, 5)"/>
+      <rect x="16" y="14" width="6" height="4" fill="none" stroke="#10b981" stroke-width="2" rx="0" transform="translate(12, 5)"/>
       <text x="70" y="32" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1" text-transform="uppercase">Workflow Orchestration</text>
       <text x="70" y="54" font-size="18" font-weight="700" fill="url(#g7)">Automation</text>
 
@@ -397,7 +371,7 @@
       <g class="logo-wrapper" transform="translate(146, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/pipedream" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(188, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/selenium" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(230, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/playwright" width="34" height="34"/></g>
-
+      
       <g class="logo-wrapper" transform="translate(20, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/puppeteer" width="34" height="34"/></g>
 
       <g class="badge" transform="translate(20, 170)"><rect width="100" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="#1e293b"/><text x="50" y="17" fill="#cbd5e1" font-size="11" font-weight="500" text-anchor="middle">Browser Auto.</text></g>
@@ -410,15 +384,15 @@
   </g>
 
   <!-- Card 8: SaaS Engineering -->
-  <g class="card-wrapper" transform="translate(350, 720)">
+  <g class="c8" transform="translate(350, 720)">
     <g class="card" style="--accent: #f472b6;">
       <rect class="card-bg" width="300" height="320" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
-      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#f472b6" clip-path="url(#cardClip)"/>
-      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow8)" opacity="0" transition="opacity 0.4s ease"/>
+      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#f472b6" clip-path="url(#cardClip)" opacity="0.8"/>
+      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow8)" opacity="0"/>
       
-      <svg class="card-icon" x="20" y="20" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18"/><path d="M9 21V9"/>
-      </svg>
+      <path class="card-icon" d="M3 9h18" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12, 5)"/>
+      <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="#f472b6" stroke-width="2" transform="translate(12, 5)"/>
+      <path d="M9 21V9" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12, 5)"/>
       <text x="70" y="32" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1" text-transform="uppercase">Scalable Applications</text>
       <text x="70" y="54" font-size="18" font-weight="700" fill="url(#g8)">SaaS Engineering</text>
 
@@ -442,15 +416,13 @@
   </g>
 
   <!-- Card 9: Developer Toolkit -->
-  <g class="card-wrapper" transform="translate(680, 720)">
+  <g class="c9" transform="translate(680, 720)">
     <g class="card" style="--accent: #64748b;">
       <rect class="card-bg" width="300" height="320" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
-      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#64748b" clip-path="url(#cardClip)"/>
-      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow9)" opacity="0" transition="opacity 0.4s ease"/>
+      <rect class="left-accent" x="0" y="0" width="4" height="320" fill="#64748b" clip-path="url(#cardClip)" opacity="0.8"/>
+      <circle class="glow" cx="0" cy="0" r="150" fill="url(#glow9)" opacity="0"/>
       
-      <svg class="card-icon" x="20" y="20" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a1 1 0 0 0 0-1.4L19.9 3a1 1 0 0 0-1.4 0l-3.8 3.8ZM9.3 17.7a1 1 0 0 0 0-1.4l-1.6-1.6a1 1 0 0 0-1.4 0l-3.8 3.8a1 1 0 0 0 0 1.4L4.1 21a1 1 0 0 0 1.4 0l3.8-3.8ZM5.3 12.4a2 2 0 0 1 0-2.8l4.3-4.3a2 2 0 0 1 2.8 0l4.3 4.3a2 2 0 0 1 0 2.8l-4.3 4.3a2 2 0 0 1-2.8 0l-4.3-4.3Z"/>
-      </svg>
+      <path class="card-icon" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a1 1 0 0 0 0-1.4L19.9 3a1 1 0 0 0-1.4 0l-3.8 3.8ZM9.3 17.7a1 1 0 0 0 0-1.4l-1.6-1.6a1 1 0 0 0-1.4 0l-3.8 3.8a1 1 0 0 0 0 1.4L4.1 21a1 1 0 0 0 1.4 0l3.8-3.8ZM5.3 12.4a2 2 0 0 1 0-2.8l4.3-4.3a2 2 0 0 1 2.8 0l4.3 4.3a2 2 0 0 1 0 2.8l-4.3 4.3a2 2 0 0 1-2.8 0l-4.3-4.3Z" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(20, 20)"/>
       <text x="70" y="32" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1" text-transform="uppercase">Productivity Suite</text>
       <text x="70" y="54" font-size="18" font-weight="700" fill="url(#g9)">Developer Toolkit</text>
 
@@ -460,14 +432,14 @@
       <g class="logo-wrapper" transform="translate(146, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/java" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(188, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/c" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(230, 80)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/cplusplus" width="34" height="34"/></g>
-
+      
       <g class="logo-wrapper" transform="translate(20, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/sqlite" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(62, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/gnubash" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(104, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/visualstudiocode" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(146, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/github" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(188, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/postman" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(230, 122)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/docker" width="34" height="34"/></g>
-
+      
       <g class="logo-wrapper" transform="translate(20, 164)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/figma" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(62, 164)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/notion" width="34" height="34"/></g>
       <g class="logo-wrapper" transform="translate(104, 164)"><rect width="34" height="34" rx="8" fill="#1e293b" stroke="transparent"/><image href="https://cdn.simpleicons.org/jira" width="34" height="34"/></g>
