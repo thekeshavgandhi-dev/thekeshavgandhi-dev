@@ -1,8 +1,8 @@
 <p align="center">
   <img src="assets/up-banner.png" alt="Banner" width="100%">
 </p>
-<p align="center">
-  <img src="assets/banner.png" alt="Banner" width="100%">
+<p align="center" style="margin:-50px; padding:0; line-height:0;">
+  <img src="assets/Banner.png" alt="Bannerr" width="100%">
 </p>
 <h1 align="center">Hi 👋, I'm Keshav Gandhi</h1>
 
