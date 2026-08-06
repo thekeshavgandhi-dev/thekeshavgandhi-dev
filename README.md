@@ -1,5 +1,5 @@
 <div align="center" style="margin:0; padding:0; line-height:0;">
-  <img src="assets/Banner.png" alt="Bannerr" width="100%">
+  <img src="Banner.png" alt="Bannerr" width="100%">
 </div>
 <p align="center">
   <a href="https://github.com/AbdullahBakir97"><img src="https://komarev.com/ghpvc/?username=AbdullahBakir97&label=PROFILE%20VIEWS&color=F90001&style=for-the-badge&v=20260806" alt="Profile views" /></a>
