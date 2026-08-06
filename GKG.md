@@ -1,185 +1,155 @@
 <style>
-  /* Main Layout & Reset */
+.tech-stack-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media (max-width: 768px) {
   .tech-stack-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    grid-template-columns: 1fr;
   }
-
-  @media (max-width: 768px) {
-    .tech-stack-wrapper {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  /* Card Base Design */
-  .tech-card {
-    background: #111827;
-    border: 1px solid #1e293b;
-    border-left: 4px solid var(--accent);
-    border-radius: 12px;
-    padding: 24px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    opacity: 0;
-    animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-
-  /* Animation Delays for Staggered Loading */
-  .tech-card:nth-child(1) { animation-delay: 0.1s; }
-  .tech-card:nth-child(2) { animation-delay: 0.15s; }
-  .tech-card:nth-child(3) { animation-delay: 0.2s; }
-  .tech-card:nth-child(4) { animation-delay: 0.25s; }
-  .tech-card:nth-child(5) { animation-delay: 0.3s; }
-  .tech-card:nth-child(6) { animation-delay: 0.35s; }
-  .tech-card:nth-child(7) { animation-delay: 0.4s; }
-  .tech-card:nth-child(8) { animation-delay: 0.45s; }
-  .tech-card:nth-child(9) { animation-delay: 0.5s; }
-
-  /* Glassmorphism Light Source Glow */
-  .tech-card::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 0% 0%, var(--glow) 0%, transparent 70%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    pointer-events: none;
-  }
-
-  /* Interactive Hover Effects */
-  .tech-card:hover {
-    transform: translateY(-8px) scale(1.01);
-    border-color: var(--accent);
-    box-shadow: 0 20px 40px -10px var(--glow);
-  }
-
-  .tech-card:hover::before {
-    opacity: 1;
-  }
-
-  /* Header Section */
-  .card-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
-  }
-
-  .card-icon {
-    width: 36px;
-    height: 36px;
-    stroke-width: 2px;
-    stroke: var(--accent);
-    fill: none;
-    flex-shrink: 0;
-    animation: float 3s ease-in-out infinite;
-  }
-
-  .card-info {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-subtitle {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #94a3b8;
-    margin-bottom: 4px;
-  }
-
-  .card-title {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
-    background: linear-gradient(to right, #ffffff, var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  /* Tech Logo Grid */
-  .tech-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    position: relative;
-    z-index: 1;
-    margin-top: auto;
-  }
-
-  .tech-icon {
-    width: 34px;
-    height: 34px;
-    padding: 6px;
-    background: #1e293b;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-    border: 1px solid transparent;
-  }
-
-  .tech-card:hover .tech-icon {
-    background: #334155;
-    border-color: var(--accent);
-  }
-
-  .tech-icon:hover {
-    transform: scale(1.25) rotate(-6deg);
-    background: #1e293b;
-    box-shadow: 0 0 15px var(--glow);
-    border-color: var(--accent);
-  }
-
-  .tech-badge {
-    display: inline-flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid #1e293b;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-size: 11px;
-    font-weight: 500;
-    color: #cbd5e1;
-    transition: all 0.2s;
-  }
-
-  .tech-badge:hover {
-    background: var(--accent);
-    color: #000;
-    border-color: transparent;
-    transform: scale(1.05);
-    box-shadow: 0 0 12px var(--glow);
-  }
-
-  /* Keyframe Animations */
-  @keyframes fadeUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-4px); }
-  }
+}
+.tech-card {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.tech-card:nth-child(1) { animation-delay: 0.1s; }
+.tech-card:nth-child(2) { animation-delay: 0.15s; }
+.tech-card:nth-child(3) { animation-delay: 0.2s; }
+.tech-card:nth-child(4) { animation-delay: 0.25s; }
+.tech-card:nth-child(5) { animation-delay: 0.3s; }
+.tech-card:nth-child(6) { animation-delay: 0.35s; }
+.tech-card:nth-child(7) { animation-delay: 0.4s; }
+.tech-card:nth-child(8) { animation-delay: 0.45s; }
+.tech-card:nth-child(9) { animation-delay: 0.5s; }
+.tech-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 0% 0%, var(--glow) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.tech-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: var(--accent);
+  box-shadow: 0 20px 40px -10px var(--glow);
+}
+.tech-card:hover::before {
+  opacity: 1;
+}
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.card-icon {
+  width: 36px;
+  height: 36px;
+  stroke-width: 2px;
+  stroke: var(--accent);
+  fill: none;
+  flex-shrink: 0;
+  animation: float 3s ease-in-out infinite;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+.card-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+.card-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffffff, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+}
+.tech-icon {
+  width: 34px;
+  height: 34px;
+  padding: 6px;
+  background: #1e293b;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+.tech-card:hover .tech-icon {
+  background: #334155;
+  border-color: var(--accent);
+}
+.tech-icon:hover {
+  transform: scale(1.25) rotate(-6deg);
+  background: #1e293b;
+  box-shadow: 0 0 15px var(--glow);
+  border-color: var(--accent);
+}
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #1e293b;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #cbd5e1;
+  transition: all 0.2s;
+}
+.tech-badge:hover {
+  background: var(--accent);
+  color: #000;
+  border-color: transparent;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px var(--glow);
+}
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
 </style>
-
 <div class="tech-stack-wrapper">
-
-  <!-- Row 1: Card 1 -->
   <div class="tech-card" style="--accent: #8b5cf6; --glow: rgba(139, 92, 246, 0.4);">
     <div class="card-header">
       <svg class="card-icon" viewBox="0 0 24 24"><path d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm0 0v2m0 8v2M8 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h4m6-12h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4M9 18v-2a3 3 0 0 1 6 0v2"/></svg>
@@ -207,8 +177,6 @@
       <span class="tech-badge">Model Eval</span>
     </div>
   </div>
-
-  <!-- Row 1: Card 2 -->
   <div class="tech-card" style="--accent: #06b6d4; --glow: rgba(6, 182, 212, 0.4);">
     <div class="card-header">
       <svg class="card-icon" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.6 1.5-2 .5-.2 1-.2 1.5 0 .7.4.9 1.3.5 2-.3.6-1 1.1-1.5 1.2a6.5 6.5 0 0 1-.7 3.7M9 18a6.5 6.5 0 0 1-4.5-11 2.5 2.5 0 0 1 4.3 1.5M9 18c0 1 .5 1.5 1.5 1.5S12 19 12 18m-8-5h16"/></svg>
@@ -235,8 +203,6 @@
       <span class="tech-badge">Embeddings</span>
     </div>
   </div>
-
-  <!-- Row 1: Card 3 -->
   <div class="tech-card" style="--accent: #ec4899; --glow: rgba(236, 72, 153, 0.4);">
     <div class="card-header">
       <svg class="card-icon" viewBox="0 0 24 24"><path d="M9 6a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM5 20a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm8 0a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM12 9v2m0 6v2M6 12h2m8 0h2"/></svg>
@@ -260,8 +226,6 @@
       <span class="tech-badge">Autonomous Agents</span>
     </div>
   </div>
-
-  <!-- Row 2: Card 4 -->
   <div class="tech-card" style="--accent: #3b82f6; --glow: rgba(59, 130, 246, 0.4);">
     <div class="card-header">
       <svg class="card-icon" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8 0 6-6-6-6"/></svg>
@@ -292,8 +256,6 @@
       <span class="tech-badge">WebSockets</span>
     </div>
   </div>
-
-  <!-- Row 2: Card 5 -->
   <div class="tech-card" style="--accent: #14b8a6; --glow: rgba(20, 184, 166, 0.4);">
     <div class="card-header">
       <svg class="card-icon" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.7-9.2A5 5 0 0 1 17.5 19Z"/></svg>
@@ -318,8 +280,6 @@
       <img src="https://cdn.simpleicons.org/digitalocean" class="tech-icon" title="DigitalOcean"/>
     </div>
   </div>
-
-  <!-- Row 2: Card 6 -->
   <div class="tech-card" style="--accent: #f59e0b; --glow: rgba(245, 158, 11, 0.4);">
     <div class="card-header">
       <svg class="card-icon" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
@@ -344,8 +304,6 @@
       <img src="https://cdn.simpleicons.org/milvus" class="tech-icon" title="Milvus"/>
     </div>
   </div>
-
-  <!-- Row 3: Card 7 -->
   <div class="tech-card" style="--accent: #10b981; --glow: rgba(16, 185, 129, 0.4);">
     <div class="card-header">
       <svg class="card-icon" viewBox="0 0 24 24"><rect x="2" y="6" width="6" height="4"/><path d="M8 10v2a4 4 0 0 0 8 0v-2"/><rect x="16" y="14" width="6" height="4"/></svg>
@@ -369,8 +327,6 @@
       <span class="tech-badge">Workflow Auto.</span>
     </div>
   </div>
-
-  <!-- Row 3: Card 8 -->
   <div class="tech-card" style="--accent: #f472b6; --glow: rgba(244, 114, 182, 0.4);">
     <div class="card-header">
       <svg class="card-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
@@ -394,8 +350,6 @@
       <span class="tech-badge">Analytics</span>
     </div>
   </div>
-
-  <!-- Row 3: Card 9 -->
   <div class="tech-card" style="--accent: #64748b; --glow: rgba(100, 116, 139, 0.4);">
     <div class="card-header">
       <svg class="card-icon" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a1 1 0 0 0 0-1.4L19.9 3a1 1 0 0 0-1.4 0l-3.8 3.8ZM9.3 17.7a1 1 0 0 0 0-1.4l-1.6-1.6a1 1 0 0 0-1.4 0l-3.8 3.8a1 1 0 0 0 0 1.4L4.1 21a1 1 0 0 0 1.4 0l3.8-3.8ZM5.3 12.4a2 2 0 0 1 0-2.8l4.3-4.3a2 2 0 0 1 2.8 0l4.3 4.3a2 2 0 0 1 0 2.8l-4.3 4.3a2 2 0 0 1-2.8 0l-4.3-4.3Z"/></svg>
