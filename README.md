@@ -64,8 +64,6 @@ Learning:
 ````
 
 ---
-
-# 🚀 Tech Arsenall
 ![Tech Stack](assets/tech-stack.svg)
 
 ### Languages
