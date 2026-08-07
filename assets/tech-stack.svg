@@ -1,491 +1,537 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1080" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1560" width="100%" height="100%">
   <defs>
-    <!-- Card Clip Path -->
-    <clipPath id="cardClip">
-      <rect width="300" height="270" rx="16"/>
-    </clipPath>
+    <!-- Background Blur Filters -->
+    <filter id="bg-blur">
+      <feGaussianBlur stdDeviation="80" />
+    </filter>
+    
+    <!-- Card Drop Shadow -->
+    <filter id="card-shadow" x="-5%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
 
-    <!-- Banner Background Glow -->
-    <radialGradient id="bannerGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Card Background Gradients -->
-    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1e1b4b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+    <!-- Card Background Gradients (Plain Accents) -->
+    <!-- Purple -->
+    <linearGradient id="bg-purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9c27b0" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#3d0f4a" stop-opacity="0.15"/>
     </linearGradient>
-    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#020617"/>
+    <!-- Cyan -->
+    <linearGradient id="bg-cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00838f" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#00363a" stop-opacity="0.15"/>
     </linearGradient>
-    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1b1f3b"/>
-      <stop offset="100%" stop-color="#111827"/>
+    <!-- Pink -->
+    <linearGradient id="bg-pink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ad1457" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#4a0d24" stop-opacity="0.15"/>
     </linearGradient>
-
-    <!-- Premium Title Gradients -->
-    <linearGradient id="tg1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="100%" stop-color="#8b5cf6"/>
+    <!-- Blue -->
+    <linearGradient id="bg-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1565c0" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0a2540" stop-opacity="0.15"/>
     </linearGradient>
-    <linearGradient id="tg2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="100%" stop-color="#06b6d4"/>
+    <!-- Teal -->
+    <linearGradient id="bg-teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00695c" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#00231e" stop-opacity="0.15"/>
     </linearGradient>
-    <linearGradient id="tg3" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="100%" stop-color="#ec4899"/>
+    <!-- Orange -->
+    <linearGradient id="bg-orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e65100" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#4a1c00" stop-opacity="0.15"/>
     </linearGradient>
-    <linearGradient id="tg4" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="100%" stop-color="#3b82f6"/>
+    <!-- Lime -->
+    <linearGradient id="bg-lime" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#827717" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#2e2e00" stop-opacity="0.15"/>
     </linearGradient>
-    <linearGradient id="tg5" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="100%" stop-color="#14b8a6"/>
+    <!-- Rose -->
+    <linearGradient id="bg-rose" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#880e4f" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#38041e" stop-opacity="0.15"/>
     </linearGradient>
-    <linearGradient id="tg6" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="100%" stop-color="#f59e0b"/>
-    </linearGradient>
-    <linearGradient id="tg7" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="100%" stop-color="#10b981"/>
-    </linearGradient>
-    <linearGradient id="tg8" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="100%" stop-color="#f472b6"/>
-    </linearGradient>
-    <linearGradient id="tg9" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="100%" stop-color="#64748b"/>
+    <!-- Grey -->
+    <linearGradient id="bg-grey" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#37474f" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#10171c" stop-opacity="0.15"/>
     </linearGradient>
 
-    <!-- Sweeping Banner Text Gradient -->
+    <!-- Title Text Gradients -->
+    <linearGradient id="tg-purple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#b388ff"/>
+    </linearGradient>
+    <linearGradient id="tg-cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#80deea"/>
+    </linearGradient>
+    <linearGradient id="tg-pink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f48fb1"/>
+    </linearGradient>
+    <linearGradient id="tg-blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#90caf9"/>
+    </linearGradient>
+    <linearGradient id="tg-teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#80cbc4"/>
+    </linearGradient>
+    <linearGradient id="tg-orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffcc80"/>
+    </linearGradient>
+    <linearGradient id="tg-lime" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e6ee9c"/>
+    </linearGradient>
+    <linearGradient id="tg-rose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f48fb1"/>
+    </linearGradient>
+    <linearGradient id="tg-grey" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#b0bec5"/>
+    </linearGradient>
+
+    <!-- Premium Banner Gradient Border -->
+    <linearGradient id="bannerStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="25%" stop-color="#a855f7" />
+      <stop offset="70%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    
+    <!-- Banner Animated Text & Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
     <linearGradient id="bannerText" x1="-1" y1="0" x2="0" y2="0">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="20%" stop-color="#a78bfa" />
-      <stop offset="70%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#a78bfa" />
       <stop offset="100%" stop-color="#ffffff" />
+      <animate attributeName="x1" values="-1; 1; -1" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="0; 2; 0" dur="4s" repeatCount="indefinite" />
     </linearGradient>
-
-    <!-- Static Glows for Cards -->
-    <radialGradient id="glow1" cx="0%" cy="0%" r="150%">
-      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow2" cx="0%" cy="0%" r="150%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow3" cx="0%" cy="0%" r="150%">
-      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow4" cx="0%" cy="0%" r="150%">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow5" cx="0%" cy="0%" r="150%">
-      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow6" cx="0%" cy="0%" r="150%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow7" cx="0%" cy="0%" r="150%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow8" cx="0%" cy="0%" r="150%">
-      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow9" cx="0%" cy="0%" r="150%">
-      <stop offset="0%" stop-color="#64748b" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#64748b" stop-opacity="0"/>
-    </radialGradient>
   </defs>
 
-  <!-- ================= MAIN BANNER ================= -->
-  <g transform="translate(20, 90)">
-    <rect width="960" height="80" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
-    <rect width="960" height="80" rx="16" fill="url(#bannerGlow)" opacity="0.8" />
+  <!-- ================= DARK BACKGROUND WITH BLOBS ================= -->
+  <rect width="1080" height="1560" fill="#09050d" />
+  
+  <circle cx="200" cy="300" r="250" fill="#7c4dff" opacity="0.15" filter="url(#bg-blur)" />
+  <circle cx="900" cy="400" r="250" fill="#d500f9" opacity="0.10" filter="url(#bg-blur)" />
+  <circle cx="600" cy="600" r="250" fill="#00bcd4" opacity="0.10" filter="url(#bg-blur)" />
+  <circle cx="800" cy="1100" r="250" fill="#ffab00" opacity="0.10" filter="url(#bg-blur)" />
+  <circle cx="200" cy="1200" r="250" fill="#76ff03" opacity="0.10" filter="url(#bg-blur)" />
+
+  <!-- ================= BANNER (Improved Colors) ================= -->
+  <g transform="translate(0, 0)">
+    <!-- Banner Base -->
+    <rect x="20" y="80" width="1040" height="90" rx="30" fill="#140d21" stroke="url(#bannerStroke)" stroke-width="3" filter="url(#card-shadow)" />
     
-    <path d="M 200 40 Q 480 -10 760 40" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.5">
-      <animate attributeName="stroke-dashoffset" from="500" to="0" dur="3s" repeatCount="indefinite" />
-    </path>
-    <path d="M 200 40 Q 480 90 760 40" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.5">
-      <animate attributeName="stroke-dashoffset" from="500" to="0" dur="3s" repeatCount="indefinite" />
-    </path>
-
-    <g transform="translate(250, 40)">
-      <animateTransform attributeName="transform" type="rotate" from="0 8 8" to="360 8 8" dur="8s" repeatCount="indefinite" />
-      <path d="M8 0 L10 5 L15 8 L10 11 L8 16 L6 11 L1 8 L6 5 Z" fill="#a78bfa" />
-      <circle cx="8" cy="8" r="3" fill="#fff" opacity="0.6">
-        <animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite" />
-      </circle>
+    <!-- Network Icon -->
+    <g transform="translate(480, 122)">
+        <path d="M-8-4 L-8-8 L8-8 L8-4 M-8-8 L-15-4 M8-8 L15-4 M-4-4 L-4 0 M4-4 L4 0 M-15 0 L-4 0 M15 0 L4 0 M-2 4 L-2 8 L-12 8 M2 4 L2 8 L12 8 M-12 8 L-16 12 M12 8 L16 12" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
 
-    <text x="480" y="52" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="url(#bannerText)" text-anchor="middle" letter-spacing="4">⚡ TECH STACK</text>
-
-    <g transform="translate(710, 40)">
-      <animateTransform attributeName="transform" type="rotate" from="360 8 8" to="0 8 8" dur="8s" repeatCount="indefinite" />
-      <path d="M8 0 L10 5 L15 8 L10 11 L8 16 L6 11 L1 8 L6 5 Z" fill="#06b6d4" />
-      <circle cx="8" cy="8" r="3" fill="#fff" opacity="0.6">
-        <animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite" />
-      </circle>
-    </g>
+    <!-- Title Text -->
+    <text x="540" y="134" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="url(#bannerText)" text-anchor="middle" letter-spacing="4" filter="url(#glow)">TECH STACK</text>
   </g>
 
-  <!-- ================= ROW 1 ================= -->
-
-  <!-- Card 1: AI Engineering -->
+  <!-- ================= ROW 1 (Y: 210) ================= -->
+  
+  <!-- Card 1: AI Engineering (Purple) - Height 390 -->
   <g transform="translate(20, 210)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.1s" fill="freeze" />
-    <g>
-      <rect width="300" height="270" rx="16" fill="url(#bg1)" stroke="#8b5cf6" stroke-width="1.5"/>
-      <circle cx="0" cy="0" r="150" fill="url(#glow1)" opacity="1"/>
-      <rect x="0" y="0" width="6" height="270" fill="#8b5cf6" rx="3" opacity="0.8"/>
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.1s" fill="freeze" />
+    <g filter="url(#card-shadow)">
+      <rect width="330" height="390" rx="16" fill="url(#bg-purple)" stroke="#9c27b0" stroke-width="3"/>
       
       <g transform="translate(20, 20)">
-        <rect x="0" y="0" width="32" height="32" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1"/>
-        <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#8b5cf6" text-anchor="middle">AI</text>
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="#2a203a" stroke="#ab47bc" stroke-width="1.5"/>
+        <text x="18" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#ce93d8" text-anchor="middle">AI</text>
       </g>
-      <text x="70" y="32" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1">Artificial Intelligence</text>
-      <text x="70" y="54" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#tg1)">AI Engineering</text>
+      <text x="70" y="34" font-family="system-ui, sans-serif" font-size="12" fill="#9ca3af" font-weight="500">Artificial Intelligence</text>
+      <text x="70" y="60" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="url(#tg-purple)">AI Engineering</text>
 
-      <g transform="translate(20, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Python</text></g>
-      <g transform="translate(110, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">NumPy</text></g>
-      <g transform="translate(200, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Pandas</text></g>
+      <g transform="translate(15, 85)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">Python</text></g>
+      <g transform="translate(123, 85)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">NumPy</text></g>
+      <g transform="translate(231, 85)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">Pandas</text></g>
 
-      <g transform="translate(20, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Sklearn</text></g>
-      <g transform="translate(110, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">TensorFlow</text></g>
-      <g transform="translate(200, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">PyTorch</text></g>
+      <g transform="translate(15, 125)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">Sklearn</text></g>
+      <g transform="translate(123, 125)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">TensorFlow</text></g>
+      <g transform="translate(231, 125)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">PyTorch</text></g>
 
-      <g transform="translate(20, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">XGBoost</text></g>
-      <g transform="translate(110, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">LightGBM</text></g>
-      <g transform="translate(200, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">CatBoost</text></g>
+      <g transform="translate(15, 165)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">XGBoost</text></g>
+      <g transform="translate(123, 165)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">LightGBM</text></g>
+      <g transform="translate(231, 165)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">CatBoost</text></g>
 
-      <g transform="translate(20, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">OpenCV</text></g>
-      <g transform="translate(110, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">MLflow</text></g>
-      <g transform="translate(200, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">WandB</text></g>
+      <g transform="translate(15, 205)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">OpenCV</text></g>
+      <g transform="translate(123, 205)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">MLFlow</text></g>
+      <g transform="translate(231, 205)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">WandB</text></g>
 
-      <g transform="translate(20, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Feature Eng</text></g>
-      <g transform="translate(110, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Data Prep</text></g>
-      <g transform="translate(200, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Model Training</text></g>
+      <g transform="translate(15, 245)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">Feature Eng</text></g>
+      <g transform="translate(123, 245)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">Data Prep</text></g>
+      <g transform="translate(231, 245)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">Model Training</text></g>
 
-      <g transform="translate(20, 233)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Model Eval</text></g>
+      <g transform="translate(15, 285)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">Model Eval</text></g>
+      <g transform="translate(123, 285)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">Hyperparams</text></g>
+      <g transform="translate(231, 285)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">Deployment</text></g>
+
+      <g transform="translate(15, 325)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">Data Viz</text></g>
+      <g transform="translate(123, 325)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">SHAP</text></g>
+      <g transform="translate(231, 325)"><rect width="84" height="28" rx="6" fill="#201732" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ce93d8" font-weight="500" text-anchor="middle">LIME</text></g>
     </g>
   </g>
 
-  <!-- Card 2: Generative AI & LLMs -->
-  <g transform="translate(350, 210)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.15s" fill="freeze" />
-    <g>
-      <rect width="300" height="270" rx="16" fill="url(#bg2)" stroke="#06b6d4" stroke-width="1.5"/>
-      <circle cx="0" cy="0" r="150" fill="url(#glow2)" opacity="1"/>
-      <rect x="0" y="0" width="6" height="270" fill="#06b6d4" rx="3" opacity="0.8"/>
+  <!-- Card 2: Gen AI & LLMs (Cyan) -->
+  <g transform="translate(375, 210)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.15s" fill="freeze" />
+    <g filter="url(#card-shadow)">
+      <rect width="330" height="390" rx="16" fill="url(#bg-cyan)" stroke="#00838f" stroke-width="3"/>
       
       <g transform="translate(20, 20)">
-        <rect x="0" y="0" width="32" height="32" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="1"/>
-        <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#06b6d4" text-anchor="middle">LLM</text>
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="#17323a" stroke="#26c6da" stroke-width="1.5"/>
+        <text x="18" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#80deea" text-anchor="middle">LLM</text>
       </g>
-      <text x="70" y="32" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1">Large Language Models</text>
-      <text x="70" y="54" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#tg2)">Generative AI &amp; LLMs</text>
+      <text x="70" y="34" font-family="system-ui, sans-serif" font-size="12" fill="#9ca3af" font-weight="500">Large Language Models</text>
+      <text x="70" y="60" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="url(#tg-cyan)">Generative AI &amp; LLMs</text>
 
-      <g transform="translate(20, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">OpenAI</text></g>
-      <g transform="translate(110, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Claude</text></g>
-      <g transform="translate(200, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Gemini</text></g>
+      <g transform="translate(15, 85)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">OpenAI</text></g>
+      <g transform="translate(123, 85)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Claude</text></g>
+      <g transform="translate(231, 85)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Gemini</text></g>
 
-      <g transform="translate(20, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Grok</text></g>
-      <g transform="translate(110, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Mistral</text></g>
-      <g transform="translate(200, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Llama</text></g>
+      <g transform="translate(15, 125)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Grok</text></g>
+      <g transform="translate(123, 125)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Mistral</text></g>
+      <g transform="translate(231, 125)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Llama</text></g>
 
-      <g transform="translate(20, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">DeepSeek</text></g>
-      <g transform="translate(110, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">HF</text></g>
-      <g transform="translate(200, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Ollama</text></g>
+      <g transform="translate(15, 165)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">DeepSeek</text></g>
+      <g transform="translate(123, 165)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Hugging Face</text></g>
+      <g transform="translate(231, 165)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Ollama</text></g>
 
-      <g transform="translate(20, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">LangChain</text></g>
-      <g transform="translate(110, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">LlamaIndex</text></g>
-      <g transform="translate(200, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">DSPy</text></g>
+      <g transform="translate(15, 205)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">LangChain</text></g>
+      <g transform="translate(123, 205)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">LlamaIndex</text></g>
+      <g transform="translate(231, 205)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">DSPy</text></g>
 
-      <g transform="translate(20, 167)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Haystack</text></g>
+      <g transform="translate(15, 245)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Haystack</text></g>
+      <g transform="translate(123, 245)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Prompt Eng</text></g>
+      <g transform="translate(231, 245)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">RAG</text></g>
 
-      <g transform="translate(20, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Prompt Eng</text></g>
-      <g transform="translate(110, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">RAG</text></g>
-      <g transform="translate(200, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Fine-Tuning</text></g>
+      <g transform="translate(15, 285)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Fine-Tuning</text></g>
+      <g transform="translate(123, 285)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Embeddings</text></g>
+      <g transform="translate(231, 285)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Function Calling</text></g>
 
-      <g transform="translate(20, 233)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Embeddings</text></g>
+      <g transform="translate(15, 325)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Vector Search</text></g>
+      <g transform="translate(123, 325)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Semantic Search</text></g>
+      <g transform="translate(231, 325)"><rect width="84" height="28" rx="6" fill="#17323a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80deea" font-weight="500" text-anchor="middle">Structured Output</text></g>
     </g>
   </g>
 
-  <!-- Card 3: Agentic AI -->
-  <g transform="translate(680, 210)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.2s" fill="freeze" />
-    <g>
-      <rect width="300" height="270" rx="16" fill="url(#bg3)" stroke="#ec4899" stroke-width="1.5"/>
-      <circle cx="0" cy="0" r="150" fill="url(#glow3)" opacity="1"/>
-      <rect x="0" y="0" width="6" height="270" fill="#ec4899" rx="3" opacity="0.8"/>
+  <!-- Card 3: Agentic AI (Pink) -->
+  <g transform="translate(730, 210)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.2s" fill="freeze" />
+    <g filter="url(#card-shadow)">
+      <rect width="330" height="390" rx="16" fill="url(#bg-pink)" stroke="#ad1457" stroke-width="3"/>
       
       <g transform="translate(20, 20)">
-        <rect x="0" y="0" width="32" height="32" rx="8" fill="#1e293b" stroke="#ec4899" stroke-width="1"/>
-        <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#ec4899" text-anchor="middle">Ag</text>
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="#301c28" stroke="#f06292" stroke-width="1.5"/>
+        <text x="18" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#f48fb1" text-anchor="middle">Ag</text>
       </g>
-      <text x="70" y="32" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1">Autonomous Agents</text>
-      <text x="70" y="54" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#tg3)">Agentic AI</text>
+      <text x="70" y="34" font-family="system-ui, sans-serif" font-size="12" fill="#9ca3af" font-weight="500">Autonomous Agents</text>
+      <text x="70" y="60" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="url(#tg-pink)">Agentic AI</text>
 
-      <g transform="translate(20, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">LangGraph</text></g>
-      <g transform="translate(110, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">CrewAI</text></g>
-      <g transform="translate(200, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">AutoGen</text></g>
+      <g transform="translate(15, 85)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">LangGraph</text></g>
+      <g transform="translate(123, 85)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">CrewAI</text></g>
+      <g transform="translate(231, 85)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">AutoGen</text></g>
 
-      <g transform="translate(20, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Agno</text></g>
-      <g transform="translate(110, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">MCP</text></g>
+      <g transform="translate(15, 125)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Agno</text></g>
+      <g transform="translate(123, 125)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">MCP</text></g>
+      <g transform="translate(231, 125)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Function Calling</text></g>
 
-      <g transform="translate(20, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Multi-Agent Sys.</text></g>
-      <g transform="translate(110, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">AI Agents</text></g>
-      <g transform="translate(200, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Tool Calling</text></g>
+      <g transform="translate(15, 165)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Agent Memory</text></g>
+      <g transform="translate(123, 165)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Orchestration</text></g>
+      <g transform="translate(231, 165)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Planning Agents</text></g>
 
-      <g transform="translate(20, 233)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Agent Memory</text></g>
-      <g transform="translate(110, 233)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Orchestration</text></g>
-      <g transform="translate(200, 233)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Planning Agents</text></g>
+      <g transform="translate(15, 205)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Multi-Agent Sys.</text></g>
+      <g transform="translate(123, 205)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Tool Calling</text></g>
+      <g transform="translate(231, 205)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Guardrails</text></g>
 
-      <g transform="translate(20, 256)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Autonomous Agents</text></g>
+      <g transform="translate(15, 245)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Workflow Triggers</text></g>
+      <g transform="translate(123, 245)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Routing</text></g>
+      <g transform="translate(231, 245)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Cognitive Eng.</text></g>
+
+      <g transform="translate(15, 285)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Validation</text></g>
+      <g transform="translate(123, 285)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">State Mgmt.</text></g>
+      <g transform="translate(231, 285)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Autonomous Exe.</text></g>
+
+      <g transform="translate(15, 325)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Agent Feedback</text></g>
+      <g transform="translate(123, 325)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Human-in-loop</text></g>
+      <g transform="translate(231, 325)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Prompt Chaining</text></g>
     </g>
   </g>
 
-  <!-- ================= ROW 2 ================= -->
-
-  <!-- Card 4: Full-Stack Development -->
-  <g transform="translate(20, 510)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.25s" fill="freeze" />
-    <g>
-      <rect width="300" height="270" rx="16" fill="url(#bg1)" stroke="#3b82f6" stroke-width="1.5"/>
-      <circle cx="0" cy="0" r="150" fill="url(#glow4)" opacity="1"/>
-      <rect x="0" y="0" width="6" height="270" fill="#3b82f6" rx="3" opacity="0.8"/>
+  <!-- ================= ROW 2 (Y: 630) ================= -->
+  
+  <!-- Card 4: Full-Stack (Blue) -->
+  <g transform="translate(20, 630)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.25s" fill="freeze" />
+    <g filter="url(#card-shadow)">
+      <rect width="330" height="390" rx="16" fill="url(#bg-blue)" stroke="#1565c0" stroke-width="3"/>
       
       <g transform="translate(20, 20)">
-        <rect x="0" y="0" width="32" height="32" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
-        <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#3b82f6" text-anchor="middle">&lt;/&gt;</text>
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="#1c2a3a" stroke="#64b5f6" stroke-width="1.5"/>
+        <text x="18" y="24" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#90caf9" text-anchor="middle">&lt;/&gt;</text>
       </g>
-      <text x="70" y="32" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1">Client &amp; Server</text>
-      <text x="70" y="54" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#tg4)">Full-Stack Development</text>
+      <text x="70" y="34" font-family="system-ui, sans-serif" font-size="12" fill="#9ca3af" font-weight="500">Client &amp; Server</text>
+      <text x="70" y="60" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="url(#tg-blue)">Full-Stack Development</text>
 
-      <g transform="translate(20, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">React</text></g>
-      <g transform="translate(110, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Next.js</text></g>
-      <g transform="translate(200, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">TS</text></g>
+      <g transform="translate(15, 85)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">React</text></g>
+      <g transform="translate(123, 85)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">Next.js</text></g>
+      <g transform="translate(231, 85)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">TypeScript</text></g>
 
-      <g transform="translate(20, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">JS</text></g>
-      <g transform="translate(110, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">HTML5</text></g>
-      <g transform="translate(200, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">CSS3</text></g>
+      <g transform="translate(15, 125)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">JavaScript</text></g>
+      <g transform="translate(123, 125)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">HTML5</text></g>
+      <g transform="translate(231, 125)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">CSS3</text></g>
 
-      <g transform="translate(20, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Tailwind</text></g>
-      <g transform="translate(110, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Redux</text></g>
-      <g transform="translate(200, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Shadcn</text></g>
+      <g transform="translate(15, 165)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">Tailwind</text></g>
+      <g transform="translate(123, 165)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">Redux</text></g>
+      <g transform="translate(231, 165)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">Shadcn</text></g>
 
-      <g transform="translate(20, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Framer</text></g>
-      <g transform="translate(110, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Vite</text></g>
-      <g transform="translate(200, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Node</text></g>
+      <g transform="translate(15, 205)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">Framer</text></g>
+      <g transform="translate(123, 205)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">Vite</text></g>
+      <g transform="translate(231, 205)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">Node.js</text></g>
 
-      <g transform="translate(20, 167)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Express</text></g>
-      <g transform="translate(110, 167)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">FastAPI</text></g>
-      <g transform="translate(200, 167)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Django</text></g>
+      <g transform="translate(15, 245)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">Express</text></g>
+      <g transform="translate(123, 245)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">FastAPI</text></g>
+      <g transform="translate(231, 245)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">Django</text></g>
 
-      <g transform="translate(20, 190)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Flask</text></g>
+      <g transform="translate(15, 285)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">Flask</text></g>
+      <g transform="translate(123, 285)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">GraphQL</text></g>
+      <g transform="translate(231, 285)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">WebSockets</text></g>
 
-      <g transform="translate(20, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">REST APIs</text></g>
-      <g transform="translate(110, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">GraphQL</text></g>
-      <g transform="translate(200, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">WebSockets</text></g>
+      <g transform="translate(15, 325)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">JWT</text></g>
+      <g transform="translate(123, 325)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">CORS</text></g>
+      <g transform="translate(231, 325)"><rect width="84" height="28" rx="6" fill="#1c2a3a" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#90caf9" font-weight="500" text-anchor="middle">SSR</text></g>
     </g>
   </g>
 
-  <!-- Card 5: Cloud & DevOps -->
-  <g transform="translate(350, 510)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.3s" fill="freeze" />
-    <g>
-      <rect width="300" height="270" rx="16" fill="url(#bg2)" stroke="#14b8a6" stroke-width="1.5"/>
-      <circle cx="0" cy="0" r="150" fill="url(#glow5)" opacity="1"/>
-      <rect x="0" y="0" width="6" height="270" fill="#14b8a6" rx="3" opacity="0.8"/>
+  <!-- Card 5: Cloud & DevOps (Teal) -->
+  <g transform="translate(375, 630)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.3s" fill="freeze" />
+    <g filter="url(#card-shadow)">
+      <rect width="330" height="390" rx="16" fill="url(#bg-teal)" stroke="#00695c" stroke-width="3"/>
       
       <g transform="translate(20, 20)">
-        <rect x="0" y="0" width="32" height="32" rx="8" fill="#1e293b" stroke="#14b8a6" stroke-width="1"/>
-        <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#14b8a6" text-anchor="middle">☁️</text>
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="#1d3631" stroke="#4db6ac" stroke-width="1.5"/>
+        <text x="18" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#80cbc4" text-anchor="middle">☁️</text>
       </g>
-      <text x="70" y="32" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1">Infrastructure &amp; CI/CD</text>
-      <text x="70" y="54" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#tg5)">Cloud &amp; DevOps</text>
+      <text x="70" y="34" font-family="system-ui, sans-serif" font-size="12" fill="#9ca3af" font-weight="500">Infrastructure &amp; CI/CD</text>
+      <text x="70" y="60" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="url(#tg-teal)">Cloud &amp; DevOps</text>
 
-      <g transform="translate(20, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">AWS</text></g>
-      <g transform="translate(110, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Docker</text></g>
-      <g transform="translate(200, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">K8s</text></g>
+      <g transform="translate(15, 85)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">AWS</text></g>
+      <g transform="translate(123, 85)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Docker</text></g>
+      <g transform="translate(231, 85)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Kubernetes</text></g>
 
-      <g transform="translate(20, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Git</text></g>
-      <g transform="translate(110, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">GitHub</text></g>
-      <g transform="translate(200, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">GHA</text></g>
+      <g transform="translate(15, 125)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Git</text></g>
+      <g transform="translate(123, 125)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">GitHub</text></g>
+      <g transform="translate(231, 125)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">GHA</text></g>
 
-      <g transform="translate(20, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Linux</text></g>
-      <g transform="translate(110, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Nginx</text></g>
-      <g transform="translate(200, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Vercel</text></g>
+      <g transform="translate(15, 165)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Linux</text></g>
+      <g transform="translate(123, 165)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Nginx</text></g>
+      <g transform="translate(231, 165)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Vercel</text></g>
 
-      <g transform="translate(20, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Railway</text></g>
-      <g transform="translate(110, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Render</text></g>
-      <g transform="translate(200, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Netlify</text></g>
+      <g transform="translate(15, 205)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Railway</text></g>
+      <g transform="translate(123, 205)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Render</text></g>
+      <g transform="translate(231, 205)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Netlify</text></g>
 
-      <g transform="translate(20, 167)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">DO</text></g>
+      <g transform="translate(15, 245)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">DigitalOcean</text></g>
+      <g transform="translate(123, 245)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Serverless</text></g>
+      <g transform="translate(231, 245)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Containerized</text></g>
 
-      <g transform="translate(20, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Serverless</text></g>
-      <g transform="translate(110, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Containerized</text></g>
-      <g transform="translate(200, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">GitOps</text></g>
+      <g transform="translate(15, 285)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">GitOps</text></g>
+      <g transform="translate(123, 285)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Scaling</text></g>
+      <g transform="translate(231, 285)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Monitoring</text></g>
+
+      <g transform="translate(15, 325)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">CloudFront</text></g>
+      <g transform="translate(123, 325)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">Traffic</text></g>
+      <g transform="translate(231, 325)"><rect width="84" height="28" rx="6" fill="#1d3631" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#80cbc4" font-weight="500" text-anchor="middle">IAM</text></g>
     </g>
   </g>
 
-  <!-- Card 6: Databases -->
-  <g transform="translate(680, 510)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.35s" fill="freeze" />
-    <g>
-      <rect width="300" height="270" rx="16" fill="url(#bg3)" stroke="#f59e0b" stroke-width="1.5"/>
-      <circle cx="0" cy="0" r="150" fill="url(#glow6)" opacity="1"/>
-      <rect x="0" y="0" width="6" height="270" fill="#f59e0b" rx="3" opacity="0.8"/>
+  <!-- Card 6: Databases (Orange) -->
+  <g transform="translate(730, 630)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.35s" fill="freeze" />
+    <g filter="url(#card-shadow)">
+      <rect width="330" height="390" rx="16" fill="url(#bg-orange)" stroke="#e65100" stroke-width="3"/>
       
       <g transform="translate(20, 20)">
-        <rect x="0" y="0" width="32" height="32" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
-        <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#f59e0b" text-anchor="middle">DB</text>
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="#2b211c" stroke="#ffb74d" stroke-width="1.5"/>
+        <text x="18" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#ffcc80" text-anchor="middle">DB</text>
       </g>
-      <text x="70" y="32" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1">Data Persistence</text>
-      <text x="70" y="54" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#tg6)">Databases</text>
+      <text x="70" y="34" font-family="system-ui, sans-serif" font-size="12" fill="#9ca3af" font-weight="500">Data Persistence</text>
+      <text x="70" y="60" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="url(#tg-orange)">Databases</text>
 
-      <g transform="translate(20, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">MongoDB</text></g>
-      <g transform="translate(110, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">PostgreSQL</text></g>
-      <g transform="translate(200, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">MySQL</text></g>
+      <g transform="translate(15, 85)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">MongoDB</text></g>
+      <g transform="translate(123, 85)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">PostgreSQL</text></g>
+      <g transform="translate(231, 85)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">MySQL</text></g>
 
-      <g transform="translate(20, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Redis</text></g>
-      <g transform="translate(110, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">SQLite</text></g>
-      <g transform="translate(200, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Supabase</text></g>
+      <g transform="translate(15, 125)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Redis</text></g>
+      <g transform="translate(123, 125)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">SQLite</text></g>
+      <g transform="translate(231, 125)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Supabase</text></g>
 
-      <g transform="translate(20, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Firebase</text></g>
-      <g transform="translate(110, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Pinecone</text></g>
-      <g transform="translate(200, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">ChromaDB</text></g>
+      <g transform="translate(15, 165)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Firebase</text></g>
+      <g transform="translate(123, 165)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Pinecone</text></g>
+      <g transform="translate(231, 165)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">ChromaDB</text></g>
 
-      <g transform="translate(20, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">FAISS</text></g>
-      <g transform="translate(110, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Weaviate</text></g>
-      <g transform="translate(200, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Qdrant</text></g>
+      <g transform="translate(15, 205)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">FAISS</text></g>
+      <g transform="translate(123, 205)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Weaviate</text></g>
+      <g transform="translate(231, 205)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Qdrant</text></g>
 
-      <g transform="translate(20, 167)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Milvus</text></g>
+      <g transform="translate(15, 245)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Milvus</text></g>
+      <g transform="translate(123, 245)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Relational</text></g>
+      <g transform="translate(231, 245)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">NoSQL</text></g>
 
-      <g transform="translate(20, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Relational</text></g>
-      <g transform="translate(110, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">NoSQL</text></g>
-      <g transform="translate(200, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Vector DB</text></g>
+      <g transform="translate(15, 285)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Vector DB</text></g>
+      <g transform="translate(123, 285)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Caching</text></g>
+      <g transform="translate(231, 285)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Replication</text></g>
+
+      <g transform="translate(15, 325)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Partitioning</text></g>
+      <g transform="translate(123, 325)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Backup</text></g>
+      <g transform="translate(231, 325)"><rect width="84" height="28" rx="6" fill="#2b211c" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#ffcc80" font-weight="500" text-anchor="middle">Restore</text></g>
     </g>
   </g>
 
-  <!-- ================= ROW 3 ================= -->
-
-  <!-- Card 7: Automation -->
-  <g transform="translate(20, 810)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.4s" fill="freeze" />
-    <g>
-      <rect width="300" height="270" rx="16" fill="url(#bg1)" stroke="#10b981" stroke-width="1.5"/>
-      <circle cx="0" cy="0" r="150" fill="url(#glow7)" opacity="1"/>
-      <rect x="0" y="0" width="6" height="270" fill="#10b981" rx="3" opacity="0.8"/>
+  <!-- ================= ROW 3 (Y: 1050) ================= -->
+  
+  <!-- Card 7: Automation (Lime) -->
+  <g transform="translate(20, 1050)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.4s" fill="freeze" />
+    <g filter="url(#card-shadow)">
+      <rect width="330" height="390" rx="16" fill="url(#bg-lime)" stroke="#827717" stroke-width="3"/>
       
       <g transform="translate(20, 20)">
-        <rect x="0" y="0" width="32" height="32" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
-        <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#10b981" text-anchor="middle">⚡</text>
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="#2a3020" stroke="#d4e157" stroke-width="1.5"/>
+        <text x="18" y="24" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#e6ee9c" text-anchor="middle">⚡</text>
       </g>
-      <text x="70" y="32" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1">Workflow Orchestration</text>
-      <text x="70" y="54" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#tg7)">Automation</text>
+      <text x="70" y="34" font-family="system-ui, sans-serif" font-size="12" fill="#9ca3af" font-weight="500">Workflow Orchestration</text>
+      <text x="70" y="60" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="url(#tg-lime)">Automation</text>
 
-      <g transform="translate(20, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">n8n</text></g>
-      <g transform="translate(110, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Make</text></g>
-      <g transform="translate(200, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Zapier</text></g>
+      <g transform="translate(15, 85)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">n8n</text></g>
+      <g transform="translate(123, 85)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Make</text></g>
+      <g transform="translate(231, 85)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Zapier</text></g>
 
-      <g transform="translate(20, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Pipedream</text></g>
-      <g transform="translate(110, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Selenium</text></g>
-      <g transform="translate(200, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Playwright</text></g>
+      <g transform="translate(15, 125)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Puppeteer</text></g>
+      <g transform="translate(123, 125)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Selenium</text></g>
+      <g transform="translate(231, 125)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Playwright</text></g>
 
-      <g transform="translate(20, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Puppeteer</text></g>
+      <g transform="translate(15, 165)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">N8n</text></g>
+      <g transform="translate(123, 165)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Python</text></g>
+      <g transform="translate(231, 165)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Zapier</text></g>
 
-      <g transform="translate(20, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Browser Auto.</text></g>
-      <g transform="translate(110, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">API Int.</text></g>
-      <g transform="translate(200, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Webhooks</text></g>
+      <g transform="translate(15, 205)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Scheduling</text></g>
+      <g transform="translate(123, 205)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">RPA</text></g>
+      <g transform="translate(231, 205)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Airflow</text></g>
 
-      <g transform="translate(20, 233)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Cron Jobs</text></g>
-      <g transform="translate(110, 233)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Workflow Auto.</text></g>
+      <g transform="translate(15, 245)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Alerts</text></g>
+      <g transform="translate(123, 245)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">RPA</text></g>
+      <g transform="translate(231, 245)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Bot Management</text></g>
+
+      <g transform="translate(15, 285)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Event-driven</text></g>
+      <g transform="translate(123, 285)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Logging</text></g>
+      <g transform="translate(231, 285)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Error Handling</text></g>
+
+      <g transform="translate(15, 325)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Retry</text></g>
+      <g transform="translate(123, 325)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Queues</text></g>
+      <g transform="translate(231, 325)"><rect width="84" height="28" rx="6" fill="#2a3020" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#e6ee9c" font-weight="500" text-anchor="middle">Dead Letter</text></g>
     </g>
   </g>
 
-  <!-- Card 8: SaaS Engineering -->
-  <g transform="translate(350, 810)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.45s" fill="freeze" />
-    <g>
-      <rect width="300" height="270" rx="16" fill="url(#bg2)" stroke="#f472b6" stroke-width="1.5"/>
-      <circle cx="0" cy="0" r="150" fill="url(#glow8)" opacity="1"/>
-      <rect x="0" y="0" width="6" height="270" fill="#f472b6" rx="3" opacity="0.8"/>
+  <!-- Card 8: SaaS Engineering (Rose) -->
+  <g transform="translate(375, 1050)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.45s" fill="freeze" />
+    <g filter="url(#card-shadow)">
+      <rect width="330" height="390" rx="16" fill="url(#bg-rose)" stroke="#880e4f" stroke-width="3"/>
       
       <g transform="translate(20, 20)">
-        <rect x="0" y="0" width="32" height="32" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="1"/>
-        <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#f472b6" text-anchor="middle">🏢</text>
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="#301c28" stroke="#f06292" stroke-width="1.5"/>
+        <text x="18" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#f48fb1" text-anchor="middle">☰</text>
       </g>
-      <text x="70" y="32" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1">Scalable Applications</text>
-      <text x="70" y="54" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#tg8)">SaaS Engineering</text>
+      <text x="70" y="34" font-family="system-ui, sans-serif" font-size="12" fill="#9ca3af" font-weight="500">Scalable Applications</text>
+      <text x="70" y="60" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="url(#tg-rose)">SaaS Engineering</text>
 
-      <g transform="translate(20, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Stripe</text></g>
-      <g transform="translate(110, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Razorpay</text></g>
+      <g transform="translate(15, 85)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Stripe</text></g>
+      <g transform="translate(123, 85)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Razorpay</text></g>
+      <g transform="translate(231, 85)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Multi-Tenant</text></g>
 
-      <g transform="translate(20, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Multi-Tenant</text></g>
-      <g transform="translate(110, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Auth</text></g>
-      <g transform="translate(200, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">RBAC</text></g>
+      <g transform="translate(15, 125)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Authentication</text></g>
+      <g transform="translate(123, 125)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">RBAC</text></g>
+      <g transform="translate(231, 125)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Subscriptions</text></g>
 
-      <g transform="translate(20, 233)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Subscriptions</text></g>
-      <g transform="translate(110, 233)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Billing</text></g>
-      <g transform="translate(200, 233)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">User Mgmt</text></g>
+      <g transform="translate(15, 165)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Billing</text></g>
+      <g transform="translate(123, 165)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Email Svc.</text></g>
+      <g transform="translate(231, 165)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Onboarding</text></g>
 
-      <g transform="translate(20, 256)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Dashboards</text></g>
-      <g transform="translate(110, 256)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Email Svc.</text></g>
-      <g transform="translate(200, 256)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Notifications</text></g>
+      <g transform="translate(15, 205)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Analytics</text></g>
+      <g transform="translate(123, 205)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Email Ess.</text></g>
+      <g transform="translate(231, 205)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Onboarding</text></g>
+
+      <g transform="translate(15, 245)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Metrics</text></g>
+      <g transform="translate(123, 245)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">CRM</text></g>
+      <g transform="translate(231, 245)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Reporting</text></g>
+
+      <g transform="translate(15, 285)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Audit</text></g>
+      <g transform="translate(123, 285)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Compliance</text></g>
+      <g transform="translate(231, 285)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Support</text></g>
+
+      <g transform="translate(15, 325)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Retention</text></g>
+      <g transform="translate(123, 325)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Engagement</text></g>
+      <g transform="translate(231, 325)"><rect width="84" height="28" rx="6" fill="#301c28" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#f48fb1" font-weight="500" text-anchor="middle">Funnels</text></g>
     </g>
   </g>
 
-  <!-- Card 9: Developer Toolkit -->
-  <g transform="translate(680, 810)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.5s" fill="freeze" />
-    <g>
-      <rect width="300" height="270" rx="16" fill="url(#bg3)" stroke="#64748b" stroke-width="1.5"/>
-      <circle cx="0" cy="0" r="150" fill="url(#glow9)" opacity="1"/>
-      <rect x="0" y="0" width="6" height="270" fill="#64748b" rx="3" opacity="0.8"/>
+  <!-- Card 9: Developer Toolkit (Grey) -->
+  <g transform="translate(730, 1050)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.5s" fill="freeze" />
+    <g filter="url(#card-shadow)">
+      <rect width="330" height="390" rx="16" fill="url(#bg-grey)" stroke="#37474f" stroke-width="3"/>
       
       <g transform="translate(20, 20)">
-        <rect x="0" y="0" width="32" height="32" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="1"/>
-        <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#64748b" text-anchor="middle">🧰</text>
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="#222c33" stroke="#90a4ae" stroke-width="1.5"/>
+        <text x="18" y="24" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#b0bec5" text-anchor="middle">⚙</text>
       </g>
-      <text x="70" y="32" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#94a3b8" font-weight="600" letter-spacing="1">Productivity Suite</text>
-      <text x="70" y="54" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#tg9)">Developer Toolkit</text>
+      <text x="70" y="34" font-family="system-ui, sans-serif" font-size="12" fill="#9ca3af" font-weight="500">Productivity Suite</text>
+      <text x="70" y="60" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="url(#tg-grey)">Developer Toolkit</text>
 
-      <g transform="translate(20, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Python</text></g>
-      <g transform="translate(110, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">TS</text></g>
-      <g transform="translate(200, 75)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">JS</text></g>
+      <g transform="translate(15, 85)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Python</text></g>
+      <g transform="translate(123, 85)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">TS</text></g>
+      <g transform="translate(231, 85)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">JS</text></g>
 
-      <g transform="translate(20, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Java</text></g>
-      <g transform="translate(110, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">C</text></g>
-      <g transform="translate(200, 98)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">C++</text></g>
+      <g transform="translate(15, 125)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Java</text></g>
+      <g transform="translate(123, 125)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">C</text></g>
+      <g transform="translate(231, 125)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">C++</text></g>
 
-      <g transform="translate(20, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">SQL</text></g>
-      <g transform="translate(110, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Bash</text></g>
-      <g transform="translate(200, 121)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">VS Code</text></g>
+      <g transform="translate(15, 165)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">SQL</text></g>
+      <g transform="translate(123, 165)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Bash</text></g>
+      <g transform="translate(231, 165)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">VS Code</text></g>
 
-      <g transform="translate(20, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">GitHub</text></g>
-      <g transform="translate(110, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Postman</text></g>
-      <g transform="translate(200, 144)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Docker</text></g>
+      <g transform="translate(15, 205)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">GitHub</text></g>
+      <g transform="translate(123, 205)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Postman</text></g>
+      <g transform="translate(231, 205)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Docker</text></g>
 
-      <g transform="translate(20, 167)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Figma</text></g>
-      <g transform="translate(110, 167)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Notion</text></g>
-      <g transform="translate(200, 167)"><rect width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Jira</text></g>
+      <g transform="translate(15, 245)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Figma</text></g>
+      <g transform="translate(123, 245)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Notion</text></g>
+      <g transform="translate(231, 245)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Jira</text></g>
 
-      <g transform="translate(20, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Code</text></g>
-      <g transform="translate(110, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Debug</text></g>
-      <g transform="translate(200, 210)"><rect width="80" height="22" rx="6" fill="rgba(255,255,255,0.05)" stroke="#334155" stroke-width="1"/><text x="40" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#cbd5e1" font-weight="500" text-anchor="middle">Deploy</text></g>
+      <g transform="translate(15, 285)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Vim</text></g>
+      <g transform="translate(123, 285)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Zsh</text></g>
+      <g transform="translate(231, 285)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Slack</text></g>
+
+      <g transform="translate(15, 325)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Agile</text></g>
+      <g transform="translate(123, 325)"><rect width="84" height="28" rx="6" fill="#222c33" /><text x="42" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#b0bec5" font-weight="500" text-anchor="middle">Scrum</text></g>
     </g>
   </g>
 </svg>
