@@ -62,8 +62,6 @@ Learning:
   - Cloud Architecture
   - Machine Learning
 ````
-
----
 ![Tech Stack](assets/tech-stack.svg)
 
 ### Languages
