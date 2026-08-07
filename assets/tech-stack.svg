@@ -134,13 +134,8 @@
     <!-- Banner Base -->
     <rect x="20" y="40" width="1040" height="90" rx="30" fill="#140d21" stroke="url(#bannerStroke)" stroke-width="3" filter="url(#card-shadow)" />
     
-    <!-- Network Icon -->
-    <g transform="translate(480, 82)">
-        <path d="M-8-4 L-8-8 L8-8 L8-4 M-8-8 L-15-4 M8-8 L15-4 M-4-4 L-4 0 M4-4 L4 0 M-15 0 L-4 0 M15 0 L4 0 M-2 4 L-2 8 L-12 8 M2 4 L2 8 L12 8 M-12 8 L-16 12 M12 8 L16 12" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    </g>
-
-    <!-- Title Text -->
-    <text x="540" y="100" font-family="Orbitron, Arial, sans-serif" font-size="50" font-weight="700" fill="url(#bannerText)" text-anchor="middle" letter-spacing="5" filter="url(#glow)">TECH STACK</text>
+        <!-- Title Text -->
+    <text x="540" y="100" font-family="Orbitron, Arial, sans-serif" font-size="100" font-weight="700" fill="url(#bannerText)" text-anchor="middle" letter-spacing="5" filter="url(#glow)">TECH STACK</text>
   </g>
 
   <!-- ================= ROW 1 (Y: 170) ================= -->
