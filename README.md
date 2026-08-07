@@ -1,3 +1,6 @@
+div align="center" style="margin:0; padding:0; line-height:0;">
+  <img src="Banner.png" alt="Bannerr" width="100%">
+</div>
 ![Tech Stack](assets/tech-stack.svg)
 <div align="center" style="margin:0; padding:0; line-height:0;">
   <img src="Banner.png" alt="Bannerr" width="100%">
