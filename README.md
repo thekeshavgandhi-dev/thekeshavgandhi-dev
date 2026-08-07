@@ -1,4 +1,4 @@
-
+![Tech Stack](assets/banner.svg)
 <div align="center" style="margin:0; padding:0; line-height:0;">
   <img src="/assets/Banner.png" alt="Bannerr" width="100%">
 </div>
