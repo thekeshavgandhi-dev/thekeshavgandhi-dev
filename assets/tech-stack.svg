@@ -135,7 +135,7 @@
     <rect x="20" y="40" width="1040" height="90" rx="30" fill="#140d21" stroke="url(#bannerStroke)" stroke-width="3" filter="url(#card-shadow)" />
     
         <!-- Title Text -->
-    <text x="540" y="100" font-family="Orbitron, Arial, sans-serif" font-size="100" font-weight="700" fill="url(#bannerText)" text-anchor="middle" letter-spacing="5" filter="url(#glow)">TECH STACK</text>
+    <text x="540" y="100" font-family="Orbitron, Arial, sans-serif" font-size="50" font-weight="700" fill="url(#bannerText)" text-anchor="middle" letter-spacing="5" filter="url(#glow)">TECH STACK</text>
   </g>
 
   <!-- ================= ROW 1 (Y: 170) ================= -->
