@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1560" width="100%" height="100%">
   <defs>
-    <!-- <!-- Background Blur Filters -->
+    <!-- Background Blur Filters -->
     <filter id="bg-blur">
       <feGaussianBlur stdDeviation="80" />
-    </filter> -->
+    </filter>
     
     <!-- Card Drop Shadow -->
     <filter id="card-shadow" x="-5%" y="-5%" width="120%" height="120%">
