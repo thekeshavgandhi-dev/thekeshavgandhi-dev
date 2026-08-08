@@ -232,9 +232,9 @@ async function main() {
       noContribution: '#ebedf0',
     };
     const darkTheme = {
-      shooter: '#39d353', // GitHub green (dark)
-      explosion: '#ff9e64',
-      noContribution: '#161b22', // GitHub dark empty cell color
+      shooter: '#06b6d4', // GitHub green (dark)
+      explosion: '#ec4899',
+      noContribution: '#0b1124', // GitHub dark empty cell color
     };
 
     console.log('🎨 Generating bubble-shoot er SVG (light)...');
