@@ -38,7 +38,7 @@
 </p>
 
 ---
-<h2 id="contributions" align="center">🐍 Contribution Graph</h2>
+
 
 
 # 👨‍💻 About Me
@@ -63,143 +63,13 @@ Learning:
 ````
 ![Tech Stack](assets/tech-stack.svg)
 
-### Languages
 
-<p>
-<img src="https://skillicons.dev/icons?i=python,javascript,typescript,java,c,cpp,html,css,bash" />
-</p>
 
-### Frontend
 
-<p>
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite,redux" />
-</p>
 
-### Backend
 
-<p>
-<img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,django" />
-</p>
 
-### Mobile
 
-<p>
-<img src="https://skillicons.dev/icons?i=flutter,react" />
-</p>
-
-### AI / ML
-
-<p>
-<img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch" />
-</p>
-
-* Machine Learning
-* Deep Learning
-* LLMs
-* Prompt Engineering
-* RAG
-* AI Agents
-* Computer Vision
-* NLP
-* Generative AI
-
-### Databases
-
-<p>
-<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,firebase,supabase" />
-</p>
-
-### Cloud & DevOps
-
-<p>
-<img src="https://skillicons.dev/icons?i=aws,docker,linux,git,github,vercel,netlify" />
-</p>
-
----
-
-# 🧠 AI Stack
-
-✔ OpenAI
-
-✔ Claude
-
-✔ Gemini
-
-✔ LangChain
-
-✔ CrewAI
-
-✔ Vector Databases
-
-✔ AI Agents
-
-✔ RAG Systems
-
-✔ Automation Workflows
-
-✔ N8N
-
-✔ MCP
-
-✔ LLM Applications
-
----
-
-# 🏢 Ventures
-
-### 🚀 Techarvel Ltd
-
-Building innovative technology products.
-
-### 🧪 Techarvel Labs
-
-Research, AI & Innovation.
-
-### 🎬 Techarvel Studios
-
-Digital Experiences & Product Design.
-
----
-
-# 🌐 Connect With Me
-
-<p align="center">
-
-<a href="YOUR-LINKEDIN">
-LinkedIn
-</a> •
-
-<a href="YOUR-PORTFOLIO">
-Portfolio
-</a> •
-
-<a href="YOUR-YOUTUBE">
-YouTube
-</a> •
-
-<a href="YOUR-INSTAGRAM">
-Instagram
-</a> •
-
-<a href="YOUR-TWITTER">
-Twitter/X
-</a> •
-
-<a href="YOUR-KAGGLE">
-Kaggle
-</a> •
-
-<a href="YOUR-DEVTO">
-Dev.to
-</a> •
-
-<a href="YOUR-MEDIUM">
-Medium
-</a>
-
-</p>
-
----
 
 # 📈 GitHub Analytics
 
@@ -226,7 +96,11 @@ Medium
 ---
 
 # 🐍 Contribution Snake
-
+<h2 id="contributions" align="center">🐍 Contribution Graph</h2>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="github-contribution-animation-dark.svg" />
+  <img alt="thekeshavgandhi-dev's Contribution Animation" src="github-contribution-animation.svg" />
+</picture>
 <p align="center">
 <img src="https://raw.githubusercontent.com/YOURUSERNAME/YOURUSERNAME/output/github-contribution-grid-snake.svg" />
 </p>
