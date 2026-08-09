@@ -94,6 +94,11 @@ Learning:
 </p>
 
 ---
+<div align="center">
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com?user=thekeshavgandhi-dev&theme=black-ice&hide_border=true&background=0F172A" width="85%" alt="GitHub Streak" />
+  </a>
+</div>
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=thekeshavgandhi-dev&theme=black-ice&hide_border=true&background=0F172A)](https://git.io/streak-stats)
 <picture>
