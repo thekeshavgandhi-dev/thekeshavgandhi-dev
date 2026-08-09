@@ -95,7 +95,7 @@ Learning:
 
 ---
 
-# 🐍 Contribution Snake
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=First+line+of+text;Second+line+of+text)](https://git.io/typing-svg)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="github-contribution-animation-dark.svg" />
   <img alt="thekeshavgandhi-dev's Contribution Animation" src="github-contribution-animation.svg" />
