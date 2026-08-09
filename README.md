@@ -95,7 +95,7 @@ Learning:
 
 ---
 
-<a href="https://git.io/streak-stats"><img src="./profile/streak.svg" alt="GitHub Streak" /></a>
+[![GitHub Streak](https://streak-stats.demolab.com?user=thekeshavgandhi-dev&theme=black-ice&hide_border=true&background=0F172A)](https://git.io/streak-stats)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="github-contribution-animation-dark.svg" />
   <img alt="thekeshavgandhi-dev's Contribution Animation" src="github-contribution-animation.svg" />
