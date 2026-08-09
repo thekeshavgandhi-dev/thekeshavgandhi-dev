@@ -99,13 +99,11 @@ Learning:
     <img src="https://streak-stats.demolab.com?user=thekeshavgandhi-dev&theme=black-ice&hide_border=true&background=0F172A" width="80%" alt="GitHub Streak" />
   </a>
 </div>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="github-contribution-animation-dark.svg" />
-    <img alt="thekeshavgandhi-dev's Contribution Animation" src="github-contribution-animation.svg" style="height: 200px; width: auto;" />
-  </picture>
-</div>
+---
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="github-contribution-animation-dark.svg" />
+  <img alt="thekeshavgandhi-dev's Contribution Animation" src="github-contribution-animation.svg" />
+</picture>
 ---
 
 # 🎮 Fun Zone
