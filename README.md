@@ -100,10 +100,12 @@ Learning:
   </a>
 </div>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="github-contribution-animation-dark.svg" />
-  <img alt="thekeshavgandhi-dev's Contribution Animation" src="github-contribution-animation.svg" />
-</picture>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="github-contribution-animation-dark.svg" />
+    <img alt="thekeshavgandhi-dev's Contribution Animation" src="github-contribution-animation.svg" style="height: 200px; width: auto;" />
+  </picture>
+</div>
 ---
 
 # 🎮 Fun Zone
