@@ -95,7 +95,7 @@ Learning:
 
 ---
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=First+line+of+text;Second+line+of+text)](https://git.io/typing-svg)
+<a href="https://git.io/streak-stats"><img src="./profile/streak.svg" alt="GitHub Streak" /></a>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="github-contribution-animation-dark.svg" />
   <img alt="thekeshavgandhi-dev's Contribution Animation" src="github-contribution-animation.svg" />
