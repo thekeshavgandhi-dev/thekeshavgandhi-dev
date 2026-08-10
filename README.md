@@ -9,6 +9,8 @@
 </p>
 
 <!-- 🏷️ PROFESSIONAL BADGES — contact / availability row -->
+[![X](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/thekeshavgandhi)
+[![Instagram - Dev](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/thekesahvgandhi.dev)
 <p align="center">
   <a href="mailto:abdullah.bakir.1997@gmail.com"><img src="https://img.shields.io/badge/EMAIL-D44638?style=for-the-badge&logo=gmail&logoColor=white&v=20260806" alt="Email" /></a>
   <a href="https://www.linkedin.com/in/abdullah-bakir-809065273/"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&v=20260806" alt="LinkedIn" /></a>
