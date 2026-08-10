@@ -193,7 +193,7 @@
         <!-- ================================================ -->
          <g id="user-avatar-placeholder">
             <!-- 🔥 Changed Size to 320x320 (Diameter of r=160 circle), X to -160, Y to -160. No extra circles added! -->
-            <image x="-160" y="-160" width="320" height="380" clip-path="url(#avatar-mask)" href="pp.png" preserveAspectRatio="xMidYMid slice" />
+            <image x="-160" y="-160" width="320" height="380" clip-path="url(#avatar-mask)" href="https://github.com/thekeshavgandhi-dev/thekeshavgandhi-dev/blob/021911eee8bf851768ed8b776797cc688dac5734/assets/profile-pic.png" preserveAspectRatio="xMidYMid slice" />
         </g>
         <!-- ================================================ -->
         <!-- 🔥 END OF IMAGE ZONE -->
