@@ -40,8 +40,360 @@
 ---
 
 
+#About me
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="610" viewBox="0 0 1180 610" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="dark-title dark-description" xml:space="preserve">
+  <title id="dark-title">Keshav Gandhi — AI/ML Engineer &amp; Full-Stack Developer</title>
+  <desc id="dark-description">Dual-panel animated GitHub profile banner with a glowing tech avatar and a detailed professional profile card.</desc>
+  <defs>
+    <linearGradient id="dark-background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#030712"/>
+      <stop offset="0.52" stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0B1020"/>
+      <animate attributeName="x1" values="0;0.16;0" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="1;0.82;1" dur="14s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="dark-panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111C31" stop-opacity="0.92"/>
+      <stop offset="0.5" stop-color="#0F172A" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#0A1222" stop-opacity="0.92"/>
+      <animate attributeName="x2" values="1;0.72;1" dur="11s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="dark-panel-header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#111C31" stop-opacity="0.58"/>
+      <stop offset="0.55" stop-color="#7C3AED" stop-opacity="0.045"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.035"/>
+    </linearGradient>
+    
+    <linearGradient id="dark-name-glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.5" stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+      <animate attributeName="x1" values="0;0.5;0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
 
-![About Me](about-me.svg)
+    <linearGradient id="dark-typing-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#00E5FF"/>
+      <animate attributeName="x1" values="0;1;0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <radialGradient id="dark-glow-violet">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.28">
+        <animate attributeName="stop-opacity" values="0.2016;0.28;0.2016" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dark-glow-blue">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.28">
+        <animate attributeName="stop-opacity" values="0.28;0.1624;0.28" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dark-glow-green">
+      <stop offset="0" stop-color="#10B981" stop-opacity="0.2184"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- <filter id="dark-panel-shadow" x="-20%" y="-20%" width="140%" height="155%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="17" result="shadow-blur"/>
+      <feOffset dy="12" result="shadow-offset"/>
+      <feFlood flood-color="#000000" flood-opacity="0.52" result="shadow-color"/>
+      <feComposite in="shadow-color" in2="shadow-offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter> -->
+    <filter id="dark-soft-glow" x="-70%" y="-90%" width="240%" height="280%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5.5" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dark-orb-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="44"/>
+    </filter>
+    <filter id="dark-noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.56 0.72" numOctaves="2" seed="11" stitchTiles="stitch" result="noise">
+        <animate attributeName="baseFrequency" values="0.56 0.72;0.62 0.68;0.54 0.76;0.56 0.72" dur="12s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feColorMatrix in="noise" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.035 0"/>
+    </filter>
+    <linearGradient id="dark-scanline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="0.48" stop-color="#22D3EE" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="dark-border-gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1180" y2="610">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0"/>
+      <stop offset="0.38" stop-color="#7C3AED" stop-opacity="0.68"/>
+      <stop offset="0.63" stop-color="#22D3EE" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" from="0 590 305" to="360 590 305" dur="16s" repeatCount="indefinite"/>
+    </linearGradient>
+    <mask id="dark-particle-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="1180" height="610">
+      <rect x="0" y="0" width="1180" height="610" fill="white" opacity="0.9"/>
+      <ellipse cx="590" cy="305" rx="465" ry="240" fill="white"/>
+    </mask>
+
+    <clipPath id="dark-outer-clip"><rect x="1" y="1" width="1178" height="608" rx="30"/></clipPath>
+    <clipPath id="dark-left-clip"><rect x="24" y="24" width="424" height="562" rx="24"/></clipPath>
+    <clipPath id="dark-right-clip"><rect x="470" y="24" width="686" height="562" rx="24"/></clipPath>
+
+    <!-- RIGHT PANEL TYPING CLIP PATHS -->
+    <clipPath id="right-phrase-clip-0">
+      <rect x="527" y="220" width="0" height="28">
+        <animate attributeName="width" values="0;0;12;24;36;48;60;72;84;96;108;120;132;144;156;168;168;0;0" keyTimes="0;0.02;0.025;0.03;0.035;0.04;0.045;0.05;0.055;0.06;0.065;0.07;0.075;0.08;0.085;0.09;0.18;0.20;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="right-phrase-clip-1">
+      <rect x="527" y="220" width="0" height="28">
+        <animate attributeName="width" values="0;0;12;24;36;48;60;72;84;96;108;120;132;144;156;168;180;192;204;216;228;240;240;0;0" keyTimes="0;0.22;0.225;0.23;0.235;0.24;0.245;0.25;0.255;0.26;0.265;0.27;0.275;0.28;0.285;0.29;0.295;0.30;0.305;0.31;0.315;0.32;0.38;0.40;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="right-phrase-clip-2">
+      <rect x="527" y="220" width="0" height="28">
+        <animate attributeName="width" values="0;0;12;24;36;48;60;72;84;96;108;120;132;144;156;156;0;0" keyTimes="0;0.42;0.425;0.43;0.435;0.44;0.445;0.45;0.455;0.46;0.465;0.47;0.475;0.48;0.485;0.58;0.60;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="right-phrase-clip-3">
+      <rect x="527" y="220" width="0" height="28">
+        <animate attributeName="width" values="0;0;12;24;36;48;60;72;84;96;108;120;132;144;156;168;180;192;204;216;228;240;240;0;0" keyTimes="0;0.62;0.625;0.63;0.635;0.64;0.645;0.65;0.655;0.66;0.665;0.67;0.675;0.68;0.685;0.69;0.695;0.70;0.705;0.71;0.715;0.72;0.78;0.80;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <!-- LEFT PANEL TYPING CLIP PATHS -->
+    <clipPath id="left-phrase-clip-0">
+      <rect x="165" y="-16" width="0" height="16">
+        <animate attributeName="width" values="0;0;20;40;50;50;0;0" keyTimes="0;0.02;0.04;0.06;0.08;0.25;0.28;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="left-phrase-clip-1">
+      <rect x="165" y="-16" width="0" height="16">
+        <animate attributeName="width" values="0;0;20;40;60;80;90;90;0;0;0" keyTimes="0;0.28;0.30;0.32;0.34;0.36;0.38;0.40;0.55;0.58;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="left-phrase-clip-2">
+      <rect x="165" y="-16" width="0" height="16">
+        <animate attributeName="width" values="0;0;20;40;60;70;70;0;0;0" keyTimes="0;0.58;0.60;0.62;0.64;0.66;0.68;0.85;0.88;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <!-- CLIP PATH FOR YOUR IMAGE (Perfectly Matches r=160) -->
+    <clipPath id="avatar-mask">
+      <circle cx="0" cy="0" r="160" />
+    </clipPath>
+  </defs>
+
+  <!-- <g clip-path="url(#dark-outer-clip)">
+    <rect x="0" y="0" width="1180" height="610" fill="url(#dark-background)"/>
+    <ellipse cx="150" cy="80" rx="330" ry="260" fill="url(#dark-glow-violet)" filter="url(#dark-orb-blur)"><animate attributeName="cx" values="150;255;150" dur="13s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="1000" cy="70" rx="310" ry="230" fill="url(#dark-glow-blue)" filter="url(#dark-orb-blur)"><animate attributeName="cx" values="1000;880;1000" dur="15s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="790" cy="610" rx="360" ry="235" fill="url(#dark-glow-green)" filter="url(#dark-orb-blur)"><animate attributeName="cx" values="790;680;790" dur="17s" repeatCount="indefinite"/></ellipse>
+    <rect x="0" y="0" width="1180" height="610" filter="url(#dark-noise)" opacity="1"/>
+  </g> -->
+  
+  <g clip-path="url(#dark-outer-clip)" mask="url(#dark-particle-mask)" opacity="0.72">
+    <circle cx="0" cy="0" r="1.3" fill="#7C3AED" filter="url(#dark-soft-glow)"><animateMotion path="M 72 548 C 190 438 250 192 404 82" dur="17s" begin="-4s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="0" r="1.1" fill="#22D3EE" filter="url(#dark-soft-glow)"><animateMotion path="M 138 590 C 270 520 318 232 472 112" dur="22s" begin="-12s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="0" r="1.25" fill="#10B981" filter="url(#dark-soft-glow)"><animateMotion path="M 344 610 C 466 490 518 178 640 42" dur="19s" begin="-7s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="0" r="1" fill="#7C3AED" filter="url(#dark-soft-glow)"><animateMotion path="M 520 594 C 618 456 692 190 822 38" dur="24s" begin="-18s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="0" r="1.2" fill="#22D3EE" filter="url(#dark-soft-glow)"><animateMotion path="M 706 612 C 790 486 882 212 1008 60" dur="18s" begin="-2s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="0" r="1.05" fill="#10B981" filter="url(#dark-soft-glow)"><animateMotion path="M 924 600 C 1030 470 1106 256 1150 104" dur="21s" begin="-10s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="0" r="1.15" fill="#7C3AED" filter="url(#dark-soft-glow)"><animateMotion path="M 1110 560 C 930 442 812 224 672 66" dur="23s" begin="-16s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="0" r="1" fill="#22D3EE" filter="url(#dark-soft-glow)"><animateMotion path="M 1018 610 C 826 500 718 276 574 96" dur="20s" begin="-5s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="0" r="1.3" fill="#10B981" filter="url(#dark-soft-glow)"><animateMotion path="M 808 604 C 654 472 586 254 438 68" dur="26s" begin="-21s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="0" r="1.05" fill="#7C3AED" filter="url(#dark-soft-glow)"><animateMotion path="M 596 604 C 470 472 376 260 228 92" dur="18s" begin="-11s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="0" r="1.15" fill="#22D3EE" filter="url(#dark-soft-glow)"><animateMotion path="M 396 592 C 274 452 176 276 46 132" dur="25s" begin="-8s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="0" r="0.95" fill="#10B981" filter="url(#dark-soft-glow)"><animateMotion path="M 1160 360 C 900 300 640 180 430 26" dur="28s" begin="-20s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <rect x="24" y="24" width="424" height="562" rx="24" fill="url(#dark-panel)" filter="url"/>
+  <rect x="470" y="24" width="686" height="562" rx="24" fill="url(#dark-panel)" filter="url"/>
+  <rect x="24.5" y="24.5" width="423" height="561" rx="23.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="470.5" y="24.5" width="685" height="561" rx="23.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="24.5" y="24.5" width="423" height="561" rx="23.5" fill="none" stroke="url(#dark-border-gradient)" stroke-width="1.2" stroke-dasharray="125 1730" stroke-linecap="round"><animate attributeName="stroke-dashoffset" from="0" to="-1855" dur="7.5s" repeatCount="indefinite"/></rect>
+  <rect x="470.5" y="24.5" width="685" height="561" rx="23.5" fill="none" stroke="url(#dark-border-gradient)" stroke-width="1.2" stroke-dasharray="145 2280" stroke-linecap="round"><animate attributeName="stroke-dashoffset" from="0" to="-2425" dur="8.8s" repeatCount="indefinite"/></rect>
+
+  <!-- LEFT PANEL -->
+  <g clip-path="url(#dark-left-clip)">
+    <rect x="24" y="24" width="424" height="50" fill="url(#dark-panel-header)"/>
+    <line x1="24" y1="76" x2="448" y2="76" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="52" y="57" fill="#94A3B8" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="10.5" font-weight="600" letter-spacing="1.5">AI CORE / AVATAR.01</text>
+    
+    <g transform="translate(238, 285)">
+        <circle cx="0" cy="0" r="200" fill="url(#dark-glow-violet)" filter="url(#dark-orb-blur)" />
+        <circle cx="0" cy="0" r="180" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-dasharray="8 12" opacity="0.5" />
+        <circle cx="0" cy="0" r="170" fill="none" stroke="url(#dark-border-gradient)" stroke-width="5" />
+        <circle cx="0" cy="0" r="160" fill="#111C31" stroke="#4400ff" stroke-width="1" stroke-opacity="0.2" />
+        <polygon points="0,-150 130,-75 130,75 0,150 -130,75 -130,-75" fill="none" stroke="#7C3AED" stroke-width="2" stroke-opacity="0.15" />
+        <polygon points="0,-110 95,-55 95,55 0,110 -95,55 -95,-55" fill="none" stroke="#22D3EE" stroke-width="1" stroke-opacity="0.3" />
+
+        <!-- ================================================ -->
+        <!-- 🔥 YOUR IMAGE HERE (FIXED PERFECTLY INSIDE) -->
+        <!-- ================================================ -->
+         <g id="user-avatar-placeholder">
+            <!-- 🔥 Changed Size to 320x320 (Diameter of r=160 circle), X to -160, Y to -160. No extra circles added! -->
+            <image x="-160" y="-160" width="320" height="380" clip-path="url(#avatar-mask)" href="pp.png" preserveAspectRatio="xMidYMid slice" />
+        </g>
+        <!-- ================================================ -->
+        <!-- 🔥 END OF IMAGE ZONE -->
+        <!-- ================================================ -->
+
+        <!-- ====== HANDLE + INLINE TYPING (PERFECTLY MID-ALIGNED WITH MINOR RIGHT SHIFT - x=-95) ====== -->
+        <g transform="translate(-95, 210)">
+            <g transform="translate(0, 0)">
+                <!-- Static Handle Text -->
+                <text x="0" y="0" fill="#FFFFFF" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="600" letter-spacing="1">@thekeshavgandhi</text>
+                
+                <!-- Phrase 0: .in -->
+                <g opacity="1">
+                  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.001;0.002;0.25;0.28;1" dur="16s" repeatCount="indefinite"/>
+                  <text x="165" y="0" clip-path="url(#left-phrase-clip-0)" fill="#00E5FF" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="600" letter-spacing="1">.in</text>
+                  <rect x="165" y="-16" width="2" height="16" fill="#00E5FF" filter="url(#dark-soft-glow)">
+                    <animate attributeName="x" values="165;165;185;205;215;215" keyTimes="0;0.02;0.04;0.06;0.08;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+                  </rect>
+                </g>
+                
+                <!-- Phrase 1: .tech -->
+                <g opacity="0">
+                  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.28;0.30;0.55;0.58;1" dur="16s" repeatCount="indefinite"/>
+                  <text x="165" y="0" clip-path="url(#left-phrase-clip-1)" fill="#00E5FF" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="600" letter-spacing="1">.tech</text>
+                  <rect x="165" y="-16" width="2" height="16" fill="#00E5FF" filter="url(#dark-soft-glow)">
+                    <animate attributeName="x" values="165;165;185;205;225;245;255;255" keyTimes="0;0.30;0.32;0.34;0.36;0.38;0.40;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+                  </rect>
+                </g>
+                
+                <!-- Phrase 2: .dev -->
+                <g opacity="0">
+                  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.58;0.60;0.85;0.88;1" dur="16s" repeatCount="indefinite"/>
+                  <text x="165" y="0" clip-path="url(#left-phrase-clip-2)" fill="#00E5FF" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="600" letter-spacing="1">.dev</text>
+                  <rect x="165" y="-16" width="2" height="16" fill="#00E5FF" filter="url(#dark-soft-glow)">
+                    <animate attributeName="x" values="165;165;185;205;225;235;235" keyTimes="0;0.60;0.62;0.64;0.66;0.68;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+                  </rect>
+                </g>
+            </g>
+        </g>
+    </g>
+
+    <!-- Scanline & Footer -->
+    <rect x="43" y="78" width="386" height="54" fill="url(#dark-scanline)" opacity="0"><animate attributeName="y" values="78;479;78" keyTimes="0;0.76;1" dur="5.8s" repeatCount="indefinite"/></rect>
+    <line x1="46" y1="118" x2="426" y2="118" stroke="url(#dark-scanline)" stroke-width="1" opacity="0.42"><animate attributeName="y1" values="90;500;90" dur="4.6s" repeatCount="indefinite"/></line>
+    <line x1="52" y1="518" x2="420" y2="518" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <circle cx="59" cy="548" r="3.2" fill="#10B981" filter="url(#dark-soft-glow)"><animate attributeName="r" values="2.7;4;2.7" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.65;1;0.65" dur="2.4s" repeatCount="indefinite"/></circle>
+    <text x="72" y="552" fill="#94A3B8" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="10" font-weight="600" letter-spacing="1.25">SIGNAL LOCKED</text>
+    <text x="420" y="552" text-anchor="end" fill="#64748B" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9.5" letter-spacing="1">SMIL / 60</text>
+  </g>
+
+  <!-- RIGHT PANEL -->
+  <g clip-path="url(#dark-right-clip)">
+    <rect x="470" y="24" width="686" height="50" fill="url(#dark-panel-header)"/>
+    <line x1="470" y1="76" x2="1156" y2="76" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    
+    <circle cx="496" cy="51" r="4" fill="#7C3AED" opacity="0.68"><animate attributeName="opacity" values="0.38;0.95;0.38" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="512" cy="51" r="4" fill="#22D3EE" opacity="0.68"><animate attributeName="opacity" values="0.38;0.95;0.38" dur="2.8s" begin="-0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="528" cy="51" r="4" fill="#10B981" opacity="0.68"><animate attributeName="opacity" values="0.38;0.95;0.38" dur="2.8s" begin="-1.8s" repeatCount="indefinite"/></circle>
+    
+    <text x="556" y="55" fill="#94A3B8" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="10.5" font-weight="600" letter-spacing="0.45">~/profile/keshav-gandhi</text>
+    <text x="1129" y="55" text-anchor="end" fill="#64748B" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9.2" letter-spacing="1.1">LIVE / SMIL</text>
+    <circle cx="1139" cy="51" r="2.5" fill="#10B981" filter="url(#dark-soft-glow)"><animate attributeName="r" values="2;3.4;2" dur="2.2s" repeatCount="indefinite"/></circle>
+
+    <text x="508" y="118" fill="#64748B" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="10" font-weight="650" letter-spacing="1.2">› IDENTITY --VERBOSE</text>
+    <text x="508" y="150" fill="#94A3B8" font-family="Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="20" font-weight="600">Hi 👋, I'm</text>
+    <text x="508" y="205" fill="url(#dark-name-glow)" font-family="Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="48" font-weight="800" filter="url(#dark-soft-glow)" letter-spacing="-1.2">KESHAV GANDHI</text>
+    
+    <text x="508" y="240" fill="#22D3EE" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="18.5" font-weight="700">›</text>
+    
+    <g opacity="1">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.001;0.002;0.175;0.197;1" dur="16s" repeatCount="indefinite"/>
+      <text x="527" y="240" clip-path="url(#right-phrase-clip-0)" fill="#FFFFFF" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="18.5" font-weight="700">AI/ML Engineer</text>
+      <rect x="527" y="223" width="2.5" height="18" fill="#22D3EE" filter="url(#dark-soft-glow)">
+        <animate attributeName="x" values="527;527;539;551;563;575;587;599;611;623;635;647;659;671;683;695;695" keyTimes="0;0.02;0.025;0.03;0.035;0.04;0.045;0.05;0.055;0.06;0.065;0.07;0.075;0.08;0.085;0.09;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.201;0.202;0.375;0.397;1" dur="16s" repeatCount="indefinite"/>
+      <text x="527" y="240" clip-path="url(#right-phrase-clip-1)" fill="#FFFFFF" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="18.5" font-weight="700">Full Stack Developer</text>
+      <rect x="527" y="223" width="2.5" height="18" fill="#22D3EE" filter="url(#dark-soft-glow)">
+        <animate attributeName="x" values="527;527;539;551;563;575;587;599;611;623;635;647;659;671;683;695;707;719;731;743;755;767;767" keyTimes="0;0.22;0.225;0.23;0.235;0.24;0.245;0.25;0.255;0.26;0.265;0.27;0.275;0.28;0.285;0.29;0.295;0.30;0.305;0.31;0.315;0.32;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.401;0.402;0.575;0.597;1" dur="16s" repeatCount="indefinite"/>
+      <text x="527" y="240" clip-path="url(#right-phrase-clip-2)" fill="#FFFFFF" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="18.5" font-weight="700">GenAI Builder</text>
+      <rect x="527" y="223" width="2.5" height="18" fill="#22D3EE" filter="url(#dark-soft-glow)">
+        <animate attributeName="x" values="527;527;539;551;563;575;587;599;611;623;635;647;659;671;683;683" keyTimes="0;0.42;0.425;0.43;0.435;0.44;0.445;0.45;0.455;0.46;0.465;0.47;0.475;0.48;0.485;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.601;0.602;0.775;0.797;1" dur="16s" repeatCount="indefinite"/>
+      <text x="527" y="240" clip-path="url(#right-phrase-clip-3)" fill="#FFFFFF" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="18.5" font-weight="700">Agentic AI Architect</text>
+      <rect x="527" y="223" width="2.5" height="18" fill="#22D3EE" filter="url(#dark-soft-glow)">
+        <animate attributeName="x" values="527;527;539;551;563;575;587;599;611;623;635;647;659;671;683;695;707;719;731;743;755;767;767" keyTimes="0;0.62;0.625;0.63;0.635;0.64;0.645;0.65;0.655;0.66;0.665;0.67;0.675;0.68;0.685;0.69;0.695;0.70;0.705;0.71;0.715;0.72;1" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <line x1="508" y1="255" x2="1132" y2="255" stroke="#FFFFFF" stroke-opacity="0.08"/>
+
+    <g opacity="1">
+      <circle cx="511" cy="290" r="2.2" fill="#22D3EE" filter="url(#dark-soft-glow)"/>
+      <text x="523" y="293.5" fill="#64748B" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9.5" font-weight="700" letter-spacing="1.15">AVAILABLE</text>
+      <text x="667" y="293.5" fill="#F8FAFC" font-family="Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12.5" font-weight="500">Open source, Freelance, Long-term collaboration</text>
+    </g>
+    <g opacity="1">
+      <circle cx="511" cy="320" r="2.2" fill="#7C3AED" filter="url(#dark-soft-glow)"/>
+      <text x="523" y="323.5" fill="#64748B" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9.5" font-weight="700" letter-spacing="1.15">EXPERIENCE</text>
+      <text x="667" y="323.5" fill="#F8FAFC" font-family="Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12.5" font-weight="500">KPMG (Full-Stack) · Tech Mahindra (Data Science)</text>
+    </g>
+    <g opacity="1">
+      <circle cx="511" cy="350" r="2.2" fill="#22D3EE" filter="url(#dark-soft-glow)"/>
+      <text x="523" y="353.5" fill="#64748B" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9.5" font-weight="700" letter-spacing="1.15">EDUCATION</text>
+      <text x="667" y="353.5" fill="#F8FAFC" font-family="Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12.5" font-weight="500">Indian Institute of Technology, Madras (BS Data Science &amp; AI)</text>
+    </g>
+    <g opacity="1">
+      <circle cx="511" cy="380" r="2.2" fill="#7C3AED" filter="url(#dark-soft-glow)"/>
+      <text x="523" y="383.5" fill="#64748B" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9.5" font-weight="700" letter-spacing="1.15">LOCATION</text>
+      <text x="667" y="383.5" fill="#F8FAFC" font-family="Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12.5" font-weight="500">Vrindavan, Uttar Pradesh, India</text>
+    </g>
+    <g opacity="1">
+      <circle cx="511" cy="410" r="2.2" fill="#22D3EE" filter="url(#dark-soft-glow)"/>
+      <text x="523" y="413.5" fill="#64748B" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9.5" font-weight="700" letter-spacing="1.15">LANGUAGES</text>
+      <text x="667" y="413.5" fill="#F8FAFC" font-family="Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12.5" font-weight="500">English, Hindi</text>
+    </g>
+
+    <line x1="508" y1="440" x2="1132" y2="440" stroke="#FFFFFF" stroke-opacity="0.08"/>
+
+    <text x="508" y="460" fill="#64748B" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9.5" font-weight="700" letter-spacing="1.2">› ABOUT ME</text>
+    <text x="508" y="485" fill="#E2E8F0" font-family="Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13.5" font-weight="400" line-height="1.7">
+      <tspan x="508" dy="0">I bridge AI research with real-world engineering to build scalable, intelligent products.</tspan>
+      <tspan x="508" dy="26">Expert in GenAI, LLMs, and automation, with Linux &amp; Ethical Hacking for secure systems.</tspan>
+    </text>
+
+    <line x1="508" y1="525" x2="1132" y2="525" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <circle cx="511" cy="555" r="3.2" fill="#10B981" filter="url(#dark-soft-glow)">
+      <animate attributeName="r" values="2.7;4;2.7" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.65;1;0.65" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="523" y="559" fill="#94A3B8" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="10" font-weight="600" letter-spacing="1.25">›_ Let's build the future of AI, one agent at a time.</text>
+    <text x="1129" y="559" text-anchor="end" fill="#64748B" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9.5" letter-spacing="1">AGENT / 60</text>
+  </g>
+
+  <g clip-path="url(#dark-outer-clip)" pointer-events="none">
+    <path d="M -360 0 L -130 0 L 150 610 L -80 610 Z" fill="url(#dark-reflection)" opacity="0.45"><animateTransform attributeName="transform" type="translate" from="0 0" to="1700 0" dur="13s" repeatCount="indefinite"/></path>
+    <rect x="0" y="-2" width="1180" height="1.2" fill="url(#dark-scanline)" opacity="0.25"><animate attributeName="y" values="-2;612;-2" keyTimes="0;0.92;1" dur="7s" repeatCount="indefinite"/></rect>
+  </g>
+  <rect x="1" y="1" width="1178" height="608" rx="30" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
+</svg>
+    
 ![Tech Stack](assets/tech-stack.svg)
 
 
