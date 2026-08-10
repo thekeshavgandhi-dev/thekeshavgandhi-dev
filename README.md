@@ -41,7 +41,7 @@
 
 
 
-![About Me](assets/about-me.svg)
+![About Me](about-me.svg)
 ![Tech Stack](assets/tech-stack.svg)
 
 
