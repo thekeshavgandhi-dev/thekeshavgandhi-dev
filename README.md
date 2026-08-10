@@ -41,26 +41,7 @@
 
 
 
-# 👨‍💻 About Me
-
-```yaml
-Name: Keshav Gandhi
-Role: Full-Stack Developer & AI Engineer
-Location: India 🇮🇳
-Company: Techarvel Ltd
-Mission: Building impactful AI & SaaS products
-
-Currently Building:
-  - AI SaaS Products
-  - Startup Ecosystem
-  - Full-Stack Applications
-
-Learning:
-  - Advanced AI Engineering
-  - System Design
-  - Cloud Architecture
-  - Machine Learning
-````
+![About Me](assets/about-me.svg)
 ![Tech Stack](assets/tech-stack.svg)
 
 
