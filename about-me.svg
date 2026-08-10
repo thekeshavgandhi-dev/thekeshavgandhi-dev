@@ -193,7 +193,7 @@
         <!-- ================================================ -->
          <g id="user-avatar-placeholder">
             <!-- 🔥 Changed Size to 320x320 (Diameter of r=160 circle), X to -160, Y to -160. No extra circles added! -->
-            <image x="-160" y="-160" width="320" height="380" clip-path="url(#avatar-mask)" href="/assets/profile-pic.png" preserveAspectRatio="xMidYMid slice" />
+            <image x="-160" y="-160" width="320" height="380" clip-path="url(#avatar-mask)" href="assets/profile-pic.png" preserveAspectRatio="xMidYMid slice" />
         </g>
         <!-- ================================================ -->
         <!-- 🔥 END OF IMAGE ZONE -->
