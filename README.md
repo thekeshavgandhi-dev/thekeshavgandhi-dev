@@ -49,7 +49,6 @@
   <a href="https://stripe.com/thekeshavgandhi"><img src="https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" /></a>
   <a href="https://producthunt.com/@thekeshavgandhi"><img src="https://img.shields.io/badge/Product_Hunt-DA552F?style=for-the-badge&logo=producthunt&logoColor=white" alt="Product Hunt" /></a>
 </p>
-#About me
 
  ![About Me](about-me.svg)   
 ![Tech Stack](assets/tech-stack.svg)
