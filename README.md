@@ -4,13 +4,13 @@
 <!-- 📊 STATS ROW -->
 <p align="center">
   <a href="https://github.com/thekeshavgandhi-dev">
-    <img src="https://komarev.com/ghpvc/?username=thekeshavgandhi-dev&label=PROFILE%20VIEWS&color=F90001&style=for-the-badge" alt="Profile views" />
+    <img src="https://komarev.com/ghpvc/?username=thekeshavgandhi-dev&label=PROFILE%20VIEWS&color=0A66C2&style=for-the-badge" alt="Profile views" />
   </a>
   <a href="https://github.com/yourusername?tab=followers">
-    <img src="https://img.shields.io/github/followers/thekeshavgandhi-dev?label=FOLLOWERS&style=for-the-badge&color=F90001&logo=github&logoColor=white" alt="GitHub followers" />
+    <img src="https://img.shields.io/github/followers/thekeshavgandhi-dev?label=FOLLOWERS&style=for-the-badge&color=0A66C2&logo=github&logoColor=white" alt="GitHub followers" />
   </a>
   <a href="https://github.com/yourusername">
-    <img src="https://img.shields.io/github/stars/thekeshavgandhi-dev?affiliations=OWNER&label=TOTAL%20STARS&style=for-the-badge&color=F90001&logo=github&logoColor=white" alt="Total stars" />
+    <img src="https://img.shields.io/github/stars/thekeshavgandhi-dev?affiliations=OWNER&label=TOTAL%20STARS&style=for-the-badge&color=0A66C2&logo=github&logoColor=white" alt="Total stars" />
   </a>
 </p>
 
