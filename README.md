@@ -1,47 +1,54 @@
 <div align="center" style="margin:0; padding:0; line-height:0;">
   <img src="GIF-Banner.png" alt="Bannerr" width="100%">
 </div>
+<!-- 📊 STATS ROW -->
 <p align="center">
-  <a href="https://github.com/AbdullahBakir97"><img src="https://komarev.com/ghpvc/?username=AbdullahBakir97&label=PROFILE%20VIEWS&color=F90001&style=for-the-badge&v=20260806" alt="Profile views" /></a>
-  <a href="https://github.com/AbdullahBakir97?tab=followers"><img src="https://img.shields.io/github/followers/AbdullahBakir97?label=FOLLOWERS&style=for-the-badge&color=F90001&logo=github&logoColor=white&v=20260806" alt="GitHub followers" /></a>
-  <a href="https://github.com/AbdullahBakir97"><img src="https://img.shields.io/github/stars/AbdullahBakir97?affiliations=OWNER&label=TOTAL%20STARS&style=for-the-badge&color=F90001&logo=github&logoColor=white&v=20260806" alt="Total stars" /></a>
-  <a href="https://codetime.dev"><img src="https://img.shields.io/endpoint?style=for-the-badge&color=F90001&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D23432%26project%3D%26in=12096000000&v=20260806" alt="CodeTime hours" /></a>
-</p>
-
-<!-- 🏷️ PROFESSIONAL BADGES — contact / availability row -->
-[![X](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/thekeshavgandhi)
-[![Instagram - Dev](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/thekesahvgandhi.dev)
-<p align="center">
-  <a href="mailto:abdullah.bakir.1997@gmail.com"><img src="https://img.shields.io/badge/EMAIL-D44638?style=for-the-badge&logo=gmail&logoColor=white&v=20260806" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/abdullah-bakir-809065273/"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&v=20260806" alt="LinkedIn" /></a>
-  <a href="https://t.me/BlackSea0011"><img src="https://img.shields.io/badge/TELEGRAM-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&v=20260806" alt="Telegram" /></a>
-  <a href="https://github.com/AbdullahBakir97"><img src="https://img.shields.io/badge/Open_to_Work-00C853?style=for-the-badge&logo=googlechat&logoColor=white&v=20260806" alt="Open to work" /></a>
-</p>
-
-<div align="center">
-  <img src="./assets/redline.gif" width="100%" alt=""/>
-</div>
-<p align="center">
-  <a href="https://thekeshavgandhi.dev">
-    <img src="https://img.shields.io/badge/Portfolio-Visit-blue?style=for-the-badge">
+  <a href="https://github.com/thekeshavgandhi-dev">
+    <img src="https://komarev.com/ghpvc/?username=thekeshavgandhi-dev&label=PROFILE%20VIEWS&color=F90001&style=for-the-badge" alt="Profile views" />
   </a>
-
-  <a href="https://linkedin.com/in/YOUR-LINKEDIN">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge">
+  <a href="https://github.com/yourusername?tab=followers">
+    <img src="https://img.shields.io/github/followers/thekeshavgandhi-dev?label=FOLLOWERS&style=for-the-badge&color=F90001&logo=github&logoColor=white" alt="GitHub followers" />
   </a>
-
-  <a href="https://youtube.com/@YOURCHANNEL">
-    <img src="https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge">
-  </a>
-
-  <a href="https://instagram.com/thekeshavgandhi.dev">
-    <img src="https://img.shields.io/badge/Instagram-Follow-purple?style=for-the-badge">
+  <a href="https://github.com/yourusername">
+    <img src="https://img.shields.io/github/stars/thekeshavgandhi-dev?affiliations=OWNER&label=TOTAL%20STARS&style=for-the-badge&color=F90001&logo=github&logoColor=white" alt="Total stars" />
   </a>
 </p>
 
----
+<!-- ============ ROW 1: SOCIAL (Long Line) ============ -->
+<p align="center">
+  <a href="https://linkedin.com/in/thekeshavgandhi"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://x.com/thekeshavgandhi"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://instagram.com/thekeshavgandhi.dev"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  <a href="https://threads.net/@thekeshavgandhi.dev"><img src="https://img.shields.io/badge/Threads-000000?style=for-the-badge&logo=threads&logoColor=white" alt="Threads" /></a>
+  <a href="https://youtube.com/@thekeshavgandhi.dev"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" /></a>
+  <a href="https://peerlist.io/thekeshavgandhi"><img src="https://img.shields.io/badge/Peerlist-1A3B5D?style=for-the-badge&logo=peerlist&logoColor=white" alt="Peerlist" /></a>
+</p>
 
+<!-- ============ ROW 2: CONNECT (Email, Chats, Teams) ============ -->
+<p align="center">
+  <a href="mailto:thekeshavgandhi.dev@gmail.com"><img src="https://img.shields.io/badge/Email-D44638?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://discord.gg/thekeshavgandhi"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://t.me/thekeshavgandhi"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" /></a>
+  <a href="https://teams.microsoft.com/thekeshavgandhi"><img src="https://img.shields.io/badge/Microsoft_Teams-6264A7?style=for-the-badge&logo=microsoftteams&logoColor=white" alt="Teams" /></a>
+</p>
 
+<!-- ============ ROW 3: DEV & BLOGGING ECOSYSTEM ============ -->
+<p align="center">
+  <a href="https://kaggle.com/thekeshavgandhi"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" /></a>
+  <a href="https://dev.to/thekeshavgandhi-dev"><img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" alt="Dev.to" /></a>
+  <a href="https://medium.com/thekeshavgandhi.dev"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
+  <a href="https://hashnode.com/thekeshavgandhi-dev"><img src="https://img.shields.io/badge/Hashnode-2962FF?style=for-the-badge&logo=hashnode&logoColor=white" alt="Hashnode" /></a>
+  <a href="https://stackoverflow.com/users/thekeshavgandhi.dev"><img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" alt="Stack Overflow" /></a>
+  <a href="https://yourblog.com/thekeshavgandhi.dev"><img src="https://img.shields.io/badge/RSS-FFA500?style=for-the-badge&logo=rss&logoColor=white" alt="RSS" /></a>
+</p>
+
+<!-- ============ ROW 4: WORK / SUPPORT (Long Line) ============ -->
+<p align="center">
+  <a href="https://thekeshavgandhi.is-a.dev"><img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=aboutdotme&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://github.com/sponsors/thekeshavgandhi-dev"><img src="https://img.shields.io/badge/Sponsor-30363D?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor" /></a>
+  <a href="https://stripe.com/thekeshavgandhi"><img src="https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" /></a>
+  <a href="https://producthunt.com/@thekeshavgandhi"><img src="https://img.shields.io/badge/Product_Hunt-DA552F?style=for-the-badge&logo=producthunt&logoColor=white" alt="Product Hunt" /></a>
+</p>
 #About me
 
  ![About Me](about-me.svg)   
