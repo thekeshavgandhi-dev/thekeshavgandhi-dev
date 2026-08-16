@@ -17,14 +17,14 @@
     </linearGradient>
     <linearGradient id="dark-panel-header" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#111C31" stop-opacity="0.58"/>
-      <stop offset="0.55" stop-color="#00A3FF" stop-opacity="0.045"/>
+      <stop offset="0.55" stop-color="#0A66C2" stop-opacity="0.045"/>
       <stop offset="1" stop-color="#00E5FF" stop-opacity="0.035"/>
     </linearGradient>
     
     <linearGradient id="dark-name-glow" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="0.5" stop-color="#00E5FF"/>
-      <stop offset="1" stop-color="#00A3FF"/>
+      <stop offset="0.5" stop-color="#0A66C2"/>
+      <stop offset="1" stop-color="#00E5FF"/>
       <animate attributeName="x1" values="0;0.5;0" dur="6s" repeatCount="indefinite"/>
     </linearGradient>
 
@@ -35,10 +35,10 @@
     </linearGradient>
 
     <radialGradient id="dark-glow-blue">
-      <stop offset="0" stop-color="#00A3FF" stop-opacity="0.28">
+      <stop offset="0" stop-color="#0A66C2" stop-opacity="0.28">
         <animate attributeName="stop-opacity" values="0.2016;0.28;0.2016" dur="10s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="1" stop-color="#00A3FF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0A66C2" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="dark-glow-cyan">
       <stop offset="0" stop-color="#00E5FF" stop-opacity="0.28">
@@ -69,12 +69,12 @@
     </filter>
     <linearGradient id="dark-scanline" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
-      <stop offset="0.48" stop-color="#00E5FF" stop-opacity="0.65"/>
-      <stop offset="1" stop-color="#00A3FF" stop-opacity="0"/>
+      <stop offset="0.48" stop-color="#0A66C2" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="dark-border-gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1180" y2="610">
-      <stop offset="0" stop-color="#00A3FF" stop-opacity="0"/>
-      <stop offset="0.38" stop-color="#00A3FF" stop-opacity="0.68"/>
+      <stop offset="0" stop-color="#0A66C2" stop-opacity="0"/>
+      <stop offset="0.38" stop-color="#0A66C2" stop-opacity="0.68"/>
       <stop offset="0.63" stop-color="#00E5FF" stop-opacity="0.78"/>
       <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
       <animateTransform attributeName="gradientTransform" type="rotate" from="0 590 305" to="360 590 305" dur="16s" repeatCount="indefinite"/>
