@@ -61,19 +61,18 @@
   <img src="./assets/blueline.png" width="100%" alt=""/>
 </div>
 <div align="center">
-  <a href="https://github.com/thekeshavgandhi-dev">
-   <img src="https://github-readme-activity-graph.vercel.app/graph?username=thekeshavgandhi-dev&custom_title=thekeshavgandhi-dev's%20GitHub%20Activity%20Graph&bg_color=0D1117&color=F0F6FC&line=0A66C2&point=00B7FF&area_color=0A66C2&title_color=00B7FF&area=true" width="100%" alt="Activity Graph"/>
-  </a>
-</div>
-<img src="assets/blueline.png" alt="Gradient Line" width="100%">
-<div align="center"><img 
-    src="https://streak-stats.demolab.com?user=thekeshavgandhi-dev&theme=black-ice&hide_border=true&background=0F172A"
+  <img 
+    src="https://streak-stats.demolab.com?user=thekeshavgandhi-dev&theme=black-ice&hide_border=true&card_width=530&card_height=220&background=0F172A&fire=EB5454"
     width="55%"
+    align="left"
+    align="middle"
     alt="GitHub Streak"
-  />&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img 
     src="./assets/cartoon.png"
     width="32%"
+    align="middle"
+    align="right"
     alt="Coding Cartoon"
   />
 </div>
@@ -82,4 +81,10 @@
   <source media="(prefers-color-scheme: dark)" srcset="github-contribution-animation-dark.svg" />
   <img alt="thekeshavgandhi-dev's Contribution Animation" src="github-contribution-animation.svg" />
 </picture>
+<img src="assets/blueline.png" alt="Gradient Line" width="100%">
+<div align="center">
+  <a href="https://github.com/thekeshavgandhi-dev">
+   <img src="https://github-readme-activity-graph.vercel.app/graph?username=thekeshavgandhi-dev&custom_title=thekeshavgandhi-dev's%20GitHub%20Activity%20Graph&bg_color=0D1117&color=F0F6FC&line=0A66C2&point=00B7FF&area_color=0A66C2&title_color=00B7FF&area=true" width="100%" alt="Activity Graph"/>
+  </a>
+</div>
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A66C2,100:0A66C2&height=180&section=footer&text=Thanks%20for%20visiting!&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=70&desc=Let's%20build%20something%20great%20together&descAlignY=92&descSize=14&descColor=0A66C2&reversal=true" width="100%" alt="Thanks for visiting" />
