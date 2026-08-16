@@ -60,11 +60,15 @@
     <img src="https://img.shields.io/badge/GITHUB-STATS-181717?style=flat-square&color=0A66C2&logo=github&logoColor=0A66C2&v=20260816" alt="GitHub Stats" width="200">
   <img src="./assets/blueline.png" width="100%" alt=""/>
 </div>
-
+<div align="center">
+  <a href="https://github.com/thekeshavgandhi-dev">
+   <img src="https://github-readme-activity-graph.vercel.app/graph?username=thekeshavgandhi-dev&custom_title=thekeshavgandhi-dev's%20GitHub%20Activity%20Graph&bg_color=0D1117&color=F0F6FC&line=0A66C2&point=00B7FF&area_color=0A66C2&title_color=00B7FF&area=true" width="100%" alt="Activity Graph"/>
+  </a>
+</div>
 
 <div align="center">
   <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=thekeshavgandhi-dev&theme=black-ice&hide_border=true&background=0F172A" width="80%" alt="GitHub Streak" />
+    <img src="https://streak-stats.demolab.com?user=thekeshavgandhi-dev&theme=black-ice&hide_border=true&background=#0F172AFF" width="80%" alt="GitHub Streak" />
   </a>
 </div>
 ---
