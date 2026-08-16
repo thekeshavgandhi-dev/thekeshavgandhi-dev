@@ -50,11 +50,16 @@
   <a href="https://stripe.com/thekeshavgandhi"><img src="https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" /></a>
   <a href="https://producthunt.com/@thekeshavgandhi"><img src="https://img.shields.io/badge/Product_Hunt-DA552F?style=for-the-badge&logo=producthunt&logoColor=white" alt="Product Hunt" /></a>
 </p>
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" alt="Bannerr" width="100%">
+<img src="assets/gradient-line.png" alt="Gradient Line" width="100%">
 
- ![About Me](about-me.svg)   
+ ![About Me](about-me.svg)
+ <img src="assets/blueline.png" alt="Gradient Line" width="100%">
 ![Tech Stack](assets/tech-stack.svg)
-
+ <div align="center">
+    <img src="assets/blueline.png" alt="Gradient Line" width="100%">
+    <img src="https://img.shields.io/badge/GITHUB-STATS-181717?style=flat-square&color=0A66C2&logo=github&logoColor=0A66C2&v=20260816" alt="GitHub Stats" width="200">
+  <img src="./assets/blueline.png" width="100%" alt=""/>
+</div>
 
 
 <div align="center">
