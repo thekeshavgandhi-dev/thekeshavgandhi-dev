@@ -1,5 +1,5 @@
 <div align="center" style="margin:0; padding:0; line-height:0;">
-  <img src="GIF-Banner.png" alt="Bannerr" width="100%">
+  <img src="assets/GIF-Banner.png" alt="Bannerr" width="100%">
 </div>
 <!-- 📊 STATS ROW -->
 <p align="center">
@@ -52,7 +52,7 @@
 </p>
 <img src="assets/gradient-line.png" alt="Gradient Line" width="100%">
 
- ![About Me](about-me.svg)
+ ![About Me](assets/about-me.svg)
  <div align="center">
    <img src="assets/blueline.png" alt="Gradient Line" width="100%">
    <img src="https://img.shields.io/badge/TECH-STACK-181717?style=flat-square&color=0A66C2&logo=three.js&logoColor=0A66C2&v=20260816" alt="Tech Staack" width="200">
