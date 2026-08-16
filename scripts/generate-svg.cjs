@@ -241,7 +241,7 @@ async function main() {
     const svgLight = buildBubbleShooterSVG({
       data: normalized,
       width: 1200,
-      height: 340,
+      height: 440,
       theme: { shooter: lightTheme.shooter, explosion: lightTheme.explosion },
       speedMul: 1,
       noContributionColor: lightTheme.noContribution,
