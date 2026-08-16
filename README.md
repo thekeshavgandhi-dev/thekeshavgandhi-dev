@@ -53,7 +53,12 @@
 <img src="assets/gradient-line.png" alt="Gradient Line" width="100%">
 
  ![About Me](about-me.svg)
- <img src="assets/blueline.png" alt="Gradient Line" width="100%">
+ <div align="center">
+   <img src="assets/blueline.png" alt="Gradient Line" width="100%">
+   <img src="https://img.shields.io/badge/TECH-STACK-181717?style=flat-square&color=0A66C2&logo=three.js&logoColor=0A66C2&v=20260816" alt="Tech Staack" width="200">
+   <img src="assets/blueline.png" alt="Gradient Line" width="100%">
+ </div>
+ 
 ![Tech Stack](assets/tech-stack.svg)
  <div align="center">
     <img src="assets/blueline.png" alt="Gradient Line" width="100%">
