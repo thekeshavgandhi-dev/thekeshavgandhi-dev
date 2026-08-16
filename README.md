@@ -14,6 +14,7 @@
   </a>
 </p>
 
+
 <!-- ============ ROW 1: SOCIAL (Long Line) ============ -->
 <p align="center">
   <a href="https://linkedin.com/in/thekeshavgandhi"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -49,6 +50,7 @@
   <a href="https://stripe.com/thekeshavgandhi"><img src="https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" /></a>
   <a href="https://producthunt.com/@thekeshavgandhi"><img src="https://img.shields.io/badge/Product_Hunt-DA552F?style=for-the-badge&logo=producthunt&logoColor=white" alt="Product Hunt" /></a>
 </p>
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" alt="Bannerr" width="100%">
 
  ![About Me](about-me.svg)   
 ![Tech Stack](assets/tech-stack.svg)
