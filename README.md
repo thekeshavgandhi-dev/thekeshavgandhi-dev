@@ -67,7 +67,7 @@
 </div>
 <div align="center">
   <img 
-    src="https://streak-stats.demolab.com?user=thekeshavgandhi-dev&theme=black-ice&hide_border=true&card_width=530&card_height=220&background=0F172A&fire=EB5454"
+    src="profile/streak.svg"
     width="55%"
     align="left"
     align="middle"
