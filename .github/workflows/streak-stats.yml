@@ -21,7 +21,7 @@ jobs:
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
           options: user=${{ github.repository_owner }}&theme=black-ice&disable_animations=false&hide_border=true&card_width=530&card_height=220&background=0F172A&fire=EB5454
-          path: profile/streak.svg
+          path: assets/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit streak stats
