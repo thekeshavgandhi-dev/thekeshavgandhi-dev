@@ -83,8 +83,8 @@
 </div>
 <img src="assets/blueline.png" alt="Gradient Line" width="100%">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="thekeshavgandhi-dev-contribution-animation-dark.svg" />
-  <img alt="thekeshavgandhi-dev's Contribution Animation" src="thekeshavgandhi-dev-contribution-animation.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/thekeshavgandhi-dev-contribution-animation-dark.svg" />
+  <img alt="thekeshavgandhi-dev's Contribution Animation" src="assets/thekeshavgandhi-dev-contribution-animation.svg" />
 </picture>
 <img src="assets/blueline.png" alt="Gradient Line" width="100%">
 <div align="center">
