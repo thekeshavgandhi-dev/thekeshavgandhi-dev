@@ -142,7 +142,7 @@
      ========================================================== -->
 <picture>
     <!-- Dark mode version -->
-    < img srcset="assets/thekeshavgandhi-dev-contribution-animation.svg" />
+    <img src="assets/thekeshavgandhi-dev-contribution-animation.svg" />
     <!-- Light mode version (fallback) -->
     <img alt="thekeshavgandhi-dev's Contribution Animation" src="assets/thekeshavgandhi-dev-contribution-animation.svg" />
 </picture>
