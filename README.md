@@ -37,7 +37,7 @@
 </p>
 
 <!-- ==========================================================
-     SECTION 3: SOCIAL LINKS (Row 1)
+     SECTION 3: SOCIAL LINKS (Row-1)
      Professional social platforms where I'm active.
      ========================================================== -->
 <p align="center">
