@@ -75,7 +75,7 @@
 </p>
 
 <!-- ==========================================================
-     SECTION 6: WORK & SUPPORT (Row 4)
+     SECTION 6: WORK & SUPPORT (Row-4)
      Portfolio, sponsorship, payment, and product discovery.
      ========================================================== -->
 <p align="center">
