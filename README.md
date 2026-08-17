@@ -142,9 +142,8 @@
      ========================================================== -->
 <picture>
     <!-- Dark mode version -->
-    <img src="assets/thekeshavgandhi-dev-contribution-animation.svg" />
-    <!-- Light mode version (fallback) -->
     <img alt="thekeshavgandhi-dev's Contribution Animation" src="assets/thekeshavgandhi-dev-contribution-animation.svg" />
+    <!-- Light mode version (fallback) -->
 </picture>
 
 <!-- Decorative divider -->
