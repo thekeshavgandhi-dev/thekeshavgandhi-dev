@@ -118,8 +118,8 @@
     <img
     src="assets/streak.svg"
     width="55%"
-    align="left"
     align="middle"
+    align="left"
     alt="GitHub Streak"
     />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <!-- Coding cartoon illustration (right) -->
