@@ -61,7 +61,7 @@
 </p>
 
 <!-- ==========================================================
-     SECTION 5: DEV & BLOGGING ECOSYSTEM (Row 3)
+     SECTION 5: DEV & BLOGGING ECOSYSTEM (Row-3)
      Platforms where I share code, write articles, and engage
      with the developer community.
      ========================================================== -->
