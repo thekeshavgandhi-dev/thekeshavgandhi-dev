@@ -22,18 +22,9 @@
      All badges use the brand blue (#0A66C2) for consistency.
      ========================================================== -->
 <p align="center">
-    <!-- Profile view counter from komarev.com -->
-    <a href="https://github.com/thekeshavgandhi-dev">
-        <img src="https://komarev.com/ghpvc/?username=thekeshavgandhi-dev&label=PROFILE%20VIEWS&color=0A66C2&style=for-the-badge" alt="Profile views" />
-    </a>
-    <!-- GitHub followers count -->
-    <a href="https://github.com/yourusername?tab=followers">
-        <img src="https://img.shields.io/github/followers/thekeshavgandhi-dev?label=FOLLOWERS&style=for-the-badge&color=0A66C2&logo=github&logoColor=white" alt="GitHub followers" />
-    </a>
-    <!-- Total stars earned on repositories -->
-    <a href="https://github.com/yourusername">
-        <img src="https://img.shields.io/github/stars/thekeshavgandhi-dev?affiliations=OWNER&label=TOTAL%20STARS&style=for-the-badge&color=0A66C2&logo=github&logoColor=white" alt="Total stars" />
-    </a>
+      <img src="https://komarev.com/ghpvc/?username=thekeshavgandhi-dev&label=PROFILE%20VIEWS&color=0A66C2&style=for-the-badge" alt="Profile views" />
+      <img src="https://img.shields.io/github/followers/thekeshavgandhi-dev?label=FOLLOWERS&style=for-the-badge&color=0A66C2&logo=github&logoColor=white" alt="GitHub followers" />
+      <img src="https://img.shields.io/github/stars/thekeshavgandhi-dev?affiliations=OWNER&label=TOTAL%20STARS&style=for-the-badge&color=0A66C2&logo=github&logoColor=white" alt="Total stars" />
 </p>
 
 <!-- ==========================================================
