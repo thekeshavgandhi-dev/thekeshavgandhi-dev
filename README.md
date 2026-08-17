@@ -121,7 +121,7 @@
     align="middle"
     align="left"
     alt="GitHub Streak"
-    />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <!-- Coding cartoon illustration (right) -->
     <img
     src="./assets/cartoon.png"
