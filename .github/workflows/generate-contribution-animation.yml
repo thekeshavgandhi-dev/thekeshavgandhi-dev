@@ -35,6 +35,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONTRIBUTION_USERNAME: ${{ github.repository_owner }}
 
+      # 🛑 CRITICAL CHANGE: REPLACE THE 'uses' STEP WITH THIS 'run' BLOCK
       - name: Commit and push SVG
         run: |
           git config --global user.name 'github-actions[bot]'
