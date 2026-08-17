@@ -67,7 +67,7 @@
 </div>
 <div align="center">
   <img 
-    src="profile/streak.svg"
+    src="assets/streak.svg"
     width="55%"
     align="left"
     align="middle"
