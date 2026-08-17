@@ -7,6 +7,7 @@
   THEME: Blue (#0A66C2) accent with dark background
 ============================================================
 -->
+
 <!-- ==========================================================
      SECTION 1: HERO BANNER
      Displays the main profile banner image.
