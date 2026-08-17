@@ -7,7 +7,6 @@ on:
   push:
     branches: [ main ]
 
-# 1. Prevent multiple runs from overlapping on the same branch
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -36,13 +35,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONTRIBUTION_USERNAME: ${{ github.repository_owner }}
 
-      # 2. Pull the remote changes and replay your local changes on top.
-      # This fixes the "non-fast-forward" error.
-      - name: Pull latest remote changes
-        run: git pull --rebase
-
       - name: Commit and push SVG
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore: update contribution animation [skip ci]'
           file_pattern: "assets/*-contribution-animation*.svg"
+          pull: 'true'
