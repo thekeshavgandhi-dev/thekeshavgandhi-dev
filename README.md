@@ -50,7 +50,7 @@
 </p>
 
 <!-- ==========================================================
-     SECTION 4: CONNECT LINKS (Row 2)
+     SECTION 4: CONNECT LINKS (Row-2)
      Direct communication channels: Email, Discord, Telegram, Teams.
      ========================================================== -->
 <p align="center">
