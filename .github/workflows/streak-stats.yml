@@ -20,7 +20,7 @@ jobs:
       - name: Generate streak stats
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
-          options: user=${{ github.repository_owner }}&theme=default&disable_animations=true
+          options: user=${{ github.repository_owner }}&theme=black-ice&hide_border=true&card_width=530&card_height=220&background=0F172A&fire=EB5454
           path: profile/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
