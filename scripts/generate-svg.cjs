@@ -261,7 +261,7 @@ async function main() {
     });
 
     const outputs = [
-      { filename: `${username}-contribution-animation-dark.svg`, content: svgDark },
+      { filename: `${username}-contribution-animation.svg`, content: svgDark },
     ];
     const outputDir = process.env.OUTPUT_DIR || '.';
       if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
@@ -272,7 +272,7 @@ async function main() {
 
   console.log('✅ Done. Embed in README (auto light/dark):');
   console.log('<picture>');
-  console.log(`  srcset="${username}-contribution-animation-dark.svg" />`);
+  console.log(`  srcset="${username}-contribution-animation.svg" />`);
   console.log(`  <img alt="Contribution Animation" src="${username}-contribution-animation.svg" />`);
   console.log('</picture>');
   } catch (error) {
