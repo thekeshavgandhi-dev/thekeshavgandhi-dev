@@ -272,7 +272,7 @@ async function main() {
 
   console.log('✅ Done. Embed in README (auto light/dark):');
   console.log('<picture>');
-  console.log(`  <source media="(prefers-color-scheme: dark)" srcset="${username}-contribution-animation-dark.svg" />`);
+  console.log(`  srcset="${username}-contribution-animation-dark.svg" />`);
   console.log(`  <img alt="Contribution Animation" src="${username}-contribution-animation.svg" />`);
   console.log('</picture>');
   } catch (error) {
