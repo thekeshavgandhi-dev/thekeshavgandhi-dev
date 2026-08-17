@@ -36,8 +36,10 @@ jobs:
           CONTRIBUTION_USERNAME: ${{ github.repository_owner }}
 
       - name: Commit and push SVG
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'chore: update contribution animation [skip ci]'
-          file_pattern: "assets/*-contribution-animation*.svg"
-          pull: 'true'
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add assets/*-contribution-animation*.svg
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update contribution animation [skip ci]"
+          git pull --rebase
+          git push
