@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const https = require('https');
-const path = require('path');  
 
 // Bubble-shooter animated SVG generator (SMIL-based), background-free
 
@@ -228,21 +227,21 @@ async function main() {
 
     // Themes for light and dark
     const lightTheme = {
-      shooter: '#ff0000', // GitHub green (light)
+      shooter: '#216e39', // GitHub green (light)
       explosion: '#ff6b35',
       noContribution: '#ebedf0',
     };
     const darkTheme = {
-      shooter: '#06b6d4', // GitHub green (dark)
-      explosion: '#ec4899',
-      noContribution: '#0b1124', // GitHub dark empty cell color
+      shooter: '#39d353', // GitHub green (dark)
+      explosion: '#ff9e64',
+      noContribution: '#161b22', // GitHub dark empty cell color
     };
 
-    console.log('🎨 Generating bubble-shoot er SVG (light)...');
+    console.log('🎨 Generating bubble-shooter SVG (light)...');
     const svgLight = buildBubbleShooterSVG({
       data: normalized,
       width: 1200,
-      height: 440,
+      height: 340,
       theme: { shooter: lightTheme.shooter, explosion: lightTheme.explosion },
       speedMul: 1,
       noContributionColor: lightTheme.noContribution,
@@ -261,18 +260,21 @@ async function main() {
     });
 
     const outputs = [
-      { filename: `${username}-contribution-animation.svg`, content: svgDark },
+      { filename: `${username}-contribution-animation.svg`, content: svgLight },
+      { filename: 'contribution-animation.svg', content: svgLight },
+      { filename: 'github-contribution-animation.svg', content: svgLight },
+      { filename: `${username}-contribution-animation-dark.svg`, content: svgDark },
+      { filename: 'contribution-animation-dark.svg', content: svgDark },
+      { filename: 'github-contribution-animation-dark.svg', content: svgDark },
     ];
-    const outputDir = process.env.OUTPUT_DIR || '.';
-      if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
     outputs.forEach(({ filename, content }) => {
-      fs.writeFileSync(path.join(outputDir, filename), content);
+      fs.writeFileSync(filename, content);
       console.log(`✅ Generated: ${filename}`);
     });
 
   console.log('✅ Done. Embed in README (auto light/dark):');
   console.log('<picture>');
-  console.log(`  srcset="${username}-contribution-animation.svg" />`);
+  console.log(`  <source media="(prefers-color-scheme: dark)" srcset="${username}-contribution-animation-dark.svg" />`);
   console.log(`  <img alt="Contribution Animation" src="${username}-contribution-animation.svg" />`);
   console.log('</picture>');
   } catch (error) {
