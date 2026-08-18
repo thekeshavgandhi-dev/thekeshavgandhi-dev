@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const https = require('https');
+const path = require('path');  
 
 // Bubble-shooter animated SVG generator (SMIL-based), background-free
 
@@ -267,8 +268,10 @@ async function main() {
       { filename: 'contribution-animation-dark.svg', content: svgDark },
       { filename: 'github-contribution-animation-dark.svg', content: svgDark },
     ];
+    const outputDir = process.env.OUTPUT_DIR || '.';
+      if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
     outputs.forEach(({ filename, content }) => {
-      fs.writeFileSync(filename, content);
+      fs.writeFileSync(path.join(outputDir, filename), content);
       console.log(`✅ Generated: ${filename}`);
     });
 
