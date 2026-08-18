@@ -261,9 +261,7 @@ async function main() {
     });
 
     const outputs = [
-      { filename: `${username}-contribution-animation.svg`, content: svgLight },
       { filename: 'github-contribution-animation.svg', content: svgLight },
-      { filename: `${username}-contribution-animation-dark.svg`, content: svgDark },
       { filename: 'github-contribution-animation-dark.svg', content: svgDark },
     ];
     const outputDir = process.env.OUTPUT_DIR || '.';
@@ -275,8 +273,8 @@ async function main() {
 
   console.log('✅ Done. Embed in README (auto light/dark):');
   console.log('<picture>');
-  console.log(`  <source media="(prefers-color-scheme: dark)" srcset="${username}-contribution-animation-dark.svg" />`);
-  console.log(`  <img alt="Contribution Animation" src="${username}-contribution-animation.svg" />`);
+  console.log(`  <source media="(prefers-color-scheme: dark)" srcset="github-contribution-animation-dark.svg" />`);
+  console.log(`  <img alt="Contribution Animation" src="github-contribution-animation.svg" />`);
   console.log('</picture>');
   } catch (error) {
     console.error('❌ Error generating animation:', error.message);
