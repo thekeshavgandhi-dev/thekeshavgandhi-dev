@@ -141,9 +141,8 @@
      Light mode / Dark mode aware via <picture> element.
      ========================================================== -->
 <picture>
-    <!-- Dark mode version -->
-    <img alt="thekeshavgandhi-dev's Contribution Animation" src="assets/thekeshavgandhi-dev-contribution-animation.svg" />
-    <!-- Light mode version (fallback) -->
+<source media=" (prefers-color-scheme: dark)" srcset="assets/github-contribution-animation-dark.svg" />
+<img alt="Contribution Animation" src="assets/github-contribution-animation.svg" />
 </picture>
 
 <!-- Decorative divider -->
