@@ -37,5 +37,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update contribution animation [skip ci]"
-          file_pattern: "assets/*-contribution-animation*.svg assets/contribution-animation*.svg assets/github-contribution-animation*.svg"
+          file_pattern: "assets/github-contribution-animation*.svg"
           # updated pattern to look inside assets/
