@@ -262,10 +262,8 @@ async function main() {
 
     const outputs = [
       { filename: `${username}-contribution-animation.svg`, content: svgLight },
-      { filename: 'contribution-animation.svg', content: svgLight },
       { filename: 'github-contribution-animation.svg', content: svgLight },
       { filename: `${username}-contribution-animation-dark.svg`, content: svgDark },
-      { filename: 'contribution-animation-dark.svg', content: svgDark },
       { filename: 'github-contribution-animation-dark.svg', content: svgDark },
     ];
     const outputDir = process.env.OUTPUT_DIR || '.';
