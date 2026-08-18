@@ -2,44 +2,40 @@ name: Generate Contribution Animation
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch: {}
+    - cron: '0 0 * * *' # Daily at 00:00 UTC
+  workflow_dispatch:
   push:
     branches: [ main ]
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
 permissions:
   contents: write
+
+concurrency:
+  group: generate-contribution-animation
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Generate animated SVG
+      - name: Generate animated SVGs
         run: node scripts/generate-svg.cjs
         env:
-          OUTPUT_DIR: assets
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONTRIBUTION_USERNAME: ${{ github.repository_owner }}
+          OUTPUT_DIR: assets                     # <-- added this line
 
-      - name: Commit and push SVG
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add assets/*-contribution-animation*.svg
-          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update contribution animation [skip ci]"
-          git pull --rebase
-          git push
+      - name: Commit and push updated SVGs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update contribution animation [skip ci]"
+          file_pattern: "assets/*-contribution-animation*.svg assets/contribution-animation*.svg assets/github-contribution-animation*.svg"
+          # updated pattern to look inside assets/
