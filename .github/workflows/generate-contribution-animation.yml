@@ -3,9 +3,9 @@ name: Generate Contribution Animation
 on:
   schedule:
     - cron: '0 0 * * *' # Daily at 00:00 UTC
-  workflow_dispatch:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: write
