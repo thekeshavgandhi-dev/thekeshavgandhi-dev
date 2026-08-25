@@ -154,11 +154,11 @@
      github-readme-activity-graph.vercel.app
      Shows commit, PR, and issue activity over time.
      ========================================================== -->
-<div align="center">
+<!-- <div align="center">
     <a href="https://github.com/thekeshavgandhi-dev">
         <img src="https://github-readme-activity-graph.vercel.app/graph?username=thekeshavgandhi-dev&custom_title=thekeshavgandhi-dev's%20GitHub%20Activity%20Graph&bg_color=0D1117&color=F0F6FC&line=0A66C2&point=00B7FF&area_color=0A66C2&title_color=00B7FF&area=true" width="100%" alt="Activity Graph" />
     </a>
-</div>
+</div> -->
 
 <!-- ==========================================================
      SECTION 13: FOOTER
