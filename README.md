@@ -97,7 +97,7 @@
 
 <!-- Tech stack SVG graphic -->
 <img src="assets/tech-stack.svg" alt="Tech Stack">
-
+<img src="assets/techd.svg" alt="Tech Stack">
 <!-- ==========================================================
      SECTION 9: GITHUB STATS HEADER
      Label for the GitHub statistics section.
