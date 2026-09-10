@@ -113,7 +113,7 @@
   </g>
   <path d="M374 34H706L724 52V72L706 90H374L356 72V52Z" fill="none" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1"/>
   <text x="540" y="61" font-size="25" font-weight="800" letter-spacing="5" fill="url(#hubText)" text-anchor="middle" filter="url(#glow)">TECH STACK</text>
-  <text x="540" y="83" font-size="9" letter-spacing="3" fill="#8ab6e6" text-anchor="middle" opacity="0.9">KESHAV GANDHI · ENGINEERING STACK</text>
+  <text x="540" y="83" font-size="9" letter-spacing="3" fill="#8ab6e6" text-anchor="middle" opacity="0.9">AI/ML Engineer | Full-Stack Developer</text>
   <g transform="translate(20,142)" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.55s" begin="0.08s" fill="freeze"/>
     <g filter="url(#card-shadow)">
