@@ -1,464 +1,1026 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1320" width="100%" role="img" aria-label="Keshav Gandhi Tech Stack">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1330" width="100%" role="img" aria-label="Keshav Gandhi Tech Stack" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <title>Keshav Gandhi - Tech Stack</title>
   <defs>
-    <filter id="bg-blur">
-      <feGaussianBlur stdDeviation="60"/>
-    </filter>
-    <filter id="card-shadow" x="-8%" y="-8%" width="116%" height="116%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.7"/>
-    </filter>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <linearGradient id="bg-purple" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="bg-cyan" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#083344" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="bg-pink" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#4a044e" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="bg-blue" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.4"/>
-    </linearGradient>
-    <linearGradient id="bg-teal" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#042f2e" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="bg-orange" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f97316" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#431407" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="bg-lime" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#a3e635" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#1a2e05" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="bg-rose" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#4c0519" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="bg-grey" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#64748b" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.4"/>
-    </linearGradient>
-    <!-- Title shimmers (banner-style) -->
-    <linearGradient id="tg-purple" x1="-0.5" y1="0" x2="0.5" y2="0">
-      <stop offset="0%" stop-color="#e9d5ff"/>
-      <stop offset="50%" stop-color="#c084fc"/>
-      <stop offset="100%" stop-color="#e9d5ff"/>
-      <animate attributeName="x1" values="-1;1;-1" dur="5s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;2;0" dur="5s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="tg-cyan" x1="-0.5" y1="0" x2="0.5" y2="0">
-      <stop offset="0%" stop-color="#cffafe"/>
-      <stop offset="50%" stop-color="#22d3ee"/>
-      <stop offset="100%" stop-color="#cffafe"/>
-      <animate attributeName="x1" values="-1;1;-1" dur="4.5s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;2;0" dur="4.5s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="tg-pink" x1="-0.5" y1="0" x2="0.5" y2="0">
-      <stop offset="0%" stop-color="#fce7f3"/>
-      <stop offset="50%" stop-color="#f472b6"/>
-      <stop offset="100%" stop-color="#fce7f3"/>
-      <animate attributeName="x1" values="-1;1;-1" dur="5.2s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;2;0" dur="5.2s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="tg-blue" x1="-0.5" y1="0" x2="0.5" y2="0">
-      <stop offset="0%" stop-color="#dbeafe"/>
-      <stop offset="50%" stop-color="#60a5fa"/>
-      <stop offset="100%" stop-color="#dbeafe"/>
-      <animate attributeName="x1" values="-1;1;-1" dur="4.8s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;2;0" dur="4.8s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="tg-teal" x1="-0.5" y1="0" x2="0.5" y2="0">
-      <stop offset="0%" stop-color="#ccfbf1"/>
-      <stop offset="50%" stop-color="#2dd4bf"/>
-      <stop offset="100%" stop-color="#ccfbf1"/>
-      <animate attributeName="x1" values="-1;1;-1" dur="5.5s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;2;0" dur="5.5s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="tg-orange" x1="-0.5" y1="0" x2="0.5" y2="0">
-      <stop offset="0%" stop-color="#ffedd5"/>
-      <stop offset="50%" stop-color="#fb923c"/>
-      <stop offset="100%" stop-color="#ffedd5"/>
-      <animate attributeName="x1" values="-1;1;-1" dur="4.2s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;2;0" dur="4.2s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="tg-lime" x1="-0.5" y1="0" x2="0.5" y2="0">
-      <stop offset="0%" stop-color="#ecfccb"/>
-      <stop offset="50%" stop-color="#a3e635"/>
-      <stop offset="100%" stop-color="#ecfccb"/>
-      <animate attributeName="x1" values="-1;1;-1" dur="5s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;2;0" dur="5s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="tg-rose" x1="-0.5" y1="0" x2="0.5" y2="0">
-      <stop offset="0%" stop-color="#ffe4e6"/>
-      <stop offset="50%" stop-color="#fb7185"/>
-      <stop offset="100%" stop-color="#ffe4e6"/>
-      <animate attributeName="x1" values="-1;1;-1" dur="4.7s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;2;0" dur="4.7s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="tg-grey" x1="-0.5" y1="0" x2="0.5" y2="0">
-      <stop offset="0%" stop-color="#f1f5f9"/>
-      <stop offset="50%" stop-color="#94a3b8"/>
-      <stop offset="100%" stop-color="#f1f5f9"/>
-      <animate attributeName="x1" values="-1;1;-1" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;2;0" dur="6s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="bannerText" x1="-1" y1="0" x2="0" y2="0">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="40%" stop-color="#60a5fa"/>
-      <stop offset="70%" stop-color="#22d3ee"/>
-      <stop offset="100%" stop-color="#ffffff"/>
-      <animate attributeName="x1" values="-1;1;-1" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;2;0" dur="4s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="bannerStroke" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1e3a8a"/>
-      <stop offset="35%" stop-color="#3b82f6"/>
-      <stop offset="70%" stop-color="#06b6d4"/>
-      <stop offset="100%" stop-color="#8b5cf6"/>
-    </linearGradient>
+    <filter id="bg-blur" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="55"/></filter>
+    <filter id="card-shadow" x="-15%" y="-12%" width="130%" height="138%"><feDropShadow dx="0" dy="7" stdDeviation="11" flood-color="#000000" flood-opacity="0.55"/></filter>
+    <filter id="hub-shadow" x="-15%" y="-55%" width="130%" height="230%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6"/></filter>
+    <filter id="glow" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="cardFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e1c33" stop-opacity="0.97"/><stop offset="1" stop-color="#0a1526" stop-opacity="0.95"/></linearGradient>
+    <linearGradient id="chipBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#10233d"/><stop offset="1" stop-color="#0a1830"/></linearGradient>
+    <linearGradient id="hubFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1e3a"/><stop offset="1" stop-color="#071120"/></linearGradient>
+    <linearGradient id="hubStroke" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.5" stop-color="#38bdf8"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient>
+    <linearGradient id="cardStroke1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#3b82f6"/><stop offset="1" stop-color="#93c5fd"/></linearGradient>
+    <linearGradient id="tg1" x1="-0.6" y1="0" x2="0.4" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#60a5fa"/><stop offset="1" stop-color="#ffffff"/><animate attributeName="x1" values="-1;0.8;-1" dur="4.75s" repeatCount="indefinite"/><animate attributeName="x2" values="0;1.8;0" dur="4.75s" repeatCount="indefinite"/></linearGradient>
+    <linearGradient id="cardStroke2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0c4a6e"/><stop offset="0.55" stop-color="#0ea5e9"/><stop offset="1" stop-color="#7dd3fc"/></linearGradient>
+    <linearGradient id="tg2" x1="-0.6" y1="0" x2="0.4" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#38bdf8"/><stop offset="1" stop-color="#ffffff"/><animate attributeName="x1" values="-1;0.8;-1" dur="5.10s" repeatCount="indefinite"/><animate attributeName="x2" values="0;1.8;0" dur="5.10s" repeatCount="indefinite"/></linearGradient>
+    <linearGradient id="cardStroke3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#155e75"/><stop offset="0.55" stop-color="#22d3ee"/><stop offset="1" stop-color="#a5f3fc"/></linearGradient>
+    <linearGradient id="tg3" x1="-0.6" y1="0" x2="0.4" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#22d3ee"/><stop offset="1" stop-color="#ffffff"/><animate attributeName="x1" values="-1;0.8;-1" dur="5.45s" repeatCount="indefinite"/><animate attributeName="x2" values="0;1.8;0" dur="5.45s" repeatCount="indefinite"/></linearGradient>
+    <linearGradient id="hubText" x1="-1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#60a5fa"/><stop offset="0.7" stop-color="#22d3ee"/><stop offset="1" stop-color="#ffffff"/><animate attributeName="x1" values="-1;1;-1" dur="4s" repeatCount="indefinite"/><animate attributeName="x2" values="0;2;0" dur="4s" repeatCount="indefinite"/></linearGradient>
+    <radialGradient id="coreGlow"><stop offset="0" stop-color="#38bdf8" stop-opacity="0.4"/><stop offset="0.55" stop-color="#1d4ed8" stop-opacity="0.14"/><stop offset="1" stop-color="#1d4ed8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="vign" cx="0.5" cy="0.42" r="0.85"><stop offset="0.55" stop-color="#010409" stop-opacity="0"/><stop offset="1" stop-color="#010409" stop-opacity="0.65"/></radialGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#38bdf8" stop-opacity="0"/><stop offset="0.5" stop-color="#38bdf8" stop-opacity="0.055"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#1d4ed8" stroke-opacity="0.07" stroke-width="1"/></pattern>
   </defs>
-
-  <!-- Dark banner-matching background -->
-  <rect width="1080" height="1320" fill="#020617"/>
-
-  <!-- Slow-moving orbs (lighter blur than original) -->
-  <circle cx="180" cy="280" r="220" fill="#3b82f6" opacity="0.13" filter="url(#bg-blur)">
-    <animate attributeName="cx" values="180;280;180" dur="22s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="280;180;280" dur="18s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="880" cy="320" r="240" fill="#8b5cf6" opacity="0.1" filter="url(#bg-blur)">
-    <animate attributeName="cx" values="880;780;880" dur="25s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="320;420;320" dur="20s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="540" cy="620" r="200" fill="#06b6d4" opacity="0.09" filter="url(#bg-blur)">
-    <animate attributeName="r" values="200;260;200" dur="16s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="820" cy="1100" r="180" fill="#ec4899" opacity="0.08" filter="url(#bg-blur)"/>
-  <circle cx="160" cy="1180" r="200" fill="#22d3ee" opacity="0.07" filter="url(#bg-blur)"/>
-
-  <!-- Header -->
-  <g transform="translate(0, 28)">
-    <rect x="240" y="8" width="600" height="72" rx="20" fill="none" stroke="url(#bannerStroke)" stroke-width="2" opacity="0.7"/>
-    <text x="540" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="800" fill="url(#bannerText)" text-anchor="middle" filter="url(#glow)">TECH STACK</text>
+  <rect width="1080" height="1330" fill="#020617"/>
+  <rect width="1080" height="1330" fill="url(#grid)"/>
+  <path d="M-120 420L620 -320" stroke="#1d4ed8" stroke-opacity="0.05" stroke-width="1"/>
+  <path d="M1200 760L460 1470" stroke="#1d4ed8" stroke-opacity="0.05" stroke-width="1"/>
+  <circle cx="150" cy="260" r="210" fill="#0A66C2" opacity="0.15" filter="url(#bg-blur)"><animate attributeName="cx" values="150;230;150" dur="24s" repeatCount="indefinite"/><animate attributeName="cy" values="260;200;260" dur="20s" repeatCount="indefinite"/></circle>
+  <circle cx="930" cy="320" r="230" fill="#1d4ed8" opacity="0.13" filter="url(#bg-blur)"><animate attributeName="cx" values="930;850;930" dur="26s" repeatCount="indefinite"/></circle>
+  <circle cx="540" cy="680" r="250" fill="#0ea5e9" opacity="0.08" filter="url(#bg-blur)"><animate attributeName="r" values="250;300;250" dur="18s" repeatCount="indefinite"/></circle>
+  <circle cx="880" cy="1160" r="200" fill="#0A66C2" opacity="0.12" filter="url(#bg-blur)"><animate attributeName="cx" values="880;800;880" dur="22s" repeatCount="indefinite"/></circle>
+  <circle cx="170" cy="1120" r="190" fill="#22d3ee" opacity="0.07" filter="url(#bg-blur)"><animate attributeName="cy" values="1120;1050;1120" dur="19s" repeatCount="indefinite"/></circle>
+  <rect width="1080" height="1330" fill="url(#vign)"/>
+  <rect x="0" y="-160" width="1080" height="140" fill="url(#scan)"><animateTransform attributeName="transform" type="translate" values="0 0;0 1500" dur="10s" repeatCount="indefinite"/></rect>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="1.5" fill="#60a5fa" opacity="0.55">
+    <text x="24" y="26">SYS://KEHAV-STACK_2026.09</text>
+    <text x="1056" y="26" text-anchor="end">NODES:09 · LINKS:12</text>
+    <text x="24" y="1318">BUS-POWER: OK</text>
+    <text x="1056" y="1318" text-anchor="end">STATUS: ONLINE</text>
   </g>
-
-  <!-- ========== ROW 1 ========== -->
-  <!-- AI Engineering -->
-  <g transform="translate(20, 130)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.1s" fill="freeze"/>
+  <circle cx="950" cy="1314.5" r="3" fill="#38bdf8"><animate attributeName="opacity" values="1;0.15;1" dur="1.6s" repeatCount="indefinite"/></circle>
+  <g stroke="#1d4ed8" fill="none" stroke-width="1.5">
+    <path d="M24 62H336" stroke-opacity="0.5"/>
+    <path d="M744 62H1056" stroke-opacity="0.5"/>
+    <path d="M24 84H268" stroke-opacity="0.28"/>
+    <path d="M812 84H1056" stroke-opacity="0.28"/>
+  </g>
+  <circle cx="336" cy="62" r="3" fill="#38bdf8" opacity="0.8"/>
+  <circle cx="744" cy="62" r="3" fill="#38bdf8" opacity="0.8"/>
+  <line x1="540" y1="96" x2="540" y2="122" stroke="#2563eb" stroke-width="1.6" opacity="0.9"/>
+  <line x1="120" y1="122" x2="960" y2="122" stroke="#0A66C2" stroke-width="6" opacity="0.22"><animate attributeName="opacity" values="0.16;0.34;0.16" dur="3.4s" repeatCount="indefinite"/></line>
+  <line x1="120" y1="122" x2="960" y2="122" stroke="#2563eb" stroke-width="1.6" opacity="0.9"/>
+  <circle cx="175" cy="122" r="5.5" fill="none" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.2"/><circle cx="175" cy="122" r="2.3" fill="#bae6fd"/>
+  <circle cx="540" cy="122" r="5.5" fill="none" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.2"/><circle cx="540" cy="122" r="2.3" fill="#bae6fd"/>
+  <circle cx="905" cy="122" r="5.5" fill="none" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.2"/><circle cx="905" cy="122" r="2.3" fill="#bae6fd"/>
+  <circle cx="120" cy="122" r="4.5" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/><circle cx="120" cy="122" r="1.5" fill="#bae6fd"/>
+  <circle cx="960" cy="122" r="4.5" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/><circle cx="960" cy="122" r="1.5" fill="#bae6fd"/>
+  <line x1="175" y1="122" x2="175" y2="142" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="175" cy="142" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <line x1="540" y1="122" x2="540" y2="142" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="540" cy="142" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <line x1="905" y1="122" x2="905" y2="142" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="905" cy="142" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <line x1="120" y1="518" x2="960" y2="518" stroke="#0A66C2" stroke-width="6" opacity="0.22"><animate attributeName="opacity" values="0.16;0.34;0.16" dur="3.4s" repeatCount="indefinite"/></line>
+  <line x1="120" y1="518" x2="960" y2="518" stroke="#2563eb" stroke-width="1.6" opacity="0.9"/>
+  <circle cx="175" cy="518" r="5.5" fill="none" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.2"/><circle cx="175" cy="518" r="2.3" fill="#bae6fd"/>
+  <circle cx="540" cy="518" r="5.5" fill="none" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.2"/><circle cx="540" cy="518" r="2.3" fill="#bae6fd"/>
+  <circle cx="905" cy="518" r="5.5" fill="none" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.2"/><circle cx="905" cy="518" r="2.3" fill="#bae6fd"/>
+  <circle cx="120" cy="518" r="4.5" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/><circle cx="120" cy="518" r="1.5" fill="#bae6fd"/>
+  <circle cx="960" cy="518" r="4.5" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/><circle cx="960" cy="518" r="1.5" fill="#bae6fd"/>
+  <line x1="175" y1="492" x2="175" y2="518" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <line x1="175" y1="518" x2="175" y2="544" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="175" cy="492" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="175" cy="544" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <line x1="540" y1="492" x2="540" y2="518" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <line x1="540" y1="518" x2="540" y2="544" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="540" cy="492" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="540" cy="544" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <line x1="905" y1="492" x2="905" y2="518" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <line x1="905" y1="518" x2="905" y2="544" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="905" cy="492" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="905" cy="544" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <line x1="120" y1="920" x2="960" y2="920" stroke="#0A66C2" stroke-width="6" opacity="0.22"><animate attributeName="opacity" values="0.16;0.34;0.16" dur="3.4s" repeatCount="indefinite"/></line>
+  <line x1="120" y1="920" x2="960" y2="920" stroke="#2563eb" stroke-width="1.6" opacity="0.9"/>
+  <circle cx="175" cy="920" r="5.5" fill="none" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.2"/><circle cx="175" cy="920" r="2.3" fill="#bae6fd"/>
+  <circle cx="540" cy="920" r="5.5" fill="none" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.2"/><circle cx="540" cy="920" r="2.3" fill="#bae6fd"/>
+  <circle cx="905" cy="920" r="5.5" fill="none" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.2"/><circle cx="905" cy="920" r="2.3" fill="#bae6fd"/>
+  <circle cx="120" cy="920" r="4.5" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/><circle cx="120" cy="920" r="1.5" fill="#bae6fd"/>
+  <circle cx="960" cy="920" r="4.5" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/><circle cx="960" cy="920" r="1.5" fill="#bae6fd"/>
+  <line x1="175" y1="894" x2="175" y2="920" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <line x1="175" y1="920" x2="175" y2="946" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="175" cy="894" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="175" cy="946" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <line x1="540" y1="894" x2="540" y2="920" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <line x1="540" y1="920" x2="540" y2="946" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="540" cy="894" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="540" cy="946" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <line x1="905" y1="894" x2="905" y2="920" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <line x1="905" y1="920" x2="905" y2="946" stroke="#2563eb" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="905" cy="894" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="905" cy="946" r="3.4" fill="#0A66C2" stroke="#38bdf8" stroke-width="1"/>
+  <g fill="#e0f2fe">
+    <circle r="3" filter="url(#glow)" opacity="0.9"><animateMotion dur="4s" repeatCount="indefinite" path="M120 122H960"/></circle>
+    <circle r="2.6" filter="url(#glow)" opacity="0.8"><animateMotion dur="5s" begin="2s" repeatCount="indefinite" path="M960 122H120"/></circle>
+    <circle r="3" filter="url(#glow)" opacity="0.9"><animateMotion dur="4.6s" begin="1.2s" repeatCount="indefinite" path="M960 518H120"/></circle>
+    <circle r="3" filter="url(#glow)" opacity="0.9"><animateMotion dur="4.2s" begin="0.6s" repeatCount="indefinite" path="M120 920H960"/></circle>
+    <circle r="2.6" filter="url(#glow)" opacity="0.8"><animateMotion dur="5.4s" begin="2.6s" repeatCount="indefinite" path="M960 920H120"/></circle>
+    <circle r="2.4" filter="url(#glow)" opacity="0.85"><animateMotion dur="1.4s" repeatCount="indefinite" path="M540 96V122"/></circle>
+  </g>
+  <circle cx="540" cy="62" r="170" fill="url(#coreGlow)" opacity="0.5"><animate attributeName="opacity" values="0.35;0.6;0.35" dur="4s" repeatCount="indefinite"/></circle>
+  <g filter="url(#hub-shadow)">
+    <path d="M372 28H708L730 50V74L708 96H372L350 74V50Z" fill="url(#hubFill)" stroke="url(#hubStroke)" stroke-width="2"/>
+  </g>
+  <path d="M374 34H706L724 52V72L706 90H374L356 72V52Z" fill="none" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="540" y="61" font-size="25" font-weight="800" letter-spacing="5" fill="url(#hubText)" text-anchor="middle" filter="url(#glow)">TECH STACK</text>
+  <text x="540" y="83" font-size="9" letter-spacing="3" fill="#8ab6e6" text-anchor="middle" opacity="0.9">KESHAV GANDHI · ENGINEERING STACK</text>
+  <g transform="translate(20,142)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.55s" begin="0.08s" fill="freeze"/>
     <g filter="url(#card-shadow)">
-      <rect width="330" height="370" rx="18" fill="url(#bg-purple)" stroke="#a78bfa" stroke-width="1.8"/>
-      <g transform="translate(18, 18)">
-        <rect width="34" height="34" rx="8" fill="#2e1065" stroke="#c084fc" stroke-width="1.5"/>
-        <text x="17" y="23" font-family="system-ui" font-size="13" font-weight="800" fill="#e9d5ff" text-anchor="middle">AI</text>
-      </g>
-      <text x="66" y="42" font-family="system-ui" font-size="22" font-weight="700" fill="url(#tg-purple)">AI Engineering</text>
-      <g transform="translate(14,78)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">Python</text></g>
-      <g transform="translate(118,78)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">NumPy</text></g>
-      <g transform="translate(222,78)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">Pandas</text></g>
-      <g transform="translate(14,114)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">Sklearn</text></g>
-      <g transform="translate(118,114)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">TensorFlow</text></g>
-      <g transform="translate(222,114)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">PyTorch</text></g>
-      <g transform="translate(14,150)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">XGBoost</text></g>
-      <g transform="translate(118,150)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">LightGBM</text></g>
-      <g transform="translate(222,150)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">CatBoost</text></g>
-      <g transform="translate(14,186)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">OpenCV</text></g>
-      <g transform="translate(118,186)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">MLFlow</text></g>
-      <g transform="translate(222,186)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">WandB</text></g>
-      <g transform="translate(14,222)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">Feature Eng</text></g>
-      <g transform="translate(118,222)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">Data Prep</text></g>
-      <g transform="translate(222,222)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">Training</text></g>
-      <g transform="translate(14,258)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">Eval</text></g>
-      <g transform="translate(118,258)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">Hyperparams</text></g>
-      <g transform="translate(222,258)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">Deploy</text></g>
-      <g transform="translate(14,294)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">Data Viz</text></g>
-      <g transform="translate(118,294)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">SHAP</text></g>
-      <g transform="translate(222,294)"><rect width="92" height="26" rx="6" fill="#1e1b4b"/><text x="46" y="18" font-size="11" fill="#ddd6fe" font-family="system-ui" text-anchor="middle">LIME</text></g>
+      <path d="M16 0H294L310 16V334L294 350H16L0 334V16Z" fill="url(#cardFill)" stroke="url(#cardStroke1)" stroke-width="1.6"/>
+    </g>
+    <path d="M18 2H292L308 18V332L292 348H18L2 332V18Z" fill="none" stroke="#93c5fd" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="8" cy="8" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <circle cx="302" cy="8" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <circle cx="302" cy="342" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <circle cx="8" cy="342" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <rect x="16" y="14" width="34" height="34" rx="7" fill="#081426" stroke="#3b82f6" stroke-width="1.4"/>
+    <text x="33" y="37" font-size="13" font-weight="800" fill="#93c5fd" text-anchor="middle">AI</text>
+    <text x="62" y="38" font-size="21" font-weight="700" fill="url(#tg1)">AI Engineering</text>
+    <text x="298" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#93c5fd" opacity="0.55" text-anchor="end" letter-spacing="1">01</text>
+    <line x1="16" y1="58" x2="294" y2="58" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="294" cy="58" r="1.8" fill="#93c5fd" opacity="0.8"/>
+    <g transform="translate(12,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Python</text>
+    </g>
+    <g transform="translate(111,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">NumPy</text>
+    </g>
+    <g transform="translate(210,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Pandas</text>
+    </g>
+    <g transform="translate(12,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Sklearn</text>
+    </g>
+    <g transform="translate(111,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">TensorFlow</text>
+    </g>
+    <g transform="translate(210,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">PyTorch</text>
+    </g>
+    <g transform="translate(12,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">XGBoost</text>
+    </g>
+    <g transform="translate(111,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">LightGBM</text>
+    </g>
+    <g transform="translate(210,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">CatBoost</text>
+    </g>
+    <g transform="translate(12,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">OpenCV</text>
+    </g>
+    <g transform="translate(111,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">MLFlow</text>
+    </g>
+    <g transform="translate(210,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">WandB</text>
+    </g>
+    <g transform="translate(12,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Feature Eng</text>
+    </g>
+    <g transform="translate(111,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Data Prep</text>
+    </g>
+    <g transform="translate(210,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Training</text>
+    </g>
+    <g transform="translate(12,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Eval</text>
+    </g>
+    <g transform="translate(111,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Hyperparams</text>
+    </g>
+    <g transform="translate(210,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Deploy</text>
+    </g>
+    <g transform="translate(12,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Data Viz</text>
+    </g>
+    <g transform="translate(111,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">SHAP</text>
+    </g>
+    <g transform="translate(210,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">LIME</text>
     </g>
   </g>
-
-  <!-- Gen AI & LLMs -->
-  <g transform="translate(375, 130)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.18s" fill="freeze"/>
+  <g transform="translate(385,142)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.55s" begin="0.17s" fill="freeze"/>
     <g filter="url(#card-shadow)">
-      <rect width="330" height="370" rx="18" fill="url(#bg-cyan)" stroke="#22d3ee" stroke-width="1.8"/>
-      <g transform="translate(18, 18)">
-        <rect width="34" height="34" rx="8" fill="#164e63" stroke="#67e8f9" stroke-width="1.5"/>
-        <text x="17" y="23" font-family="system-ui" font-size="11" font-weight="800" fill="#a5f3fc" text-anchor="middle">LLM</text>
-      </g>
-      <text x="66" y="42" font-family="system-ui" font-size="22" font-weight="700" fill="url(#tg-cyan)">Gen AI &amp; LLMs</text>
-      <g transform="translate(14,78)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">OpenAI</text></g>
-      <g transform="translate(118,78)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Claude</text></g>
-      <g transform="translate(222,78)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Gemini</text></g>
-      <g transform="translate(14,114)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Grok</text></g>
-      <g transform="translate(118,114)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Mistral</text></g>
-      <g transform="translate(222,114)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Llama</text></g>
-      <g transform="translate(14,150)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">DeepSeek</text></g>
-      <g transform="translate(118,150)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Hugging Face</text></g>
-      <g transform="translate(222,150)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Ollama</text></g>
-      <g transform="translate(14,186)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">LangChain</text></g>
-      <g transform="translate(118,186)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">LlamaIndex</text></g>
-      <g transform="translate(222,186)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">DSPy</text></g>
-      <g transform="translate(14,222)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Haystack</text></g>
-      <g transform="translate(118,222)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Prompt Eng</text></g>
-      <g transform="translate(222,222)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">RAG</text></g>
-      <g transform="translate(14,258)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Fine-Tuning</text></g>
-      <g transform="translate(118,258)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Embeddings</text></g>
-      <g transform="translate(222,258)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Tool Calling</text></g>
-      <g transform="translate(14,294)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Vector Search</text></g>
-      <g transform="translate(118,294)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Semantic</text></g>
-      <g transform="translate(222,294)"><rect width="92" height="26" rx="6" fill="#083344"/><text x="46" y="18" font-size="11" fill="#a5f3fc" font-family="system-ui" text-anchor="middle">Structured Out</text></g>
+      <path d="M16 0H294L310 16V334L294 350H16L0 334V16Z" fill="url(#cardFill)" stroke="url(#cardStroke2)" stroke-width="1.6"/>
+    </g>
+    <path d="M18 2H292L308 18V332L292 348H18L2 332V18Z" fill="none" stroke="#7dd3fc" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="8" cy="8" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <circle cx="302" cy="8" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <circle cx="302" cy="342" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <circle cx="8" cy="342" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <rect x="16" y="14" width="34" height="34" rx="7" fill="#081426" stroke="#0ea5e9" stroke-width="1.4"/>
+    <text x="33" y="37" font-size="11" font-weight="800" fill="#7dd3fc" text-anchor="middle">LLM</text>
+    <text x="62" y="38" font-size="21" font-weight="700" fill="url(#tg2)">Gen AI &amp; LLMs</text>
+    <text x="298" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#7dd3fc" opacity="0.55" text-anchor="end" letter-spacing="1">02</text>
+    <line x1="16" y1="58" x2="294" y2="58" stroke="#0ea5e9" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="294" cy="58" r="1.8" fill="#7dd3fc" opacity="0.8"/>
+    <g transform="translate(12,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">OpenAI</text>
+    </g>
+    <g transform="translate(111,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Claude</text>
+    </g>
+    <g transform="translate(210,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Gemini</text>
+    </g>
+    <g transform="translate(12,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Grok</text>
+    </g>
+    <g transform="translate(111,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Mistral</text>
+    </g>
+    <g transform="translate(210,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Llama</text>
+    </g>
+    <g transform="translate(12,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">DeepSeek</text>
+    </g>
+    <g transform="translate(111,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Hugging Face</text>
+    </g>
+    <g transform="translate(210,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Ollama</text>
+    </g>
+    <g transform="translate(12,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">LangChain</text>
+    </g>
+    <g transform="translate(111,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">LlamaIndex</text>
+    </g>
+    <g transform="translate(210,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">DSPy</text>
+    </g>
+    <g transform="translate(12,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Haystack</text>
+    </g>
+    <g transform="translate(111,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Prompt Eng</text>
+    </g>
+    <g transform="translate(210,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">RAG</text>
+    </g>
+    <g transform="translate(12,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Fine-Tuning</text>
+    </g>
+    <g transform="translate(111,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Embeddings</text>
+    </g>
+    <g transform="translate(210,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Tool Calling</text>
+    </g>
+    <g transform="translate(12,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Vector Search</text>
+    </g>
+    <g transform="translate(111,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Semantic</text>
+    </g>
+    <g transform="translate(210,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Structured Out</text>
     </g>
   </g>
-
-  <!-- Agentic AI -->
-  <g transform="translate(730, 130)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.26s" fill="freeze"/>
+  <g transform="translate(750,142)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.55s" begin="0.26s" fill="freeze"/>
     <g filter="url(#card-shadow)">
-      <rect width="330" height="370" rx="18" fill="url(#bg-pink)" stroke="#f472b6" stroke-width="1.8"/>
-      <g transform="translate(18, 18)">
-        <rect width="34" height="34" rx="8" fill="#500724" stroke="#f9a8d4" stroke-width="1.5"/>
-        <text x="17" y="23" font-family="system-ui" font-size="13" font-weight="800" fill="#fbcfe8" text-anchor="middle">Ag</text>
-      </g>
-      <text x="66" y="42" font-family="system-ui" font-size="22" font-weight="700" fill="url(#tg-pink)">Agentic AI</text>
-      <g transform="translate(14,78)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">LangGraph</text></g>
-      <g transform="translate(118,78)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">CrewAI</text></g>
-      <g transform="translate(222,78)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">AutoGen</text></g>
-      <g transform="translate(14,114)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Agno</text></g>
-      <g transform="translate(118,114)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">MCP</text></g>
-      <g transform="translate(222,114)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Tool Calling</text></g>
-      <g transform="translate(14,150)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Agent Memory</text></g>
-      <g transform="translate(118,150)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Orchestration</text></g>
-      <g transform="translate(222,150)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Planning</text></g>
-      <g transform="translate(14,186)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Multi-Agent</text></g>
-      <g transform="translate(118,186)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Guardrails</text></g>
-      <g transform="translate(222,186)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Routing</text></g>
-      <g transform="translate(14,222)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Triggers</text></g>
-      <g transform="translate(118,222)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">State Mgmt</text></g>
-      <g transform="translate(222,222)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Autonomy</text></g>
-      <g transform="translate(14,258)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Validation</text></g>
-      <g transform="translate(118,258)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">HITL</text></g>
-      <g transform="translate(222,258)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Chaining</text></g>
-      <g transform="translate(14,294)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Feedback</text></g>
-      <g transform="translate(118,294)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Cognitive</text></g>
-      <g transform="translate(222,294)"><rect width="92" height="26" rx="6" fill="#4a044e"/><text x="46" y="18" font-size="11" fill="#fbcfe8" font-family="system-ui" text-anchor="middle">Workflows</text></g>
+      <path d="M16 0H294L310 16V334L294 350H16L0 334V16Z" fill="url(#cardFill)" stroke="url(#cardStroke3)" stroke-width="1.6"/>
+    </g>
+    <path d="M18 2H292L308 18V332L292 348H18L2 332V18Z" fill="none" stroke="#a5f3fc" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="8" cy="8" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <circle cx="302" cy="8" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <circle cx="302" cy="342" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <circle cx="8" cy="342" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <rect x="16" y="14" width="34" height="34" rx="7" fill="#081426" stroke="#22d3ee" stroke-width="1.4"/>
+    <text x="33" y="37" font-size="13" font-weight="800" fill="#a5f3fc" text-anchor="middle">Ag</text>
+    <text x="62" y="38" font-size="21" font-weight="700" fill="url(#tg3)">Agentic AI</text>
+    <text x="298" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#a5f3fc" opacity="0.55" text-anchor="end" letter-spacing="1">03</text>
+    <line x1="16" y1="58" x2="294" y2="58" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="294" cy="58" r="1.8" fill="#a5f3fc" opacity="0.8"/>
+    <g transform="translate(12,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">LangGraph</text>
+    </g>
+    <g transform="translate(111,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">CrewAI</text>
+    </g>
+    <g transform="translate(210,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">AutoGen</text>
+    </g>
+    <g transform="translate(12,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Agno</text>
+    </g>
+    <g transform="translate(111,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">MCP</text>
+    </g>
+    <g transform="translate(210,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Tool Calling</text>
+    </g>
+    <g transform="translate(12,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Agent Memory</text>
+    </g>
+    <g transform="translate(111,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Orchestration</text>
+    </g>
+    <g transform="translate(210,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Planning</text>
+    </g>
+    <g transform="translate(12,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Multi-Agent</text>
+    </g>
+    <g transform="translate(111,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Guardrails</text>
+    </g>
+    <g transform="translate(210,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Routing</text>
+    </g>
+    <g transform="translate(12,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Triggers</text>
+    </g>
+    <g transform="translate(111,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">State Mgmt</text>
+    </g>
+    <g transform="translate(210,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Autonomy</text>
+    </g>
+    <g transform="translate(12,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Validation</text>
+    </g>
+    <g transform="translate(111,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">HITL</text>
+    </g>
+    <g transform="translate(210,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Chaining</text>
+    </g>
+    <g transform="translate(12,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Feedback</text>
+    </g>
+    <g transform="translate(111,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Cognitive</text>
+    </g>
+    <g transform="translate(210,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Workflows</text>
     </g>
   </g>
-
-  <!-- ========== ROW 2 ========== -->
-  <!-- Full-Stack -->
-  <g transform="translate(20, 520)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.34s" fill="freeze"/>
+  <g transform="translate(20,544)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.55s" begin="0.35s" fill="freeze"/>
     <g filter="url(#card-shadow)">
-      <rect width="330" height="370" rx="18" fill="url(#bg-blue)" stroke="#60a5fa" stroke-width="1.8"/>
-      <g transform="translate(18, 18)">
-        <rect width="34" height="34" rx="8" fill="#1e3a8a" stroke="#93c5fd" stroke-width="1.5"/>
-        <text x="17" y="23" font-family="system-ui" font-size="14" font-weight="800" fill="#bfdbfe" text-anchor="middle">&lt;/&gt;</text>
-      </g>
-      <text x="66" y="42" font-family="system-ui" font-size="22" font-weight="700" fill="url(#tg-blue)">Full-Stack Dev</text>
-      <g transform="translate(14,78)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">React</text></g>
-      <g transform="translate(118,78)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">Next.js</text></g>
-      <g transform="translate(222,78)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">TypeScript</text></g>
-      <g transform="translate(14,114)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">JavaScript</text></g>
-      <g transform="translate(118,114)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">HTML5</text></g>
-      <g transform="translate(222,114)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">CSS3</text></g>
-      <g transform="translate(14,150)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">Tailwind</text></g>
-      <g transform="translate(118,150)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">Redux</text></g>
-      <g transform="translate(222,150)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">Shadcn</text></g>
-      <g transform="translate(14,186)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">Framer</text></g>
-      <g transform="translate(118,186)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">Vite</text></g>
-      <g transform="translate(222,186)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">Node.js</text></g>
-      <g transform="translate(14,222)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">Express</text></g>
-      <g transform="translate(118,222)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">FastAPI</text></g>
-      <g transform="translate(222,222)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">Django</text></g>
-      <g transform="translate(14,258)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">Flask</text></g>
-      <g transform="translate(118,258)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">GraphQL</text></g>
-      <g transform="translate(222,258)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">WebSockets</text></g>
-      <g transform="translate(14,294)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">JWT</text></g>
-      <g transform="translate(118,294)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">CORS</text></g>
-      <g transform="translate(222,294)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#bfdbfe" font-family="system-ui" text-anchor="middle">SSR</text></g>
+      <path d="M16 0H294L310 16V334L294 350H16L0 334V16Z" fill="url(#cardFill)" stroke="url(#cardStroke1)" stroke-width="1.6"/>
+    </g>
+    <path d="M18 2H292L308 18V332L292 348H18L2 332V18Z" fill="none" stroke="#93c5fd" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="8" cy="8" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <circle cx="302" cy="8" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <circle cx="302" cy="342" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <circle cx="8" cy="342" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <rect x="16" y="14" width="34" height="34" rx="7" fill="#081426" stroke="#3b82f6" stroke-width="1.4"/>
+    <text x="33" y="37" font-size="14" font-weight="800" fill="#93c5fd" text-anchor="middle">&lt;/&gt;</text>
+    <text x="62" y="38" font-size="21" font-weight="700" fill="url(#tg1)">Full-Stack Dev</text>
+    <text x="298" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#93c5fd" opacity="0.55" text-anchor="end" letter-spacing="1">04</text>
+    <line x1="16" y1="58" x2="294" y2="58" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="294" cy="58" r="1.8" fill="#93c5fd" opacity="0.8"/>
+    <g transform="translate(12,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">React</text>
+    </g>
+    <g transform="translate(111,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Next.js</text>
+    </g>
+    <g transform="translate(210,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">TypeScript</text>
+    </g>
+    <g transform="translate(12,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">JavaScript</text>
+    </g>
+    <g transform="translate(111,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">HTML5</text>
+    </g>
+    <g transform="translate(210,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">CSS3</text>
+    </g>
+    <g transform="translate(12,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Tailwind</text>
+    </g>
+    <g transform="translate(111,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Redux</text>
+    </g>
+    <g transform="translate(210,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Shadcn</text>
+    </g>
+    <g transform="translate(12,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Framer</text>
+    </g>
+    <g transform="translate(111,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Vite</text>
+    </g>
+    <g transform="translate(210,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Node.js</text>
+    </g>
+    <g transform="translate(12,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Express</text>
+    </g>
+    <g transform="translate(111,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">FastAPI</text>
+    </g>
+    <g transform="translate(210,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Django</text>
+    </g>
+    <g transform="translate(12,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Flask</text>
+    </g>
+    <g transform="translate(111,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">GraphQL</text>
+    </g>
+    <g transform="translate(210,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">WebSockets</text>
+    </g>
+    <g transform="translate(12,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">JWT</text>
+    </g>
+    <g transform="translate(111,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">CORS</text>
+    </g>
+    <g transform="translate(210,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">SSR</text>
     </g>
   </g>
-
-  <!-- Cloud & DevOps -->
-  <g transform="translate(375, 520)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.42s" fill="freeze"/>
+  <g transform="translate(385,544)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.55s" begin="0.44s" fill="freeze"/>
     <g filter="url(#card-shadow)">
-      <rect width="330" height="370" rx="18" fill="url(#bg-teal)" stroke="#2dd4bf" stroke-width="1.8"/>
-      <g transform="translate(18, 18)">
-        <rect width="34" height="34" rx="8" fill="#134e4a" stroke="#5eead4" stroke-width="1.5"/>
-        <text x="17" y="23" font-family="system-ui" font-size="16" fill="#99f6e4" text-anchor="middle">☁️</text>
-      </g>
-      <text x="66" y="42" font-family="system-ui" font-size="22" font-weight="700" fill="url(#tg-teal)">Cloud &amp; DevOps</text>
-      <g transform="translate(14,78)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">AWS</text></g>
-      <g transform="translate(118,78)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Docker</text></g>
-      <g transform="translate(222,78)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">K8s</text></g>
-      <g transform="translate(14,114)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Git</text></g>
-      <g transform="translate(118,114)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">GitHub</text></g>
-      <g transform="translate(222,114)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">GHA</text></g>
-      <g transform="translate(14,150)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Linux</text></g>
-      <g transform="translate(118,150)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Nginx</text></g>
-      <g transform="translate(222,150)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Vercel</text></g>
-      <g transform="translate(14,186)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Railway</text></g>
-      <g transform="translate(118,186)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Render</text></g>
-      <g transform="translate(222,186)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Netlify</text></g>
-      <g transform="translate(14,222)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">DigitalOcean</text></g>
-      <g transform="translate(118,222)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Serverless</text></g>
-      <g transform="translate(222,222)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Containers</text></g>
-      <g transform="translate(14,258)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">GitOps</text></g>
-      <g transform="translate(118,258)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Scaling</text></g>
-      <g transform="translate(222,258)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Monitoring</text></g>
-      <g transform="translate(14,294)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">CloudFront</text></g>
-      <g transform="translate(118,294)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">Traffic</text></g>
-      <g transform="translate(222,294)"><rect width="92" height="26" rx="6" fill="#042f2e"/><text x="46" y="18" font-size="11" fill="#99f6e4" font-family="system-ui" text-anchor="middle">IAM</text></g>
+      <path d="M16 0H294L310 16V334L294 350H16L0 334V16Z" fill="url(#cardFill)" stroke="url(#cardStroke2)" stroke-width="1.6"/>
+    </g>
+    <path d="M18 2H292L308 18V332L292 348H18L2 332V18Z" fill="none" stroke="#7dd3fc" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="8" cy="8" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <circle cx="302" cy="8" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <circle cx="302" cy="342" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <circle cx="8" cy="342" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <rect x="16" y="14" width="34" height="34" rx="7" fill="#081426" stroke="#0ea5e9" stroke-width="1.4"/>
+    <text x="33" y="37" font-size="16" font-weight="800" fill="#7dd3fc" text-anchor="middle">☁️</text>
+    <text x="62" y="38" font-size="21" font-weight="700" fill="url(#tg2)">Cloud &amp; DevOps</text>
+    <text x="298" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#7dd3fc" opacity="0.55" text-anchor="end" letter-spacing="1">05</text>
+    <line x1="16" y1="58" x2="294" y2="58" stroke="#0ea5e9" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="294" cy="58" r="1.8" fill="#7dd3fc" opacity="0.8"/>
+    <g transform="translate(12,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">AWS</text>
+    </g>
+    <g transform="translate(111,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Docker</text>
+    </g>
+    <g transform="translate(210,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">K8s</text>
+    </g>
+    <g transform="translate(12,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Git</text>
+    </g>
+    <g transform="translate(111,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">GitHub</text>
+    </g>
+    <g transform="translate(210,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">GHA</text>
+    </g>
+    <g transform="translate(12,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Linux</text>
+    </g>
+    <g transform="translate(111,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Nginx</text>
+    </g>
+    <g transform="translate(210,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Vercel</text>
+    </g>
+    <g transform="translate(12,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Railway</text>
+    </g>
+    <g transform="translate(111,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Render</text>
+    </g>
+    <g transform="translate(210,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Netlify</text>
+    </g>
+    <g transform="translate(12,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">DigitalOcean</text>
+    </g>
+    <g transform="translate(111,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Serverless</text>
+    </g>
+    <g transform="translate(210,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Containers</text>
+    </g>
+    <g transform="translate(12,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">GitOps</text>
+    </g>
+    <g transform="translate(111,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Scaling</text>
+    </g>
+    <g transform="translate(210,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Monitoring</text>
+    </g>
+    <g transform="translate(12,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">CloudFront</text>
+    </g>
+    <g transform="translate(111,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Traffic</text>
+    </g>
+    <g transform="translate(210,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">IAM</text>
     </g>
   </g>
-
-  <!-- Databases -->
-  <g transform="translate(730, 520)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.5s" fill="freeze"/>
+  <g transform="translate(750,544)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.55s" begin="0.53s" fill="freeze"/>
     <g filter="url(#card-shadow)">
-      <rect width="330" height="370" rx="18" fill="url(#bg-orange)" stroke="#fb923c" stroke-width="1.8"/>
-      <g transform="translate(18, 18)">
-        <rect width="34" height="34" rx="8" fill="#7c2d12" stroke="#fdba74" stroke-width="1.5"/>
-        <text x="17" y="23" font-family="system-ui" font-size="12" font-weight="800" fill="#fed7aa" text-anchor="middle">DB</text>
-      </g>
-      <text x="66" y="42" font-family="system-ui" font-size="22" font-weight="700" fill="url(#tg-orange)">Databases</text>
-      <g transform="translate(14,78)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">MongoDB</text></g>
-      <g transform="translate(118,78)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">PostgreSQL</text></g>
-      <g transform="translate(222,78)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">MySQL</text></g>
-      <g transform="translate(14,114)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Redis</text></g>
-      <g transform="translate(118,114)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">SQLite</text></g>
-      <g transform="translate(222,114)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Supabase</text></g>
-      <g transform="translate(14,150)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Firebase</text></g>
-      <g transform="translate(118,150)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Pinecone</text></g>
-      <g transform="translate(222,150)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">ChromaDB</text></g>
-      <g transform="translate(14,186)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">FAISS</text></g>
-      <g transform="translate(118,186)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Weaviate</text></g>
-      <g transform="translate(222,186)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Qdrant</text></g>
-      <g transform="translate(14,222)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Milvus</text></g>
-      <g transform="translate(118,222)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Relational</text></g>
-      <g transform="translate(222,222)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">NoSQL</text></g>
-      <g transform="translate(14,258)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Vector DB</text></g>
-      <g transform="translate(118,258)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Caching</text></g>
-      <g transform="translate(222,258)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Replication</text></g>
-      <g transform="translate(14,294)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Partitioning</text></g>
-      <g transform="translate(118,294)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Backup</text></g>
-      <g transform="translate(222,294)"><rect width="92" height="26" rx="6" fill="#431407"/><text x="46" y="18" font-size="11" fill="#fed7aa" font-family="system-ui" text-anchor="middle">Restore</text></g>
+      <path d="M16 0H294L310 16V334L294 350H16L0 334V16Z" fill="url(#cardFill)" stroke="url(#cardStroke3)" stroke-width="1.6"/>
+    </g>
+    <path d="M18 2H292L308 18V332L292 348H18L2 332V18Z" fill="none" stroke="#a5f3fc" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="8" cy="8" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <circle cx="302" cy="8" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <circle cx="302" cy="342" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <circle cx="8" cy="342" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <rect x="16" y="14" width="34" height="34" rx="7" fill="#081426" stroke="#22d3ee" stroke-width="1.4"/>
+    <text x="33" y="37" font-size="12" font-weight="800" fill="#a5f3fc" text-anchor="middle">DB</text>
+    <text x="62" y="38" font-size="21" font-weight="700" fill="url(#tg3)">Databases</text>
+    <text x="298" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#a5f3fc" opacity="0.55" text-anchor="end" letter-spacing="1">06</text>
+    <line x1="16" y1="58" x2="294" y2="58" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="294" cy="58" r="1.8" fill="#a5f3fc" opacity="0.8"/>
+    <g transform="translate(12,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">MongoDB</text>
+    </g>
+    <g transform="translate(111,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">PostgreSQL</text>
+    </g>
+    <g transform="translate(210,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">MySQL</text>
+    </g>
+    <g transform="translate(12,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Redis</text>
+    </g>
+    <g transform="translate(111,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">SQLite</text>
+    </g>
+    <g transform="translate(210,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Supabase</text>
+    </g>
+    <g transform="translate(12,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Firebase</text>
+    </g>
+    <g transform="translate(111,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Pinecone</text>
+    </g>
+    <g transform="translate(210,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">ChromaDB</text>
+    </g>
+    <g transform="translate(12,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">FAISS</text>
+    </g>
+    <g transform="translate(111,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Weaviate</text>
+    </g>
+    <g transform="translate(210,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Qdrant</text>
+    </g>
+    <g transform="translate(12,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Milvus</text>
+    </g>
+    <g transform="translate(111,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Relational</text>
+    </g>
+    <g transform="translate(210,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">NoSQL</text>
+    </g>
+    <g transform="translate(12,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Vector DB</text>
+    </g>
+    <g transform="translate(111,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Caching</text>
+    </g>
+    <g transform="translate(210,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Replication</text>
+    </g>
+    <g transform="translate(12,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Partitioning</text>
+    </g>
+    <g transform="translate(111,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Backup</text>
+    </g>
+    <g transform="translate(210,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Restore</text>
     </g>
   </g>
-
-  <!-- ========== ROW 3 ========== -->
-  <!-- Automation -->
-  <g transform="translate(20, 910)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.58s" fill="freeze"/>
+  <g transform="translate(20,946)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.55s" begin="0.62s" fill="freeze"/>
     <g filter="url(#card-shadow)">
-      <rect width="330" height="370" rx="18" fill="url(#bg-lime)" stroke="#a3e635" stroke-width="1.8"/>
-      <g transform="translate(18, 18)">
-        <rect width="34" height="34" rx="8" fill="#365314" stroke="#bef264" stroke-width="1.5"/>
-        <text x="17" y="23" font-family="system-ui" font-size="16" fill="#d9f99d" text-anchor="middle">⚡</text>
-      </g>
-      <text x="66" y="42" font-family="system-ui" font-size="22" font-weight="700" fill="url(#tg-lime)">Automation</text>
-      <g transform="translate(14,78)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">n8n</text></g>
-      <g transform="translate(118,78)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Make</text></g>
-      <g transform="translate(222,78)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Zapier</text></g>
-      <g transform="translate(14,114)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Puppeteer</text></g>
-      <g transform="translate(118,114)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Selenium</text></g>
-      <g transform="translate(222,114)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Playwright</text></g>
-      <g transform="translate(14,150)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Python</text></g>
-      <g transform="translate(118,150)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Airflow</text></g>
-      <g transform="translate(222,150)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">RPA</text></g>
-      <g transform="translate(14,186)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Scheduling</text></g>
-      <g transform="translate(118,186)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Alerts</text></g>
-      <g transform="translate(222,186)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Bots</text></g>
-      <g transform="translate(14,222)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Event-driven</text></g>
-      <g transform="translate(118,222)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Logging</text></g>
-      <g transform="translate(222,222)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Error Handle</text></g>
-      <g transform="translate(14,258)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Retry</text></g>
-      <g transform="translate(118,258)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Queues</text></g>
-      <g transform="translate(222,258)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Dead Letter</text></g>
-      <g transform="translate(14,294)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Webhooks</text></g>
-      <g transform="translate(118,294)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Cron</text></g>
-      <g transform="translate(222,294)"><rect width="92" height="26" rx="6" fill="#1a2e05"/><text x="46" y="18" font-size="11" fill="#d9f99d" font-family="system-ui" text-anchor="middle">Pipelines</text></g>
+      <path d="M16 0H294L310 16V334L294 350H16L0 334V16Z" fill="url(#cardFill)" stroke="url(#cardStroke1)" stroke-width="1.6"/>
+    </g>
+    <path d="M18 2H292L308 18V332L292 348H18L2 332V18Z" fill="none" stroke="#93c5fd" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="8" cy="8" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <circle cx="302" cy="8" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <circle cx="302" cy="342" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <circle cx="8" cy="342" r="2.2" fill="#93c5fd" opacity="0.85"/>
+    <rect x="16" y="14" width="34" height="34" rx="7" fill="#081426" stroke="#3b82f6" stroke-width="1.4"/>
+    <text x="33" y="37" font-size="16" font-weight="800" fill="#93c5fd" text-anchor="middle">⚡</text>
+    <text x="62" y="38" font-size="21" font-weight="700" fill="url(#tg1)">Automation</text>
+    <text x="298" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#93c5fd" opacity="0.55" text-anchor="end" letter-spacing="1">07</text>
+    <line x1="16" y1="58" x2="294" y2="58" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="294" cy="58" r="1.8" fill="#93c5fd" opacity="0.8"/>
+    <g transform="translate(12,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">n8n</text>
+    </g>
+    <g transform="translate(111,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Make</text>
+    </g>
+    <g transform="translate(210,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Zapier</text>
+    </g>
+    <g transform="translate(12,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Puppeteer</text>
+    </g>
+    <g transform="translate(111,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Selenium</text>
+    </g>
+    <g transform="translate(210,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Playwright</text>
+    </g>
+    <g transform="translate(12,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Python</text>
+    </g>
+    <g transform="translate(111,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Airflow</text>
+    </g>
+    <g transform="translate(210,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">RPA</text>
+    </g>
+    <g transform="translate(12,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Scheduling</text>
+    </g>
+    <g transform="translate(111,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Alerts</text>
+    </g>
+    <g transform="translate(210,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Bots</text>
+    </g>
+    <g transform="translate(12,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Event-driven</text>
+    </g>
+    <g transform="translate(111,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Logging</text>
+    </g>
+    <g transform="translate(210,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Error Handle</text>
+    </g>
+    <g transform="translate(12,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Retry</text>
+    </g>
+    <g transform="translate(111,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Queues</text>
+    </g>
+    <g transform="translate(210,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Dead Letter</text>
+    </g>
+    <g transform="translate(12,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Webhooks</text>
+    </g>
+    <g transform="translate(111,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Cron</text>
+    </g>
+    <g transform="translate(210,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#dbeafe" text-anchor="middle">Pipelines</text>
     </g>
   </g>
-
-  <!-- SaaS Engineering -->
-  <g transform="translate(375, 910)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.66s" fill="freeze"/>
+  <g transform="translate(385,946)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.55s" begin="0.71s" fill="freeze"/>
     <g filter="url(#card-shadow)">
-      <rect width="330" height="370" rx="18" fill="url(#bg-rose)" stroke="#fb7185" stroke-width="1.8"/>
-      <g transform="translate(18, 18)">
-        <rect width="34" height="34" rx="8" fill="#4c0519" stroke="#fda4af" stroke-width="1.5"/>
-        <text x="17" y="23" font-family="system-ui" font-size="14" font-weight="800" fill="#fecdd3" text-anchor="middle">☰</text>
-      </g>
-      <text x="66" y="42" font-family="system-ui" font-size="20" font-weight="700" fill="url(#tg-rose)">SaaS Engineering</text>
-      <g transform="translate(14,78)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Stripe</text></g>
-      <g transform="translate(118,78)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Razorpay</text></g>
-      <g transform="translate(222,78)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Multi-Tenant</text></g>
-      <g transform="translate(14,114)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Auth</text></g>
-      <g transform="translate(118,114)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">RBAC</text></g>
-      <g transform="translate(222,114)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Subscriptions</text></g>
-      <g transform="translate(14,150)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Billing</text></g>
-      <g transform="translate(118,150)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Email</text></g>
-      <g transform="translate(222,150)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Onboarding</text></g>
-      <g transform="translate(14,186)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Analytics</text></g>
-      <g transform="translate(118,186)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Metrics</text></g>
-      <g transform="translate(222,186)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">CRM</text></g>
-      <g transform="translate(14,222)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Reporting</text></g>
-      <g transform="translate(118,222)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Audit</text></g>
-      <g transform="translate(222,222)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Compliance</text></g>
-      <g transform="translate(14,258)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Support</text></g>
-      <g transform="translate(118,258)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Retention</text></g>
-      <g transform="translate(222,258)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Engagement</text></g>
-      <g transform="translate(14,294)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Funnels</text></g>
-      <g transform="translate(118,294)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Webhooks</text></g>
-      <g transform="translate(222,294)"><rect width="92" height="26" rx="6" fill="#4c0519"/><text x="46" y="18" font-size="11" fill="#fecdd3" font-family="system-ui" text-anchor="middle">Feature Flags</text></g>
+      <path d="M16 0H294L310 16V334L294 350H16L0 334V16Z" fill="url(#cardFill)" stroke="url(#cardStroke2)" stroke-width="1.6"/>
+    </g>
+    <path d="M18 2H292L308 18V332L292 348H18L2 332V18Z" fill="none" stroke="#7dd3fc" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="8" cy="8" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <circle cx="302" cy="8" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <circle cx="302" cy="342" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <circle cx="8" cy="342" r="2.2" fill="#7dd3fc" opacity="0.85"/>
+    <rect x="16" y="14" width="34" height="34" rx="7" fill="#081426" stroke="#0ea5e9" stroke-width="1.4"/>
+    <text x="33" y="37" font-size="14" font-weight="800" fill="#7dd3fc" text-anchor="middle">☰</text>
+    <text x="62" y="38" font-size="21" font-weight="700" fill="url(#tg2)">SaaS Engineering</text>
+    <text x="298" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#7dd3fc" opacity="0.55" text-anchor="end" letter-spacing="1">08</text>
+    <line x1="16" y1="58" x2="294" y2="58" stroke="#0ea5e9" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="294" cy="58" r="1.8" fill="#7dd3fc" opacity="0.8"/>
+    <g transform="translate(12,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Stripe</text>
+    </g>
+    <g transform="translate(111,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Razorpay</text>
+    </g>
+    <g transform="translate(210,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Multi-Tenant</text>
+    </g>
+    <g transform="translate(12,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Auth</text>
+    </g>
+    <g transform="translate(111,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">RBAC</text>
+    </g>
+    <g transform="translate(210,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Subscriptions</text>
+    </g>
+    <g transform="translate(12,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Billing</text>
+    </g>
+    <g transform="translate(111,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Email</text>
+    </g>
+    <g transform="translate(210,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Onboarding</text>
+    </g>
+    <g transform="translate(12,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Analytics</text>
+    </g>
+    <g transform="translate(111,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Metrics</text>
+    </g>
+    <g transform="translate(210,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">CRM</text>
+    </g>
+    <g transform="translate(12,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Reporting</text>
+    </g>
+    <g transform="translate(111,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Audit</text>
+    </g>
+    <g transform="translate(210,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Compliance</text>
+    </g>
+    <g transform="translate(12,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Support</text>
+    </g>
+    <g transform="translate(111,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Retention</text>
+    </g>
+    <g transform="translate(210,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Engagement</text>
+    </g>
+    <g transform="translate(12,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Funnels</text>
+    </g>
+    <g transform="translate(111,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Webhooks</text>
+    </g>
+    <g transform="translate(210,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#0ea5e9" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#e0f2fe" text-anchor="middle">Feature Flags</text>
     </g>
   </g>
-
-  <!-- Developer Toolkit -->
-  <g transform="translate(730, 910)" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.74s" fill="freeze"/>
+  <g transform="translate(750,946)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.55s" begin="0.80s" fill="freeze"/>
     <g filter="url(#card-shadow)">
-      <rect width="330" height="370" rx="18" fill="url(#bg-grey)" stroke="#94a3b8" stroke-width="1.8"/>
-      <g transform="translate(18, 18)">
-        <rect width="34" height="34" rx="8" fill="#1e293b" stroke="#cbd5e1" stroke-width="1.5"/>
-        <text x="17" y="23" font-family="system-ui" font-size="16" fill="#e2e8f0" text-anchor="middle">⚙</text>
-      </g>
-      <text x="66" y="42" font-family="system-ui" font-size="20" font-weight="700" fill="url(#tg-grey)">Dev Toolkit</text>
-      <g transform="translate(14,78)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Python</text></g>
-      <g transform="translate(118,78)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">TypeScript</text></g>
-      <g transform="translate(222,78)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">JavaScript</text></g>
-      <g transform="translate(14,114)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Java</text></g>
-      <g transform="translate(118,114)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">C</text></g>
-      <g transform="translate(222,114)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">C++</text></g>
-      <g transform="translate(14,150)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">SQL</text></g>
-      <g transform="translate(118,150)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Bash</text></g>
-      <g transform="translate(222,150)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">VS Code</text></g>
-      <g transform="translate(14,186)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">GitHub</text></g>
-      <g transform="translate(118,186)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Postman</text></g>
-      <g transform="translate(222,186)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Docker</text></g>
-      <g transform="translate(14,222)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Figma</text></g>
-      <g transform="translate(118,222)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Notion</text></g>
-      <g transform="translate(222,222)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Jira</text></g>
-      <g transform="translate(14,258)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Vim</text></g>
-      <g transform="translate(118,258)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Zsh</text></g>
-      <g transform="translate(222,258)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Slack</text></g>
-      <g transform="translate(14,294)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Agile</text></g>
-      <g transform="translate(118,294)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Scrum</text></g>
-      <g transform="translate(222,294)"><rect width="92" height="26" rx="6" fill="#0f172a"/><text x="46" y="18" font-size="11" fill="#e2e8f0" font-family="system-ui" text-anchor="middle">Linux</text></g>
+      <path d="M16 0H294L310 16V334L294 350H16L0 334V16Z" fill="url(#cardFill)" stroke="url(#cardStroke3)" stroke-width="1.6"/>
+    </g>
+    <path d="M18 2H292L308 18V332L292 348H18L2 332V18Z" fill="none" stroke="#a5f3fc" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="8" cy="8" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <circle cx="302" cy="8" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <circle cx="302" cy="342" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <circle cx="8" cy="342" r="2.2" fill="#a5f3fc" opacity="0.85"/>
+    <rect x="16" y="14" width="34" height="34" rx="7" fill="#081426" stroke="#22d3ee" stroke-width="1.4"/>
+    <text x="33" y="37" font-size="16" font-weight="800" fill="#a5f3fc" text-anchor="middle">⚙</text>
+    <text x="62" y="38" font-size="21" font-weight="700" fill="url(#tg3)">Dev Toolkit</text>
+    <text x="298" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#a5f3fc" opacity="0.55" text-anchor="end" letter-spacing="1">09</text>
+    <line x1="16" y1="58" x2="294" y2="58" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="294" cy="58" r="1.8" fill="#a5f3fc" opacity="0.8"/>
+    <g transform="translate(12,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Python</text>
+    </g>
+    <g transform="translate(111,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">TypeScript</text>
+    </g>
+    <g transform="translate(210,74)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">JavaScript</text>
+    </g>
+    <g transform="translate(12,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Java</text>
+    </g>
+    <g transform="translate(111,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">C</text>
+    </g>
+    <g transform="translate(210,110)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">C++</text>
+    </g>
+    <g transform="translate(12,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">SQL</text>
+    </g>
+    <g transform="translate(111,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Bash</text>
+    </g>
+    <g transform="translate(210,146)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">VS Code</text>
+    </g>
+    <g transform="translate(12,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">GitHub</text>
+    </g>
+    <g transform="translate(111,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Postman</text>
+    </g>
+    <g transform="translate(210,182)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Docker</text>
+    </g>
+    <g transform="translate(12,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Figma</text>
+    </g>
+    <g transform="translate(111,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Notion</text>
+    </g>
+    <g transform="translate(210,218)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Jira</text>
+    </g>
+    <g transform="translate(12,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Vim</text>
+    </g>
+    <g transform="translate(111,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Zsh</text>
+    </g>
+    <g transform="translate(210,254)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Slack</text>
+    </g>
+    <g transform="translate(12,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Agile</text>
+    </g>
+    <g transform="translate(111,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Scrum</text>
+    </g>
+    <g transform="translate(210,290)">
+      <rect width="88" height="26" rx="5" fill="url(#chipBg)" stroke="#22d3ee" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="44" y="17.5" font-size="11" fill="#ecfeff" text-anchor="middle">Linux</text>
     </g>
   </g>
 </svg>
