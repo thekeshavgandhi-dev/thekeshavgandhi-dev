@@ -107,6 +107,13 @@
     <img src="https://img.shields.io/badge/GITHUB-STATS-181717?style=flat-square&color=0A66C2&logo=github&logoColor=0A66C2&v=20260816" alt="GitHub Stats" width="200">
     <img src="./assets/blueline.png" width="100%" alt="" />
 </div>
+<!-- HIGHLIGHTS_STATS:START -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Commits-609-0A66C2?style=for-the-badge&logo=git&logoColor=white&v=20260910" alt="Commits" /> 
+  <img src="https://img.shields.io/badge/PRs-37-0A66C2?style=for-the-badge&logo=github&logoColor=white&v=20260910" alt="PRs" /> 
+  <img src="https://img.shields.io/badge/New_Repos-14-0A66C2?style=for-the-badge&logo=github&logoColor=white&v=20260910" alt="New repos" /> 
+  <img src="https://img.shields.io/badge/Active_in-44_repos-0A66C2?style=for-the-badge&logo=github&logoColor=white&v=20260910" alt="Active repos" /></p>
+<!-- HIGHLIGHTS_STATS:END -->
 
 <!-- ==========================================================
      SECTION 10: STREAK & CARTOON
