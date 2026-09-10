@@ -83,7 +83,7 @@
      SECTION 7: ABOUT ME
      SVG graphic introducing myself.
      ========================================================== -->
-<img src="assets/about-me.svg" alt="About Me">
+<img src="assets/about-me-v3.svg" alt="About Me">
 
 <!-- ==========================================================
      SECTION 8: TECH STACK HEADER
