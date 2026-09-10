@@ -91,13 +91,13 @@
      ========================================================== -->
 <div align="center">
     <img src="assets/blueline.png" alt="Gradient Line" width="100%">
-    <img src="https://img.shields.io/badge/TECH-STACK-181717?style=flat-square&color=0A66C2&logo=three.js&logoColor=0A66C2&v=20260816" alt="Tech Stack" width="200">
-    <img src="assets/blueline.png" alt="Gradient Line" width="100%">
+    <!-- <img src="https://img.shields.io/badge/TECH-STACK-181717?style=flat-square&color=0A66C2&logo=three.js&logoColor=0A66C2&v=20260816" alt="Tech Stack" width="200">
+    <img src="assets/blueline.png" alt="Gradient Line" width="100%"> -->
 </div>
 
 <!-- Tech stack SVG graphic -->
-<img src="assets/tech-stack.svg" alt="Tech Stack">
-<img src="assets/techd.svg" alt="Tech Stack">
+<!-- <img src="assets/tech-stack.svg" alt="Tech Stack"> -->
+<img src="assets/tech_stack.svg" alt="Tech Stack">
 <!-- ==========================================================
      SECTION 9: GITHUB STATS HEADER
      Label for the GitHub statistics section.
