@@ -110,6 +110,13 @@
 <div align="center">
   
   ![LeetCode Stats](https://leetcard.jacoblin.cool/thekeshavgandhi_dev?theme=dark&font=Podkova&ext=heatmap)
+  <img
+    src="./assets/cartoon1.png"
+    width="24%"
+    height = 20%
+    align="right"
+    alt="Coding Cartoon"
+    />
   </div>
 <!-- HIGHLIGHTS_STATS:END -->
 <!-- ==========================================================
