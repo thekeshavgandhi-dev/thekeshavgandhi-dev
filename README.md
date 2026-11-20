@@ -104,6 +104,20 @@
      ========================================================== -->
 <div align="center">
     <img src="assets/blueline.png" alt="Gradient Line" width="100%">
+    <img src="https://img.shields.io/badge/LEETCODE-STATS-181717?style=flat-square&color=0A66C2&logo=github&logoColor=0A66C2&v=20260816" alt="GitHub Stats" width="200">
+    <img src="./assets/blueline.png" width="100%" alt="" />
+</div>
+<div align="center">
+  
+  ![LeetCode Stats](https://leetcard.jacoblin.cool/thekeshavgandhi_dev?theme=dark&font=Podkova&ext=heatmap)
+  </div>
+<!-- HIGHLIGHTS_STATS:END -->
+<!-- ==========================================================
+     SECTION 9: GITHUB STATS HEADER
+     Label for the GitHub statistics section.
+     ========================================================== -->
+<div align="center">
+    <img src="assets/blueline.png" alt="Gradient Line" width="100%">
     <img src="https://img.shields.io/badge/GITHUB-STATS-181717?style=flat-square&color=0A66C2&logo=github&logoColor=0A66C2&v=20260816" alt="GitHub Stats" width="200">
     <img src="./assets/blueline.png" width="100%" alt="" />
 </div>
